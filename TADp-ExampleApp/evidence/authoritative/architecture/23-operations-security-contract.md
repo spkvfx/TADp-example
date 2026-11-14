@@ -6,8 +6,6 @@
 **Contract owner:** Container platform owner and project architecture authority  
 **Producer:** Versioned OCI images, release Compose model, and maintenance commands  
 **Consumer:** Local operator, product verification, and future release initiatives  
-**Last reviewed:** 2026-11-10  
-**Supersedes:** Native-runtime portions of `ARC-CTR-008@1.0.0`, preserved in [`ARC-REV-001`](revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md)  
 
 ## Purpose and scope
 
@@ -470,13 +468,3 @@ change.
 - Persistence contract: [`ARC-CTR-004`](16-sqlite-persistence-contract.md)
 - Governing evidence: [`AUTH-EX-001`](01-accepted-architecture-baseline.md)
 - Governing security suites: [`SEC-NIST-SUITE-001@1.0.1`](../security/NIST/00-nist-security-policy-suite-index.md), [`SEC-HIPAA-SUITE-001@1.0.1`](../security/HIPPA/00-hipaa-security-policy-suite-index.md)
-- Superseded native deployment baseline: [`ARC-REV-001`](revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md)
-
-## Revision record
-
-| Date | Change | Authority |
-|---|---|---|
-| 2026-11-10 | Defined native local-process operations/security contract | User-authorized best-judgment architecture completion |
-| 2026-11-10 | Replaced native operation with mandatory Compose topology, container hardening, named volumes, offline maintenance, and Docker-only lifecycle | User's explicit full-Dockerization/no-host-services instruction |
-| 2026-11-10 | Required CLI and web to consume the same `/api/v1` path while retaining their distinct Docker network origins | User's explicit shared-API-path instruction |
-| 2026-11-10 | Reconciled the operations profile with the NIST and HIPAA data/use, evidence, and successor gates; no runtime behavior was changed | User's explicit instruction to apply the reconciliation findings in place |

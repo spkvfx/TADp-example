@@ -4,58 +4,32 @@
 **Status:** Accepted prospective policy evidence  
 **Revision:** `1.0.1`  
 **Owner and accepting authority:** User, project authority  
-**Effective date:** 2026-11-10  
 **Related suite:** [`SEC-HIPAA-SUITE-001`](00-hipaa-security-policy-suite-index.md)  
 
 ## Purpose
 
-This record preserves the authority, evidence classes, legal-source snapshot,
-scope decisions, and limitations used to create the demonstrator's
+This record defines the authority, evidence classes, legal-source snapshot,
+scope decisions, and limitations of the demonstrator's
 HIPAA-aligned policy. It prevents later work from mistaking prospective policy
 for an implementation assessment or from treating general HIPAA alignment as
 a compliance certification.
 
-## Human authority captured
+## Baseline authority and scope
 
-### Initial instruction
+The User is the accepting project authority for this limited, prospective
+HIPAA-aligned policy. The suite selects architecture-relevant safeguards and
+justifies them with the official HIPAA regulation and guidance identified in
+the source baseline below.
 
-> create a limited scope HIPPA aligned security policy for the TADp
-> demonstrator app. use the architecture invariant as primary evidence. The
-> policy does not need to include every HIPPA aligned protocol, limit only to
-> areas relevant to the example app. Place the policy document suite in the
-> HIPPA folder. Be certain to justify every policy with existing, documented
-> HIPPA guidelines and protocols.
+The security policy guides architecture and realization within its scope; no
+policy requirement may be changed to accommodate either. Architecture `2.0.1`,
+NIST policy `1.0.1`, and this HIPAA policy `1.0.1` apply together with separate
+ownership and additive evidence obligations.
 
-### Scope clarification
-
-> these policies guide future development, not validate existing work
-
-### Reconciliation instruction
-
-> I need you to actually reconcile the files according to these findings. I
-> need you to make these changes to the files in place.
-
-### Policy-primacy clarification
-
-> you aren't changing the security policy to match the architecture or
-> realization note right? this must remain primary invariant that guides both
-> documents - not the other way around.
-
-### Resulting authority
-
-These instructions authorize creation of a new project-authoritative policy
-suite in this directory. They authorize Codex to select a limited set of
-architecture-relevant safeguards and to justify them with current official
-HIPAA regulation and guidance. They do not authorize changes to the accepted
-architecture, protected Codex invariant suite, reusable templates, existing
-initiatives, products, or lifecycle status. The later reconciliation
-instruction authorizes only the coordinated architecture `2.0.1`, NIST
-`1.0.1`, and HIPAA `1.0.1` patch annotations recorded by those suites. It does
-not authorize new product behavior, implementation, ePHI, regulated use, a
-current-state assessment, or a HIPAA compliance claim. The later clarification
-controls precedence: the security policy guides both architecture and
-realization for its scope, and no policy requirement is changed to accommodate
-either document.
+This baseline does not authorize product behavior changes, implementation,
+ePHI, regulated use, a current-state assessment, a HIPAA compliance claim,
+changes to the protected Codex invariant suite or reusable templates, initiative
+acceptance, or a product lifecycle transition.
 
 ## Architecture input and policy precedence
 
@@ -206,8 +180,8 @@ be waived through an addressable-specification rationale.
 
 ### RZN-001 standing
 
-[`RZN-001`](../../../../_old/example/evidence/non-authoritative/realizations/v0.0/RZN-001-example-record-application.md)
-preserves requested intent and historical questions only. It is not a legal or
+[`RZN-001`](../../../non-authoritative/realizations/v0.0/RZN-001-example-record-application.md)
+supplies requested intent and source questions as non-authoritative proposal input. It is not a legal or
 security source and cannot override this policy, its permitted data profile,
 or `SEC-HIPAA-GATE-001`. Architecture `2.0.1` is likewise constrained by those
 requirements.
@@ -221,11 +195,3 @@ through an explicitly accepted successor when needed, and never weaken this
 policy to make an architecture or product pass. If external law changes, record the
 new source and effective date, identify the exact affected policies, and
 obtain explicit authority for a compatible successor revision.
-
-## Revision record
-
-| Date | Revision | Change | Authority |
-|---|---|---|---|
-| 2026-11-10 | `1.0.0` | Established authority, scope, and HIPAA source basis | User's HIPAA policy instruction and future-development clarification |
-| 2026-11-10 | `1.0.1` | Recorded the in-place reconciliation authority, policy primacy, and current architecture/NIST/RZN relationships; no policy outcome changed | User's explicit reconciliation instruction and policy-primacy clarification quoted above |
-

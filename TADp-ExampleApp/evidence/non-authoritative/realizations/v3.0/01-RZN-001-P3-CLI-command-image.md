@@ -4,10 +4,8 @@
 **Suite:** [`RZN-001-P3-CLI-SUITE@v3.0`](00-RZN-001-P3-CLI-suite-index.md)  
 **Suite version:** `v3.0`  
 **Status:** Recorded; invariant-bounded proposal input  
-**Recorded by:** Codex on behalf of the User  
-**Recorded date:** 2026-11-10  
-**Source:** User request in the current Codex conversation and [`RZN-001`](../v0.0/RZN-001-example-record-application.md)  
-**Historical product lineage:** `RZN-001-P3-CLI`  
+**Source:** User's application concept and [`RZN-001`](../v0.0/RZN-001-example-record-application.md)\
+**Source product lineage:** `RZN-001-P3-CLI`\
 **Accepted delivery-unit alignment:** `D5 Standalone CLI image`  
 **Related initiative or proposal:** None created  
 
@@ -46,7 +44,7 @@ path.
 
 ## Version identity is not product acceptance
 
-`v3.0` identifies this realization suite and its future-initiative boundary. It
+`v3.0` identifies this realization suite and its source scope. It
 does not silently select a CLI semantic version, replace the accepted `v1`
 interaction contract, or rewrite the `v2` standalone wording in
 `ARC-BND-005`. A future proposal and release record must identify the actual
@@ -61,7 +59,7 @@ its suite label as implementation authority.
 
 | Question | Record |
 |---|---|
-| What was requested historically? | Product 3 in `RZN-001` requested a CLI that mirrors the record operations exposed through the SDK and API. |
+| What is the requested outcome? | Product 3 in `RZN-001` requested a CLI that mirrors the record operations exposed through the SDK and API. |
 | What is now accepted? | Architecture `2.0.1` fixes a one-shot Compose service, fixed private API origin, public SDK dependency, command grammar, input limits, output schemas, diagnostics, exit codes, isolation, and D5 evidence gate. |
 | What is current product status? | `ARC-CTR-009` records required vectors and no supplied D5 implementation or passing conformance evidence. |
 | What remains proposal-level? | Exact repository destinations, implementation libraries within the accepted boundary, image/base/dependency patch locks, product semantic version, owners, release channel, evidence storage, and any separately acceptable sub-scope. |
@@ -72,21 +70,21 @@ its suite label as implementation authority.
 
 | Source | Exact relevance |
 |---|---|
-| [Codex invariant suite](../../../../../_old/example/evidence/authoritative/LLM/00_Codex_Invariant_Suite_Index.md) | Governs authority, source identity, narrow scope, explicit decisions, truthful status, and evidence claims. |
-| [`ARC-SUITE-001@2.0.1`](../../../architecture/00-architecture-suite-index.md) | Owns the active technical architecture and its complete reading order. |
-| [`AUTH-EX-001`](../../../architecture/01-accepted-architecture-baseline.md) | Owns the binding API-exclusive, shared-capability, Compose-only, security-additive, and permitted-use claims. |
-| [`ADR-001`](../../../architecture/04-ADR-001-api-exclusive-persistence.md) | Forbids direct/offline persistence and requires the CLI to traverse the shared API. |
-| [`ADR-004`](../../../architecture/07-ADR-004-container-only-deployment-trust-model.md) | Owns the local loopback/private-network trust boundary and unsupported remote paths. |
-| [`ADR-005`](../../../architecture/08-ADR-005-containerized-technology-stack.md) | Owns the container-only build/runtime stack and immutable artifact path. |
-| [`ADR-006`](../../../architecture/09-ADR-006-contract-versioning-and-feedback.md) | Governs compatibility feedback and successor revisions instead of implementation-led drift. |
-| [`ADR-007`](../../../architecture/10-ADR-007-product-and-delivery-decomposition.md) | Owns D5 dependencies, independent completion, and delivery before D6. |
-| [`ARC-CTR-005`](../../../architecture/18-python-sdk-contract.md) | Owns the only public client surface the CLI may consume. |
-| [`ARC-BND-005`](../../../architecture/19-cli-boundary.md) | Owns the image, entrypoint, parser/adapter/formatter boundary, state, isolation, and exclusions. |
-| [`ARC-CTR-006`](../../../architecture/20-cli-interaction-contract.md) | Owns invocation, options, commands, stdin, human/JSON output, diagnostics, exit codes, and failures. |
-| [`ARC-CTR-008`](../../../architecture/23-operations-security-contract.md) | Owns effective Compose hardening, network, logging, lifecycle, resource, and release behavior. |
-| [`ARC-CTR-009`](../../../architecture/24-conformance-contract.md) | Owns `CLI-001` through `CLI-011`, applicable cross-vector groups, the D5 gate, and evidence fields. |
-| [`SEC-NIST-SUITE-001@1.0.1`](../../../security/NIST/00-nist-security-policy-suite-index.md) | Primary future-development security and assurance invariant for this candidate. |
-| [`SEC-HIPAA-SUITE-001@1.0.1`](../../../security/HIPPA/00-hipaa-security-policy-suite-index.md) | Primary data/use, safeguard, inherited-control, evidence, and successor-gate invariant. |
+| [Codex invariant suite](../../../authoritative/LLM/00_Codex_Invariant_Suite_Index.md) | Governs authority, source identity, narrow scope, explicit decisions, truthful status, and evidence claims. |
+| [`ARC-SUITE-001@2.0.1`](../../../authoritative/architecture/00-architecture-suite-index.md) | Owns the active technical architecture and its complete reading order. |
+| [`AUTH-EX-001`](../../../authoritative/architecture/01-accepted-architecture-baseline.md) | Owns the binding API-exclusive, shared-capability, Compose-only, security-additive, and permitted-use claims. |
+| [`ADR-001`](../../../authoritative/architecture/04-ADR-001-api-exclusive-persistence.md) | Forbids direct/offline persistence and requires the CLI to traverse the shared API. |
+| [`ADR-004`](../../../authoritative/architecture/07-ADR-004-container-only-deployment-trust-model.md) | Owns the local loopback/private-network trust boundary and unsupported remote paths. |
+| [`ADR-005`](../../../authoritative/architecture/08-ADR-005-containerized-technology-stack.md) | Owns the container-only build/runtime stack and immutable artifact path. |
+| [`ADR-006`](../../../authoritative/architecture/09-ADR-006-contract-versioning-and-feedback.md) | Governs compatibility feedback and successor revisions instead of implementation-led drift. |
+| [`ADR-007`](../../../authoritative/architecture/10-ADR-007-product-and-delivery-decomposition.md) | Owns D5 dependencies, independent completion, and delivery before D6. |
+| [`ARC-CTR-005`](../../../authoritative/architecture/18-python-sdk-contract.md) | Owns the only public client surface the CLI may consume. |
+| [`ARC-BND-005`](../../../authoritative/architecture/19-cli-boundary.md) | Owns the image, entrypoint, parser/adapter/formatter boundary, state, isolation, and exclusions. |
+| [`ARC-CTR-006`](../../../authoritative/architecture/20-cli-interaction-contract.md) | Owns invocation, options, commands, stdin, human/JSON output, diagnostics, exit codes, and failures. |
+| [`ARC-CTR-008`](../../../authoritative/architecture/23-operations-security-contract.md) | Owns effective Compose hardening, network, logging, lifecycle, resource, and release behavior. |
+| [`ARC-CTR-009`](../../../authoritative/architecture/24-conformance-contract.md) | Owns `CLI-001` through `CLI-011`, applicable cross-vector groups, the D5 gate, and evidence fields. |
+| [`SEC-NIST-SUITE-001@1.0.1`](../../../authoritative/security/NIST/00-nist-security-policy-suite-index.md) | Primary future-development security and assurance invariant for this candidate. |
+| [`SEC-HIPAA-SUITE-001@1.0.1`](../../../authoritative/security/HIPPA/00-hipaa-security-policy-suite-index.md) | Primary data/use, safeguard, inherited-control, evidence, and successor-gate invariant. |
 
 The parent realization explains lineage only. It cannot reopen a decision that
 the accepted architecture owns or override either primary security suite.
@@ -332,7 +330,7 @@ successful local invocation alone cannot prove the D5 claim.
    license review, safe-output review, incident exercise, and evidence retention?
 6. Does any generated completion or automation integration have a different
    owner, destination, lifecycle, or independently acceptable claim that
-   triggers a separate dot-version suite?
+   triggers a separately scoped initiative?
 
 No answer is selected by this note.
 
@@ -356,21 +354,7 @@ all unresolved choices for explicit human disposition.
 ## Handoff notes
 
 A receiving proposal must cite this realization and its `v3.0` suite, preserve
-the historical Product 3 lineage, distinguish suite identity from product
+the source Product 3 lineage, distinguish suite identity from product
 semantic version, map every candidate output and failure to authoritative
 contracts and additive security evidence, and avoid treating this detail as an
 accepted specification or implementation authorization.
-
-
-
-## Version-scope migration addendum (2026-11-12)
-
-**Version scope:** `v3.0`
-
-**Migration authority:** [EX-VSG-DR-001](../../../../../_old/example/initiatives/decision-receipts/EX-VSG-DR-001-initiative-migration.md)
-
-**Current initiative target:** [INIT-IMP-005](../../../../../_old/example/initiatives/v3.0/implementation/INIT-IMP-005-standalone-cli-image/README.md)
-
-**Exact source catalog:** [RZN-001-P3-CLI-N01](01-RZN-001-P3-CLI-command-image.md)
-
-The original headers and one-to-one allocation language remain historical evidence under the prior revision. This addendum adopts scope membership and many-target catalog capability without changing source identity, relabeling this note or promoting its non-authoritative standing. The existing target retains the same narrow Proposed claim. Future independent outcomes require their own initiative records, not necessarily another version. The initiative index owns current assignments; the historical branch and base above remain history.

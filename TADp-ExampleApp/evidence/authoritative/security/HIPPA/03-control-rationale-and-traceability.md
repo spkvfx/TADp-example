@@ -466,7 +466,7 @@ whether a particular vendor is a business associate.
 
 **Architecture evidence.** [`ARC-CTR-009`](../../architecture/24-conformance-contract.md)
 defines stable vectors, environment identity, negative tests, delivery gates,
-and evidence fields. The [Codex evidence authority specification](../../../../_old/example/evidence/authoritative/LLM/01_Codex_Evidence_Authority_Specification.md)
+and evidence fields. The [Codex evidence authority specification](../../LLM/01_Codex_Evidence_Authority_Specification.md)
 requires precise source-to-product-to-verification traceability and truthful
 limitations.
 
@@ -527,15 +527,7 @@ gate, not a complete HIPAA checklist or a predetermined technical solution.
 each ID. Future additions require a new stable policy ID and a matching
 architecture/HIPAA/evidence/limitation entry in the same authorized revision.
 
-`RZN-001` is cited only as historical request intent. The authoritative
+`RZN-001` is cited only as non-authoritative proposal input. The authoritative
 architecture and the two security suites own every present disposition; no
 realization statement substitutes for a mapped architecture, HIPAA, or NIST
 requirement.
-
-## Revision record
-
-| Date | Revision | Change | Authority |
-|---|---|---|---|
-| 2026-11-10 | `1.0.0` | Established complete rationale for `HSP-001` through `HSP-015` | User's HIPAA policy instruction and future-development clarification |
-| 2026-11-10 | `1.0.1` | Made policy primacy explicit, updated architecture/NIST identities, and fixed RZN-001's non-authoritative role | User's explicit reconciliation instruction and policy-primacy clarification |
-

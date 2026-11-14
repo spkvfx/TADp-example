@@ -139,11 +139,3 @@ Official HHS material reviewed for this revision is cataloged in
 [`SEC-HIPAA-AUT-001`](01-authority-scope-and-source-basis.md). Future successor
 work must verify the then-current law and guidance rather than assuming this
 2026-11-10 source snapshot remains current.
-
-## Revision record
-
-| Date | Revision | Change | Authority |
-|---|---|---|---|
-| 2026-11-10 | `1.0.0` | Established the regulated-use successor gate | User's HIPAA policy instruction and future-development clarification |
-| 2026-11-10 | `1.0.1` | Bound the gate to architecture 2.0.1 and prohibited RZN-001 as bypass authority | User's explicit instruction to apply the reconciliation findings in place |
-

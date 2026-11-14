@@ -4,7 +4,6 @@
 **Status:** Accepted  
 **Architecture revision:** `2.0.1`  
 **Owner:** API persistence component owner under a future accepted initiative  
-**Last reviewed:** 2026-11-10  
 **Related records:** [`ADR-001`](04-ADR-001-api-exclusive-persistence.md), [`ADR-002`](05-ADR-002-identity-order-and-concurrency.md), [`ARC-CTR-004`](16-sqlite-persistence-contract.md), [`ARC-CTR-008`](23-operations-security-contract.md)  
 
 ## Boundary statement
@@ -102,4 +101,3 @@ network filesystems, multiple API replicas, and domain behavior above the port.
 Changes require persistence owner review plus project architecture authority.
 Schema changes must also revise `ARC-CTR-004`, migration and recovery evidence,
 API/domain compatibility analysis, and every affected product contract.
-

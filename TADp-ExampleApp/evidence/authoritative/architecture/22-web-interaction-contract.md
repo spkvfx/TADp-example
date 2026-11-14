@@ -6,7 +6,6 @@
 **Contract owner:** Web component owner and project architecture authority  
 **Producer:** Same-origin record web application  
 **Consumer:** Local browser user  
-**Last reviewed:** 2026-11-10  
 
 ## Purpose and scope
 
@@ -256,12 +255,3 @@ one coherent manifest.
 - Search contract: [`ARC-CTR-003`](14-search-navigation-contract.md)
 - Decisions: [`ADR-001`](04-ADR-001-api-exclusive-persistence.md), [`ADR-004`](07-ADR-004-container-only-deployment-trust-model.md), [`ADR-007`](10-ADR-007-product-and-delivery-decomposition.md)
 - Governing evidence: [`AUTH-EX-001`](01-accepted-architecture-baseline.md)
-- Superseded native deployment baseline: [`ARC-REV-001`](revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md)
-
-## Revision record
-
-| Date | Change | Authority |
-|---|---|---|
-| 2026-11-10 | Defined browser routes, flows, accessibility, and client-security behavior | User-authorized best-judgment architecture completion |
-| 2026-11-10 | Fixed the browser entry to the Docker-published loopback origin and the bundle to the API image build | User's explicit full-Dockerization/no-host-services instruction |
-

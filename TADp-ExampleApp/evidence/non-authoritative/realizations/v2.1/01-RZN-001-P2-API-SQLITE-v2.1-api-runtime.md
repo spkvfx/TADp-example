@@ -4,10 +4,8 @@
 **Suite:** [`RZN-001-P2-API-SQLITE-SUITE@v2.1`](00-RZN-001-P2-API-SQLITE-suite-index.md)  
 **Suite version:** `v2.1`  
 **Status:** Recorded; invariant-bounded proposal input  
-**Recorded by:** Codex on behalf of the User  
-**Recorded date:** 2026-11-10  
-**Source:** User request in the current Codex conversation and [`RZN-001`](../v0.0/RZN-001-example-record-application.md)  
-**Historical product lineage:** API portion of `RZN-001-P2-SDK-API`  
+**Source:** User's application concept and [`RZN-001`](../v0.0/RZN-001-example-record-application.md)\
+**Source product lineage:** API portion of `RZN-001-P2-SDK-API`\
 **Accepted delivery-unit alignment:** `D3 API and SQLite runtime image`  
 **Related initiative or proposal:** None created  
 
@@ -24,7 +22,7 @@ bounded search and navigation semantics, exclusive SQLite persistence,
 health/static-asset hosting, and stopped-API maintenance behavior on a
 compatible D2 platform.
 
-The opportunity is narrower than the historical Product 2 label: it excludes
+The opportunity is narrower than the source Product 2 label: it excludes
 the independently versioned Python SDK, CLI, and web interaction products.
 The image may embed D6 assets when they later exist, but static hosting does
 not make the browser bundle part of D3's acceptance claim.
@@ -54,19 +52,19 @@ not make the browser bundle part of D3's acceptance claim.
 
 | Source | Exact relevance |
 |---|---|
-| [`ARC-CTR-001`](../../../architecture/11-record-domain-contract.md) | Exact public record, normalization, validation, mutability, equality, internal-metadata boundary, and domain failures. |
-| [`ARC-BND-002`](../../../architecture/12-api-service-boundary.md) | API layers, responsibilities, request pipeline, state authority, startup/readiness, and failure boundaries. |
-| [`ARC-CTR-002`](../../../architecture/13-record-http-contract.md) | `/api/v1` create/get/update, media, headers, ETags, problems, status codes, and route exclusions. |
-| [`ARC-CTR-003`](../../../architecture/14-search-navigation-contract.md) | Browse/search/regex, cursors, ceilings, membership, ordering, pagination, neighbors, boundaries, and budgets. |
-| [`ARC-BND-003`](../../../architecture/15-sqlite-store-boundary.md) | Live-store placement, ownership, lock, capacity, failure, and recovery boundary. |
-| [`ARC-CTR-004`](../../../architecture/16-sqlite-persistence-contract.md) | Database identity/schema, pragmas, repository surface, transactions, migrations, backups, restore, and integrity. |
-| [`ADR-001`](../../../architecture/04-ADR-001-api-exclusive-persistence.md) | Sole normal runtime database authority and identical shared API path for all consumers. |
-| [`ADR-002`](../../../architecture/05-ADR-002-identity-order-and-concurrency.md) | UUIDv4, internal ordinal/revision/timestamps, ETag, and no-op behavior. |
-| [`ADR-003`](../../../architecture/06-ADR-003-search-execution-semantics.md) | Centralized NFC/case-sensitive literal and RE2-compatible bounded regex behavior. |
-| [`ARC-CTR-008`](../../../architecture/23-operations-security-contract.md) | Runtime limits, exact Host/Origin, health, logs, lifecycle, maintenance, recovery, and security-policy integration. |
-| [`ARC-CTR-009`](../../../architecture/24-conformance-contract.md) | D3 gate and required `DOM`, `HTTP`, `SRCH`, `NAV`, `DB`, platform/operations, and API end-to-end vectors. |
-| [`SEC-NIST-POL-001`](../../../security/NIST/01-demonstrator-security-policy.md) and [`SEC-NIST-VER-001`](../../../security/NIST/03-future-development-assurance.md) | Primary NIST-aligned requirements and exact prospective evidence anchors. |
-| [`SEC-HIPAA-POL-001`](../../../security/HIPPA/02-prospective-security-policy.md) and [`SEC-HIPAA-DEV-001`](../../../security/HIPPA/04-future-development-and-evidence-standard.md) | Primary data-use/safeguard requirements and exact prospective records/evidence. |
+| [`ARC-CTR-001`](../../../authoritative/architecture/11-record-domain-contract.md) | Exact public record, normalization, validation, mutability, equality, internal-metadata boundary, and domain failures. |
+| [`ARC-BND-002`](../../../authoritative/architecture/12-api-service-boundary.md) | API layers, responsibilities, request pipeline, state authority, startup/readiness, and failure boundaries. |
+| [`ARC-CTR-002`](../../../authoritative/architecture/13-record-http-contract.md) | `/api/v1` create/get/update, media, headers, ETags, problems, status codes, and route exclusions. |
+| [`ARC-CTR-003`](../../../authoritative/architecture/14-search-navigation-contract.md) | Browse/search/regex, cursors, ceilings, membership, ordering, pagination, neighbors, boundaries, and budgets. |
+| [`ARC-BND-003`](../../../authoritative/architecture/15-sqlite-store-boundary.md) | Live-store placement, ownership, lock, capacity, failure, and recovery boundary. |
+| [`ARC-CTR-004`](../../../authoritative/architecture/16-sqlite-persistence-contract.md) | Database identity/schema, pragmas, repository surface, transactions, migrations, backups, restore, and integrity. |
+| [`ADR-001`](../../../authoritative/architecture/04-ADR-001-api-exclusive-persistence.md) | Sole normal runtime database authority and identical shared API path for all consumers. |
+| [`ADR-002`](../../../authoritative/architecture/05-ADR-002-identity-order-and-concurrency.md) | UUIDv4, internal ordinal/revision/timestamps, ETag, and no-op behavior. |
+| [`ADR-003`](../../../authoritative/architecture/06-ADR-003-search-execution-semantics.md) | Centralized NFC/case-sensitive literal and RE2-compatible bounded regex behavior. |
+| [`ARC-CTR-008`](../../../authoritative/architecture/23-operations-security-contract.md) | Runtime limits, exact Host/Origin, health, logs, lifecycle, maintenance, recovery, and security-policy integration. |
+| [`ARC-CTR-009`](../../../authoritative/architecture/24-conformance-contract.md) | D3 gate and required `DOM`, `HTTP`, `SRCH`, `NAV`, `DB`, platform/operations, and API end-to-end vectors. |
+| [`SEC-NIST-POL-001`](../../../authoritative/security/NIST/01-demonstrator-security-policy.md) and [`SEC-NIST-VER-001`](../../../authoritative/security/NIST/03-future-development-assurance.md) | Primary NIST-aligned requirements and exact prospective evidence anchors. |
+| [`SEC-HIPAA-POL-001`](../../../authoritative/security/HIPPA/02-prospective-security-policy.md) and [`SEC-HIPAA-DEV-001`](../../../authoritative/security/HIPPA/04-future-development-and-evidence-standard.md) | Primary data-use/safeguard requirements and exact prospective records/evidence. |
 
 ## Candidate internal layering
 
@@ -308,20 +306,6 @@ disposition.
 ## Handoff notes
 
 A receiving proposal must cite this realization and its v2.1 suite, preserve
-the historical Product 2 API lineage without recombining it with the v2.2 SDK
+the source Product 2 API lineage without recombining it with the v2.2 SDK
 suite, and map each accepted D3 behavior to its authoritative owner, product
 destination, exact verification, and security evidence record.
-
-
-
-## Version-scope migration addendum (2026-11-12)
-
-**Version scope:** `v2.1`
-
-**Migration authority:** [EX-VSG-DR-001](../../../../../_old/example/initiatives/decision-receipts/EX-VSG-DR-001-initiative-migration.md)
-
-**Current initiative target:** [INIT-IMP-003](../../../../../_old/example/initiatives/v2.1/implementation/INIT-IMP-003-api-sqlite-runtime/README.md)
-
-**Exact source catalog:** [RZN-001-P2-API-SQLITE-N01](01-RZN-001-P2-API-SQLITE-v2.1-api-runtime.md)
-
-The original headers and one-to-one allocation language remain historical evidence under the prior revision. This addendum adopts scope membership and many-target catalog capability without changing source identity, relabeling this note or promoting its non-authoritative standing. The existing target retains the same narrow Proposed claim. Future independent outcomes require their own initiative records, not necessarily another version. The initiative index owns current assignments; the historical branch and base above remain history.

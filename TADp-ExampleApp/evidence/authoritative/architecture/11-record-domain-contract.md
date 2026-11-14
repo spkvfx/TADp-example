@@ -6,7 +6,6 @@
 **Contract owner:** Project architecture authority  
 **Producer:** Record API domain layer  
 **Consumers:** API transport, SQLite adapter, Python SDK, CLI, and web application  
-**Last reviewed:** 2026-11-10  
 
 ## Purpose and scope
 
@@ -175,4 +174,3 @@ accepted value set and every existing representation remain identical.
 - System boundaries: [`ARC-BND-001`](03-record-platform-boundary.md), [`ARC-BND-002`](12-api-service-boundary.md), [`ARC-BND-003`](15-sqlite-store-boundary.md)
 - Decisions: [`ADR-002`](05-ADR-002-identity-order-and-concurrency.md), [`ADR-006`](09-ADR-006-contract-versioning-and-feedback.md)
 - Governing evidence: [`AUTH-EX-001`](01-accepted-architecture-baseline.md)
-

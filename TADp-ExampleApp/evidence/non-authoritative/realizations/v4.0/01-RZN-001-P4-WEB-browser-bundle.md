@@ -4,10 +4,8 @@
 **Suite:** [`RZN-001-P4-WEB-SUITE@v4.0`](00-RZN-001-P4-WEB-suite-index.md)  
 **Suite version:** `v4.0`  
 **Status:** Recorded; invariant-bounded proposal input  
-**Recorded by:** Codex on behalf of the User  
-**Recorded date:** 2026-11-10  
-**Source:** User request in the current Codex conversation and [`RZN-001`](../v0.0/RZN-001-example-record-application.md)  
-**Historical product lineage:** `RZN-001-P4-WEB`  
+**Source:** User's application concept and [`RZN-001`](../v0.0/RZN-001-example-record-application.md)\
+**Source product lineage:** `RZN-001-P4-WEB`\
 **Accepted delivery-unit alignment:** `D6 Web application bundle`  
 **Related initiative or proposal:** None created  
 
@@ -45,8 +43,8 @@ client storage.
 
 ## Version identity is not product acceptance
 
-`v4.0` identifies this realization suite and one intended future-initiative
-boundary. It does not silently select a web semantic version, replace the
+`v4.0` identifies this realization suite and its source scope. It
+does not silently select a web semantic version, replace the
 accepted `v1` browser interaction contract, or prove compatibility with an API
 image. Future governed records must identify the actual bundle semantic
 version and hash, source commit, asset manifest, compatible API/image digest,
@@ -61,7 +59,7 @@ D6 may prove a bundle only against an exact compatible D3 artifact.
 
 | Question | Record |
 |---|---|
-| What was requested historically? | Product 4 in `RZN-001` requested a web interface over the same record capabilities as the CLI. |
+| What is the requested outcome? | Product 4 in `RZN-001` requested a web interface over the same record capabilities as the CLI. |
 | What is now accepted? | Architecture `2.0.1` fixes the loopback origin, embedded delivery, routes, document structure, state model, create/edit/search/navigation flows, race/error behavior, accessibility, storage exclusions, browser matrix, headers, and D6 gate. |
 | What is current product status? | `ARC-CTR-009` defines required vectors and records no supplied D6 implementation, accessibility audit, or passing conformance evidence. |
 | What remains proposal-level? | Exact source and product paths, UI styling within the interaction/accessibility invariants, framework or no-framework choice within the build boundary, dependency locks, semantic version, owners, evidence environments, and release disposition. |
@@ -72,22 +70,22 @@ D6 may prove a bundle only against an exact compatible D3 artifact.
 
 | Source | Exact relevance |
 |---|---|
-| [Codex invariant suite](../../../../../_old/example/evidence/authoritative/LLM/00_Codex_Invariant_Suite_Index.md) | Governs authority, source identity, narrow scope, explicit decisions, truthful status, and evidence claims. |
-| [`ARC-SUITE-001@2.0.1`](../../../architecture/00-architecture-suite-index.md) | Owns the active technical architecture and reading order. |
-| [`AUTH-EX-001`](../../../architecture/01-accepted-architecture-baseline.md) | Owns shared capabilities, one API path, local trust, Compose-only execution, additive security, and permitted-use claims. |
-| [`ADR-001`](../../../architecture/04-ADR-001-api-exclusive-persistence.md) | Requires all browser record behavior to traverse the API and forbids direct/offline persistence. |
-| [`ADR-004`](../../../architecture/07-ADR-004-container-only-deployment-trust-model.md) | Owns exact loopback ingress, private service topology, and unsupported remote/proxy paths. |
-| [`ADR-005`](../../../architecture/08-ADR-005-containerized-technology-stack.md) | Owns containerized TypeScript build, embedded assets, immutable artifact flow, and no-host-toolchain rule. |
-| [`ADR-006`](../../../architecture/09-ADR-006-contract-versioning-and-feedback.md) | Governs compatibility feedback and successor revisions rather than UI-led contract drift. |
-| [`ADR-007`](../../../architecture/10-ADR-007-product-and-delivery-decomposition.md) | Owns the D6 boundary, D1-D3 dependencies, and delivery after D5. |
-| [`ARC-CTR-001`](../../../architecture/11-record-domain-contract.md) | Owns record validation and public shape that browser feedback may mirror but not widen. |
-| [`ARC-CTR-003`](../../../architecture/14-search-navigation-contract.md) | Owns search predicates, ordering, cursors, ceilings, neighbors, and boundaries displayed by the web product. |
-| [`ARC-BND-006`](../../../architecture/21-web-application-boundary.md) | Owns bundle, adapter, in-memory state, supported-browser, storage, accessibility, and origin boundaries. |
-| [`ARC-CTR-007`](../../../architecture/22-web-interaction-contract.md) | Owns routes, controls, flows, races, errors, accessibility, browser security, and compatibility. |
-| [`ARC-CTR-008`](../../../architecture/23-operations-security-contract.md) | Owns API/static headers, Host/Origin behavior, health, logging, runtime content, and release controls. |
-| [`ARC-CTR-009`](../../../architecture/24-conformance-contract.md) | Owns `WEB-001` through `WEB-013`, applicable cross-vector groups, the D6 gate, and evidence fields. |
-| [`SEC-NIST-SUITE-001@1.0.1`](../../../security/NIST/00-nist-security-policy-suite-index.md) | Primary future-development security and assurance invariant for the browser product. |
-| [`SEC-HIPAA-SUITE-001@1.0.1`](../../../security/HIPPA/00-hipaa-security-policy-suite-index.md) | Primary data/use, safeguard, inherited-control, evidence, and successor-gate invariant. |
+| [Codex invariant suite](../../../authoritative/LLM/00_Codex_Invariant_Suite_Index.md) | Governs authority, source identity, narrow scope, explicit decisions, truthful status, and evidence claims. |
+| [`ARC-SUITE-001@2.0.1`](../../../authoritative/architecture/00-architecture-suite-index.md) | Owns the active technical architecture and reading order. |
+| [`AUTH-EX-001`](../../../authoritative/architecture/01-accepted-architecture-baseline.md) | Owns shared capabilities, one API path, local trust, Compose-only execution, additive security, and permitted-use claims. |
+| [`ADR-001`](../../../authoritative/architecture/04-ADR-001-api-exclusive-persistence.md) | Requires all browser record behavior to traverse the API and forbids direct/offline persistence. |
+| [`ADR-004`](../../../authoritative/architecture/07-ADR-004-container-only-deployment-trust-model.md) | Owns exact loopback ingress, private service topology, and unsupported remote/proxy paths. |
+| [`ADR-005`](../../../authoritative/architecture/08-ADR-005-containerized-technology-stack.md) | Owns containerized TypeScript build, embedded assets, immutable artifact flow, and no-host-toolchain rule. |
+| [`ADR-006`](../../../authoritative/architecture/09-ADR-006-contract-versioning-and-feedback.md) | Governs compatibility feedback and successor revisions rather than UI-led contract drift. |
+| [`ADR-007`](../../../authoritative/architecture/10-ADR-007-product-and-delivery-decomposition.md) | Owns the D6 boundary, D1-D3 dependencies, and delivery after D5. |
+| [`ARC-CTR-001`](../../../authoritative/architecture/11-record-domain-contract.md) | Owns record validation and public shape that browser feedback may mirror but not widen. |
+| [`ARC-CTR-003`](../../../authoritative/architecture/14-search-navigation-contract.md) | Owns search predicates, ordering, cursors, ceilings, neighbors, and boundaries displayed by the web product. |
+| [`ARC-BND-006`](../../../authoritative/architecture/21-web-application-boundary.md) | Owns bundle, adapter, in-memory state, supported-browser, storage, accessibility, and origin boundaries. |
+| [`ARC-CTR-007`](../../../authoritative/architecture/22-web-interaction-contract.md) | Owns routes, controls, flows, races, errors, accessibility, browser security, and compatibility. |
+| [`ARC-CTR-008`](../../../authoritative/architecture/23-operations-security-contract.md) | Owns API/static headers, Host/Origin behavior, health, logging, runtime content, and release controls. |
+| [`ARC-CTR-009`](../../../authoritative/architecture/24-conformance-contract.md) | Owns `WEB-001` through `WEB-013`, applicable cross-vector groups, the D6 gate, and evidence fields. |
+| [`SEC-NIST-SUITE-001@1.0.1`](../../../authoritative/security/NIST/00-nist-security-policy-suite-index.md) | Primary future-development security and assurance invariant for the browser product. |
+| [`SEC-HIPAA-SUITE-001@1.0.1`](../../../authoritative/security/HIPPA/00-hipaa-security-policy-suite-index.md) | Primary data/use, safeguard, inherited-control, evidence, and successor-gate invariant. |
 
 The parent realization preserves product lineage only. It cannot override the
 accepted browser contract or either primary security suite.
@@ -441,7 +439,7 @@ release records; the presence of bytes alone proves neither product.
    compatibility, vulnerability/license review, and evidence retention?
 7. Does any independently releasable design-system, help, or accessibility
    sub-scope have a different owner, destination, lifecycle, or acceptance
-   claim that requires a separate dot-version suite?
+   claim that requires a separately scoped initiative?
 
 No answer is selected by this note.
 
@@ -466,21 +464,7 @@ and preserve all unresolved choices for explicit human disposition.
 ## Handoff notes
 
 A receiving proposal must cite this realization and its `v4.0` suite, preserve
-the historical Product 4 lineage, distinguish suite identity from bundle
+the source Product 4 lineage, distinguish suite identity from bundle
 semantic version, map every state and release claim to authoritative contracts
 and additive security evidence, and avoid treating this detailed realization
 as an accepted UI specification or implementation authorization.
-
-
-
-## Version-scope migration addendum (2026-11-12)
-
-**Version scope:** `v4.0`
-
-**Migration authority:** [EX-VSG-DR-001](../../../../../_old/example/initiatives/decision-receipts/EX-VSG-DR-001-initiative-migration.md)
-
-**Current initiative target:** [INIT-IMP-006](../../../../../_old/example/initiatives/v4.0/implementation/INIT-IMP-006-web-application-bundle/README.md)
-
-**Exact source catalog:** [RZN-001-P4-WEB-N01](01-RZN-001-P4-WEB-browser-bundle.md)
-
-The original headers and one-to-one allocation language remain historical evidence under the prior revision. This addendum adopts scope membership and many-target catalog capability without changing source identity, relabeling this note or promoting its non-authoritative standing. The existing target retains the same narrow Proposed claim. Future independent outcomes require their own initiative records, not necessarily another version. The initiative index owns current assignments; the historical branch and base above remain history.

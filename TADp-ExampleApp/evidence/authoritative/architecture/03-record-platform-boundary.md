@@ -4,8 +4,6 @@
 **Status:** Accepted  
 **Architecture revision:** `2.0.1`  
 **Owner:** User, project authority  
-**Last reviewed:** 2026-11-10  
-**Supersedes:** Native-host boundary preserved in [`ARC-REV-001`](revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md)  
 **Related records:** [`AUTH-EX-001`](01-accepted-architecture-baseline.md), [`ADR-001`](04-ADR-001-api-exclusive-persistence.md), [`ADR-004`](07-ADR-004-container-only-deployment-trust-model.md), [`ADR-007`](10-ADR-007-product-and-delivery-decomposition.md)  
 
 ## Boundary statement
@@ -138,4 +136,3 @@ containers and tests cannot attach to `record-data`.
 Changes require User/later named architecture authority and synchronized review
 of the predecessor record, Compose/image contracts, API/clients, persistence,
 operations, conformance, initiatives, products, and migration/recovery effects.
-

@@ -4,10 +4,8 @@
 **Suite:** [`RZN-001-P2-PLATFORM-SUITE@v2.0`](00-RZN-001-P2-PLATFORM-suite-index.md)  
 **Suite version:** `v2.0`  
 **Status:** Recorded; invariant-bounded proposal input  
-**Recorded by:** Codex on behalf of the User  
-**Recorded date:** 2026-11-10  
-**Source:** User request in the current Codex conversation and [`RZN-001`](../v0.0/RZN-001-example-record-application.md)  
-**Historical product relationship:** Architecture-required predecessor to `RZN-001-P2-SDK-API`; not a product originally named in `RZN-001`  
+**Source:** User's application concept and [`RZN-001`](../v0.0/RZN-001-example-record-application.md)\
+**Source product relationship:** Architecture-required predecessor to `RZN-001-P2-SDK-API`; not a product originally named in `RZN-001`\
 **Accepted delivery-unit alignment:** `D2 Container platform and runtime packaging`  
 **Related initiative or proposal:** None created  
 
@@ -54,18 +52,18 @@ release, or change without claiming domain/API/SDK/CLI/web completion.
 
 | Source | Exact relevance |
 |---|---|
-| [`AUTH-EX-001.11`-`.15`](../../../architecture/01-accepted-architecture-baseline.md#binding-claims) | Compose-only host boundary, named volumes, hardened images, additive security evidence, and permitted data/use profile. |
-| [`ARC-BND-001`](../../../architecture/03-record-platform-boundary.md) | Whole-system component graph, actors, state authority, end-to-end invariants, and platform failure boundaries. |
-| [`ADR-004`](../../../architecture/07-ADR-004-container-only-deployment-trust-model.md) | Exact host prerequisite, trust topology, runtime controls, and local identity boundary. |
-| [`ADR-005`](../../../architecture/08-ADR-005-containerized-technology-stack.md) | Required artifact targets, application stack inside images, build/release rules, and no-host-toolchain constraint. |
-| [`ADR-006`](../../../architecture/09-ADR-006-contract-versioning-and-feedback.md) | Compose, OCI, wheel, bundle, schema, and source identities and change classification. |
-| [`ADR-007`](../../../architecture/10-ADR-007-product-and-delivery-decomposition.md) | D2 output boundary, predecessors, independent claim, and dependencies. |
-| [`ARC-CTR-008`](../../../architecture/23-operations-security-contract.md) | Effective Compose service contract, hardening, limits, network, volumes, configuration, lifecycle, health, logging, maintenance, and release behavior. |
-| [`ARC-CTR-009`](../../../architecture/24-conformance-contract.md) | D2 gate; `CNT-*`, applicable `OPS-*`, and clean-host/end-to-end evidence requirements. |
-| [`SEC-NIST-POL-001`](../../../security/NIST/01-demonstrator-security-policy.md) | `SEC-POL-01`-`14` security requirements for platform, release, recovery, and assurance. |
-| [`SEC-NIST-VER-001`](../../../security/NIST/03-future-development-assurance.md) | Exact-artifact `EXAMINE`, `TEST`, and witnessed-evidence expectations. |
-| [`SEC-HIPAA-POL-001`](../../../security/HIPPA/02-prospective-security-policy.md) | `HSP-001`-`015` data/use, trust, hardening, recovery, inherited-control, and evidence gates. |
-| [`SEC-HIPAA-DEV-001`](../../../security/HIPPA/04-future-development-and-evidence-standard.md) | Prospective risk, fixture, build, host, recovery, incident, external-service, and verification records. |
+| [`AUTH-EX-001.11`-`.15`](../../../authoritative/architecture/01-accepted-architecture-baseline.md#binding-claims) | Compose-only host boundary, named volumes, hardened images, additive security evidence, and permitted data/use profile. |
+| [`ARC-BND-001`](../../../authoritative/architecture/03-record-platform-boundary.md) | Whole-system component graph, actors, state authority, end-to-end invariants, and platform failure boundaries. |
+| [`ADR-004`](../../../authoritative/architecture/07-ADR-004-container-only-deployment-trust-model.md) | Exact host prerequisite, trust topology, runtime controls, and local identity boundary. |
+| [`ADR-005`](../../../authoritative/architecture/08-ADR-005-containerized-technology-stack.md) | Required artifact targets, application stack inside images, build/release rules, and no-host-toolchain constraint. |
+| [`ADR-006`](../../../authoritative/architecture/09-ADR-006-contract-versioning-and-feedback.md) | Compose, OCI, wheel, bundle, schema, and source identities and change classification. |
+| [`ADR-007`](../../../authoritative/architecture/10-ADR-007-product-and-delivery-decomposition.md) | D2 output boundary, predecessors, independent claim, and dependencies. |
+| [`ARC-CTR-008`](../../../authoritative/architecture/23-operations-security-contract.md) | Effective Compose service contract, hardening, limits, network, volumes, configuration, lifecycle, health, logging, maintenance, and release behavior. |
+| [`ARC-CTR-009`](../../../authoritative/architecture/24-conformance-contract.md) | D2 gate; `CNT-*`, applicable `OPS-*`, and clean-host/end-to-end evidence requirements. |
+| [`SEC-NIST-POL-001`](../../../authoritative/security/NIST/01-demonstrator-security-policy.md) | `SEC-POL-01`-`14` security requirements for platform, release, recovery, and assurance. |
+| [`SEC-NIST-VER-001`](../../../authoritative/security/NIST/03-future-development-assurance.md) | Exact-artifact `EXAMINE`, `TEST`, and witnessed-evidence expectations. |
+| [`SEC-HIPAA-POL-001`](../../../authoritative/security/HIPPA/02-prospective-security-policy.md) | `HSP-001`-`015` data/use, trust, hardening, recovery, inherited-control, and evidence gates. |
+| [`SEC-HIPAA-DEV-001`](../../../authoritative/security/HIPPA/04-future-development-and-evidence-standard.md) | Prospective risk, fixture, build, host, recovery, incident, external-service, and verification records. |
 
 ## Candidate artifact boundary
 
@@ -299,17 +297,3 @@ preserve the fact that D2 was introduced by accepted architecture rather than
 the original `RZN-001` wording, and state precisely what D2 supplies to the
 v2.1/D3, v2.2/D4, v3.0/D5, and v4.0/D6 suites without accepting or completing any
 of them.
-
-
-
-## Version-scope migration addendum (2026-11-12)
-
-**Version scope:** `v2.0`
-
-**Migration authority:** [EX-VSG-DR-001](../../../../../_old/example/initiatives/decision-receipts/EX-VSG-DR-001-initiative-migration.md)
-
-**Current initiative target:** [INIT-IMP-002](../../../../../_old/example/initiatives/v2.0/implementation/INIT-IMP-002-container-platform/README.md)
-
-**Exact source catalog:** [RZN-001-P2-PLATFORM-N01](01-RZN-001-P2-PLATFORM-v2.0-container-platform.md)
-
-The original headers and one-to-one allocation language remain historical evidence under the prior revision. This addendum adopts scope membership and many-target catalog capability without changing source identity, relabeling this note or promoting its non-authoritative standing. The existing target retains the same narrow Proposed claim. Future independent outcomes require their own initiative records, not necessarily another version. The initiative index owns current assignments; the historical branch and base above remain history.

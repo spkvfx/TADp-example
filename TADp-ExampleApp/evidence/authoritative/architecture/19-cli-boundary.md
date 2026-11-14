@@ -4,7 +4,6 @@
 **Status:** Accepted  
 **Architecture revision:** `2.0.1`  
 **Owner:** CLI component owner under a future accepted initiative  
-**Last reviewed:** 2026-11-10  
 **Related records:** [`ADR-001`](04-ADR-001-api-exclusive-persistence.md), [`ARC-CTR-005`](18-python-sdk-contract.md), [`ARC-CTR-006`](20-cli-interaction-contract.md), [`ARC-CTR-008`](23-operations-security-contract.md)  
 
 ## Boundary statement
@@ -118,11 +117,3 @@ different products and require accepted architecture changes.
 Changes require CLI owner review and project architecture authority. Public
 command, JSON, exit, configuration, or SDK-use changes require compatibility
 analysis and synchronized contract/conformance updates.
-
-## Revision record
-
-| Date | Change | Authority |
-|---|---|---|
-| 2026-11-10 | Defined a standalone native-installable CLI boundary | User-authorized best-judgment architecture completion |
-| 2026-11-10 | Replaced host installation with a minimal one-shot Compose CLI image and private service discovery | User's explicit full-Dockerization/no-host-services instruction |
-

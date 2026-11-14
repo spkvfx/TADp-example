@@ -4,9 +4,8 @@
 **Revision:** `1.0.1`  
 **Status:** Accepted future-development profile  
 **Owner and accepting authority:** User, project authority  
-**Effective date:** 2026-11-10  
 **Governing suite:** [`SEC-NIST-SUITE-001`](00-nist-security-policy-suite-index.md)  
-**Architecture input:** [`ARC-SUITE-001@2.0.1`](../../../architecture/00-architecture-suite-index.md)  
+**Architecture input:** [`ARC-SUITE-001@2.0.1`](../../architecture/00-architecture-suite-index.md)\
 **Applicable peer profile:** [`SEC-HIPAA-SUITE-001@1.0.1`](../HIPPA/00-hipaa-security-policy-suite-index.md)  
 
 ## Purpose
@@ -108,10 +107,3 @@ architecture invariant.
 The same trigger review must check the HIPAA successor gate. A tailoring
 decision cannot use `RZN-001`, a passing architecture vector, or an accepted
 NIST exception as a substitute for an applicable `HSP-*` requirement.
-
-## Revision record
-
-| Date | Revision | Change | Authority |
-|---|---|---|---|
-| 2026-11-10 | `1.0.0` | Established the limited control-tailoring profile | User's NIST policy instruction and clarification |
-| 2026-11-10 | `1.0.1` | Reconciled tailoring triggers with architecture 2.0.1 and the HIPAA successor gate | User's explicit instruction to apply the reconciliation findings in place |

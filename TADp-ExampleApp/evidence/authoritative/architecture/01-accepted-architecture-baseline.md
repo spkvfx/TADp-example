@@ -4,9 +4,7 @@
 **Classification:** `evidence/authoritative/architecture`  
 **Status:** Active  
 **Owner and accepting authority:** User, project authority  
-**Effective date:** 2026-11-10  
-**Source and revision:** `RZN-001` interpreted under the User's 2026-11-10 instructions; architecture revision `2.0.1`  
-**Supersedes / superseded by:** Supersedes revision `2.0.0` preserved at Git commit `5f0c325`; revision `2.0.0` superseded [`ARC-SUITE-001@1.0.0`](revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md); no successor  
+**Architecture revision:** `2.0.1`\
 
 ## Binding statement
 
@@ -39,38 +37,24 @@ security suites are the primary invariants and guide this architecture. The
 architecture supplies technical shape only within their limits; neither it nor
 `RZN-001` can narrow, waive, or cause a policy requirement to be rewritten.
 
-## Source standing and acceptance
+## Baseline standing and acceptance
 
-[`RZN-001`](../../../_old/example/evidence/non-authoritative/realizations/v0.0/RZN-001-example-record-application.md)
-is preserved as non-authoritative proposal input. It supplied the requested
-outcome, candidate products, risks, and unresolved questions; it did not
-accept its own proposed behavior.
+The [architecture suite index](00-architecture-suite-index.md) is the starting
+entry point. This suite is accepted project-level architecture under the User's
+authority. [`ARC-AUT-001`](02-authority-and-source-disposition.md) defines its
+current baseline decisions. These include Docker Compose-only application
+runtime/build/test/maintenance, no host application-service or toolchain
+installation, one `/api/v1` contract shared by CLI and browser, and the
+security/data-use limits imposed by both policy suites.
 
-The User's 2026-11-10 instruction to create a highly detailed architecture
-suite and treat it as authoritative invariant evidence establishes the output
-classification. The follow-up instruction, "complete the architecture suite
-to your best judgement. I will read it and address any issues after it is
-created", authorizes Codex's decision method for all unresolved `RZN-001`
-items and directly necessary architecture choices. `ARC-AUT-001` preserves
-the bounded disposition and limitations of that authority.
+[`RZN-001`](../../non-authoritative/realizations/v0.0/RZN-001-example-record-application.md)
+is optional, non-authoritative proposal input. It is retained for source
+correlation, is not a prerequisite for using this baseline, and cannot accept
+its own behavior or override architecture or security requirements.
 
-The User then explicitly instructed, "make this fully dockerized" and "I
-don;t want to install all the services on teh host. make taht decision now and
-add to the architecturer invaraint". Those instructions authorize the specific
-deployment-invariant revision from `1.0.0` to `2.0.0`. The predecessor and
-impact are preserved in `ARC-REV-001`.
-
-The User further instructed, "the CLI should use the same API path as teh web
-app." That instruction fixes `AUTH-EX-001.3` and is preserved verbatim in
-`ARC-AUT-001`.
-
-The User then instructed, "I need you to actually reconcile the files according
-to these findings. I need you to make these changes to the files in place."
-That instruction authorizes patch revision `2.0.1`: it incorporates the
-already-binding NIST and HIPAA suites and their `RZN-001` dispositions into
-the files that own architecture, security, and realization meaning. It does
-not authorize new product behavior, implementation, ePHI, remote access, or a
-completion/compliance claim.
+Architecture acceptance does not accept an initiative, authorize product
+implementation, permit prohibited data or remote use, or establish completion,
+conformance, or compliance.
 
 ## Applicability
 
@@ -79,7 +63,7 @@ completion/compliance claim.
 | Architecture and future documentation for the example record application | Unrelated TADp protocol, templates, or projects | The User named the example project and target architecture directory |
 | Future record API, SQLite adapter, Python SDK, CLI, and browser application | A product implementation not governed by an accepted initiative | Architecture constrains products but does not authorize execution |
 | Local single-user v2 Docker Compose deployment with the accepted non-production synthetic/documented-de-identified data profile | Native-host application runtime, actual or possible ePHI, production clinical use, public/remote/multi-tenant/regulated deployment, shared workstation identity, third-party record processing, Kubernetes, or non-Compose orchestration | The User requires no host service installs and the accepted security suites require a successor for excluded data or use; other environments require materially different deployment, identity, security, privacy, and operations decisions |
-| Record create, retrieve, update, browse, search, and adjacent navigation | Delete, bulk operations, record-level import/export, audit history, and arbitrary queries | The source did not request the excluded capabilities, and best-judgment scope keeps the example bounded; opaque backup transfer remains an operations concern |
+| Record create, retrieve, update, browse, search, and adjacent navigation | Delete, bulk operations, record-level import/export, audit history, and arbitrary queries | These capabilities are outside the bounded architecture; opaque backup transfer remains an operations concern |
 
 ## Binding claims
 
@@ -106,30 +90,14 @@ completion/compliance claim.
 The focused accepted records in this directory are the precise interpretation
 of these claims. A product convenience, implementation limitation, generated
 OpenAPI document, test fixture, or client expectation cannot weaken them.
+The governing Codex protocol remains higher authority for evidence handling,
+human decisions, initiative lifecycle, and Git traceability.
 
-Revision `1.0.0` was the first project architecture; its native-host deployment
-claims are now superseded by explicit User authority and preserved in
-`ARC-REV-001`. No unresolved invariant conflict remains from that change. The
-governing Codex protocol remains higher authority for evidence handling, human
-decisions, initiative lifecycle, and Git traceability.
+The NIST and HIPAA suites are the primary invariants for their applicable
+security, data-use, safeguard, review, and evidence scopes. Architecture owns
+technical system behavior within those limits. Neither implementation
+convenience nor realization-note candidate text may waive or revise a policy
+gate.
 
-Revision `2.0.1` makes the primary NIST and HIPAA security requirements explicit.
-Those suites already bound future work before this patch, so the reconciliation
-changes no accepted product behavior. It establishes one visible data/use and
-evidence boundary across architecture, security, and `RZN-001`. The policies
-guide both documents for their scope; neither architecture implementation
-convenience nor realization-note candidate text may be used to waive or revise
-a policy gate.
-
-If a later record or product contradicts this baseline, preserve both sources,
-stop only the affected work, and use the protocol invariant-conflict process.
-
-## Revision record
-
-| Date | Change | Reason | Authority |
-|---|---|---|---|
-| 2026-11-10 | Accepted revision `1.0.0` and its focused architecture suite | User requested an authoritative architecture derived from `RZN-001` and authorized best-judgment completion | User, project authority |
-| 2026-11-10 | Accepted revision `2.0.0`; superseded native-host deployment with mandatory Docker Compose, containerized runtime/build/test/maintenance, named-volume state, and no host application-service installs | User explicitly required full Dockerization and stated that services must not be installed on the host | User, project authority; exact instructions in `ARC-REV-001` |
-| 2026-11-10 | Fixed CLI and web to one identical `/api/v1` route/semantic surface while preserving distinct Docker origins | User explicitly required the CLI to use the same API path as the web app | User, project authority; exact instruction in `ARC-AUT-001` |
-| 2026-11-10 | Accepted patch revision `2.0.1`; reconciled architecture with NIST/HIPAA policy revisions `1.0.1` and annotated `RZN-001` with its current authoritative dispositions | The three baselines were already simultaneously binding, but their ownership, data profile, successor triggers, and consumer rules needed to be explicit in the source files | User, project authority; exact in-place reconciliation instruction in `ARC-AUT-001` |
-
+If a record or product contradicts this baseline, preserve both sources, stop
+only the affected work, and use the protocol invariant-conflict process.

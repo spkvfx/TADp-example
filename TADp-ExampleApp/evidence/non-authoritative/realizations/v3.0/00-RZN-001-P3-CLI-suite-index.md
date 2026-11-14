@@ -3,13 +3,11 @@
 **Suite ID:** `RZN-001-P3-CLI-SUITE`  
 **Suite version:** `v3.0`  
 **Status:** Recorded; non-authoritative proposal input  
-**Recorded by:** Codex on behalf of the User  
-**Recorded date:** 2026-11-10  
 **Source realization:** [`RZN-001`](../v0.0/RZN-001-example-record-application.md)  
-**Historical product label:** `RZN-001-P3-CLI`  
+**Source product label:** `RZN-001-P3-CLI`\
 **Accepted delivery-unit alignment:** `D5 Standalone CLI image`  
 **Intended future initiative boundary:** One D5 standalone CLI-image initiative  
-**Related initiative or proposal:** None created, as explicitly instructed  
+**Related initiative or proposal:** None created\
 
 > **Evidence standing:** This suite records a bounded CLI opportunity. It does
 > not specify, implement, accept, release, or complete the CLI product.
@@ -22,34 +20,35 @@ and machine-readable command surface that uses the exact released Python SDK
 and the shared `/api/v1` API while owning no server, database, web, or platform
 lifecycle behavior.
 
-## Version, suite, and future-initiative rule
+## Source scope and candidate initiative boundary
 
-`v3.0` is one directory, one realization suite, and one intended future D5
-initiative boundary. Multiple notes may belong here only when they retain the
-same CLI-image outcome, authority, owner, product destination family,
-verification claim, and lifecycle. The command interaction and image
-isolation concerns remain together because both are necessary to the same
-independently reviewable one-shot CLI outcome. Any independently acceptable
-new outcome requires a new dot-version directory and a separate future
-initiative boundary.
+`v3.0` identifies this realization suite's source scope. Its current note
+describes one candidate D5 standalone CLI image outcome. The suite and note are
+proposal inputs; neither allocates an initiative or supplies lifecycle authority.
+
+Any receiving initiative must have one narrow acceptance claim and preserve
+the exact source-note routing. Additional independent outcomes require separate
+initiative records and the applicable scope assessment under
+[specification 09](../../../authoritative/LLM/09_Codex_Version_Realization_Initiative_Correlation_Specification.md).
+A source scope does not impose a one-to-one initiative allocation.
 
 ## Authoritative baseline
 
 | Evidence | Standing and use |
 |---|---|
-| [Codex invariant suite](../../../../../_old/example/evidence/authoritative/LLM/00_Codex_Invariant_Suite_Index.md) | Governs realization standing, narrow scope, decisions, and lifecycle claims. |
-| [`ARC-SUITE-001@2.0.1`](../../../architecture/00-architecture-suite-index.md) | Owns the shared system and capability meanings. |
-| [`ADR-001`](../../../architecture/04-ADR-001-api-exclusive-persistence.md) | Requires the CLI to use the SDK/API and forbids direct SQLite or offline fallback. |
-| [`ARC-BND-005`](../../../architecture/19-cli-boundary.md) | Owns the one-shot CLI-image boundary and exclusions. |
-| [`ARC-CTR-006`](../../../architecture/20-cli-interaction-contract.md) | Owns invocation, commands, streams, JSON, diagnostics, and exit codes. |
-| [`ADR-007`](../../../architecture/10-ADR-007-product-and-delivery-decomposition.md) | Owns D5 dependencies and the CLI-before-web sequencing gate. |
-| [`ARC-CTR-009`](../../../architecture/24-conformance-contract.md) | Owns CLI, container, operations, and end-to-end vectors and records no current D5 evidence. |
-| [`SEC-NIST-SUITE-001@1.0.1`](../../../security/NIST/00-nist-security-policy-suite-index.md) | Governs CLI security, safe output, packaging, assurance, and release claims. |
-| [`SEC-HIPAA-SUITE-001@1.0.1`](../../../security/HIPPA/00-hipaa-security-policy-suite-index.md) | Governs allowed data, diagnostics, inherited controls, evidence, and successor triggers. |
+| [Codex invariant suite](../../../authoritative/LLM/00_Codex_Invariant_Suite_Index.md) | Governs realization standing, narrow scope, decisions, and lifecycle claims. |
+| [`ARC-SUITE-001@2.0.1`](../../../authoritative/architecture/00-architecture-suite-index.md) | Owns the shared system and capability meanings. |
+| [`ADR-001`](../../../authoritative/architecture/04-ADR-001-api-exclusive-persistence.md) | Requires the CLI to use the SDK/API and forbids direct SQLite or offline fallback. |
+| [`ARC-BND-005`](../../../authoritative/architecture/19-cli-boundary.md) | Owns the one-shot CLI-image boundary and exclusions. |
+| [`ARC-CTR-006`](../../../authoritative/architecture/20-cli-interaction-contract.md) | Owns invocation, commands, streams, JSON, diagnostics, and exit codes. |
+| [`ADR-007`](../../../authoritative/architecture/10-ADR-007-product-and-delivery-decomposition.md) | Owns D5 dependencies and the CLI-before-web sequencing gate. |
+| [`ARC-CTR-009`](../../../authoritative/architecture/24-conformance-contract.md) | Owns CLI, container, operations, and end-to-end vectors and records no current D5 evidence. |
+| [`SEC-NIST-SUITE-001@1.0.1`](../../../authoritative/security/NIST/00-nist-security-policy-suite-index.md) | Governs CLI security, safe output, packaging, assurance, and release claims. |
+| [`SEC-HIPAA-SUITE-001@1.0.1`](../../../authoritative/security/HIPPA/00-hipaa-security-policy-suite-index.md) | Governs allowed data, diagnostics, inherited controls, evidence, and successor triggers. |
 
 ## Document catalog
 
-| Order | Realization ID | Suite version | Same future-initiative scope |
+| Order | Realization ID | Suite version | Candidate outcome |
 |---:|---|---|---|
 | `00` | `RZN-001-P3-CLI-SUITE` | `v3.0` | This standing, lineage, authority, dependency, and navigation index |
 | `01` | `RZN-001-P3-CLI-N01` | `v3.0` | The D5 one-shot CLI image, command contract, streams, failures, isolation, release identity, security, and exact evidence boundary |
@@ -80,42 +79,3 @@ not depend on CLI code.
 A future proposal must cite `RZN-001-P3-CLI-N01`, identify the exact compatible
 D2-D4 artifacts, map all applicable architecture vectors and security gates,
 and keep the acceptance claim limited to D5. This suite creates no initiative.
-
-## Correlation migration addendum
-
-**Effective date:** 2026-11-11
-
-**Migration action:** `Migrate`
-
-**Authority:** [six-initiative migration prompt](../../../../prompts/create-v1.0-through-v4.0-initiatives.md), [EX-GIT-DR-001](../../../../../_old/example/initiatives/decision-receipts/EX-GIT-DR-001-enclosing-worktree-exception.md), and [resolved `INV-CONFLICT-001`](../../../../../_old/example/evidence/authoritative/LLM/03_Codex_Invariant_Conflict_Register.md#inv-conflict-001--embedded-example-project-root-and-git-root-invariant)
-
-This addendum applies current correlation governance without rewriting the
-pre-effective suite's header, source identity, standing, or recorded claims.
-
-| Correlation field | Migrated identity |
-|---|---|
-| Work version | `v3.0` |
-| Realization suite | `RZN-001-P3-CLI-SUITE` at this path |
-| Initiative | [`INIT-IMP-005` — Standalone CLI image](../../../../../_old/example/initiatives/v3.0/implementation/INIT-IMP-005-standalone-cli-image/README.md) |
-| Dedicated branch | `initiative/v3.0-standalone-cli-image` |
-| Captured base | `v1` at `5a0ea0bd9f51edf97f9eddd39c6a3509c271503b` |
-| Canonical row | [Example initiative index](../../../../../_old/example/initiatives/initiative-index.md#initiative-and-correlation-register) |
-| Migration disposition | [Version-correlation migration ledger](../../../../../_old/example/initiatives/version-correlation-migration-ledger.md#migration-ledger) |
-| Predecessor or successor | None |
-
-The initiative begins `Proposed`. Migration creates identity and navigation
-only; it does not promote this suite, select artifact paths, accept CLI work,
-or make a delivery, conformance, release, or deployment claim.
-
-
-## Version-scope migration addendum (2026-11-12)
-
-**Version scope:** `v3.0`
-
-**Migration authority:** [EX-VSG-DR-001](../../../../../_old/example/initiatives/decision-receipts/EX-VSG-DR-001-initiative-migration.md)
-
-**Current initiative target:** [INIT-IMP-005](../../../../../_old/example/initiatives/v3.0/implementation/INIT-IMP-005-standalone-cli-image/README.md)
-
-**Exact source catalog:** [RZN-001-P3-CLI-N01](01-RZN-001-P3-CLI-command-image.md)
-
-The original headers and one-to-one allocation language remain historical evidence under the prior revision. This addendum adopts scope membership and many-target catalog capability without changing source identity, relabeling this note or promoting its non-authoritative standing. The existing target retains the same narrow Proposed claim. Future independent outcomes require their own initiative records, not necessarily another version. The initiative index owns current assignments; the historical branch and base above remain history.

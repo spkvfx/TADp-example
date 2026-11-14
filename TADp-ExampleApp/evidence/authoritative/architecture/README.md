@@ -120,17 +120,17 @@ here, preserve the predecessor, and link both records.
 Use `Draft` or `Proposed` while a record is being reviewed; use `Accepted` only
 after its named authority accepts it. Use `Superseded` with a direct successor
 link when a new record replaces it. Retire a record only when it no longer
-governs any supported system or product; retain it for historical traceability.
+governs any supported system or product. Future replacements must retain traceable accepted meaning.
 Do not overwrite an accepted record without a revision entry, affected-record
 review, and an effective date.
 
 ## Architecture review checklist
 
 - [ ] Every file has one primary boundary, contract, or decision question.
-- [ ] Every record names its owner, status, review date, and related records.
+- [ ] Every record names its owner, status, baseline revision or review date, and related records.
 - [ ] Boundary records identify authoritative state, validation, and recovery.
 - [ ] Contract records define success, failure, compatibility, and verification.
 - [ ] Decision records cite binding evidence, alternatives, consequences, and
       acceptance.
 - [ ] Initiatives and products cite the precise architecture record and section.
-- [ ] Superseded records remain linked and discoverable.
+- [ ] Future superseded records remain linked and discoverable when replacements occur.

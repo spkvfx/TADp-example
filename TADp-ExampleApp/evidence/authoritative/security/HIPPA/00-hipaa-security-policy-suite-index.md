@@ -4,12 +4,9 @@
 **Revision:** `1.0.1`  
 **Status:** Accepted prospective policy  
 **Owner and accepting authority:** User, project authority  
-**Technical author:** Codex  
-**Effective date:** 2026-11-10  
 **Architecture input:** [`ARC-SUITE-001@2.0.1`](../../architecture/00-architecture-suite-index.md)  
 **Authority record:** [`SEC-HIPAA-AUT-001`](01-authority-scope-and-source-basis.md)  
 **Applicable peer security baseline:** [`SEC-NIST-SUITE-001@1.0.1`](../NIST/00-nist-security-policy-suite-index.md)  
-**Supersedes:** `SEC-HIPAA-SUITE-001@1.0.0` at Git commit `95f2b01`  
 
 ## Purpose and standing
 
@@ -33,18 +30,9 @@ The requested directory is named `HIPPA`; the documents use the legally
 correct acronym **HIPAA** (Health Insurance Portability and Accountability
 Act).
 
-This `1.0.1` patch records the User's 2026-11-10 instruction to reconcile the
-files according to the findings and apply the changes in place. It aligns
-cross-references and consumption rules with architecture `2.0.1`, NIST policy
-`1.0.1`, and the authoritative disposition of `RZN-001`. It changes no product
-behavior, does not authorize ePHI or regulated use, and creates no current
-conformance result.
-
-The User further clarified that the security policy must remain the primary
-invariant guiding both the architecture and realization note, not be changed to
-match them. Accordingly, this patch changes cross-references and makes
-precedence explicit; it does not weaken, replace, or retarget any `HSP-*`
-requirement.
+This policy remains the primary invariant guiding architecture and realization
+within its security and data-use scope. Neither can weaken, replace, or
+retarget an `HSP-*` requirement.
 
 ## Accepted demonstrator profile
 
@@ -70,7 +58,7 @@ successor-architecture gate in `HSP-015`.
 
 Apply the following order within this suite's scope:
 
-1. the repository's [Codex invariant suite](../../../../_old/example/evidence/authoritative/LLM/00_Codex_Invariant_Suite_Index.md);
+1. the repository's [Codex invariant suite](../../LLM/00_Codex_Invariant_Suite_Index.md);
 2. the applicable accepted security suites—
    [`SEC-NIST-SUITE-001`](../NIST/00-nist-security-policy-suite-index.md) and
    this suite—applied together as the primary security invariants without
@@ -95,11 +83,11 @@ The NIST suite remains binding for its scope; the cross-suite mapping in
 [`SEC-HIPAA-MAP-001`](03-control-rationale-and-traceability.md#cross-suite-compatibility)
 shows how the requirements are intended to operate together.
 
-[`RZN-001`](../../../../_old/example/evidence/non-authoritative/realizations/v0.0/RZN-001-example-record-application.md)
-is non-authoritative intent history. Architecture `2.0.1` owns its system and
+[`RZN-001`](../../../non-authoritative/realizations/v0.0/RZN-001-example-record-application.md)
+is non-authoritative proposal input. Architecture `2.0.1` owns its system and
 delivery dispositions; this suite and NIST `1.0.1` own the applicable security,
 data-use, review, and evidence gates. The realization's generic text fields or
-formerly open security question cannot authorize actual or possible ePHI,
+source security question cannot authorize actual or possible ePHI,
 production clinical use, remote or multi-user access, shared workstations, or
 third-party record processing.
 
@@ -108,7 +96,7 @@ third-party record processing.
 | Order | ID | Record | Purpose |
 |---:|---|---|---|
 | `00` | `SEC-HIPAA-SUITE-001` | **This index** | Establishes standing, profile, precedence, and navigation |
-| `01` | `SEC-HIPAA-AUT-001` | [Authority, scope, and source basis](01-authority-scope-and-source-basis.md) | Preserves the human instruction, source status, legal baseline, and exclusions |
+| `01` | `SEC-HIPAA-AUT-001` | [Authority, scope, and source basis](01-authority-scope-and-source-basis.md) | Defines baseline authority, source status, legal references, and exclusions |
 | `02` | `SEC-HIPAA-POL-001` | [Prospective security policy](02-prospective-security-policy.md) | Defines the complete set of in-scope normative policies `HSP-001` through `HSP-015` |
 | `03` | `SEC-HIPAA-MAP-001` | [Control rationale and traceability](03-control-rationale-and-traceability.md) | Justifies every policy with precise architecture and HIPAA sources |
 | `04` | `SEC-HIPAA-DEV-001` | [Future development and evidence standard](04-future-development-and-evidence-standard.md) | Converts the policies into initiative, delivery, and verification obligations |
@@ -160,11 +148,3 @@ review of the current HIPAA source text, impact analysis against every linked
 architecture record and active initiative, preservation of this revision,
 and a successor or revision relationship. A request to implement, test,
 align, or make a product pass is not authority to revise this policy.
-
-## Revision record
-
-| Date | Revision | Change | Authority |
-|---|---|---|---|
-| 2026-11-10 | `1.0.0` | Established the limited HIPAA-aligned prospective policy suite | User's HIPAA policy instruction and future-development clarification |
-| 2026-11-10 | `1.0.1` | Reconciled cross-references and made policy primacy over architecture/RZN explicit without changing a policy outcome | User's explicit reconciliation instruction and policy-primacy clarification |
-

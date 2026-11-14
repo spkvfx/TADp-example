@@ -4,43 +4,28 @@
 **Revision:** `2.0.1`  
 **Status:** Accepted  
 **Owner and accepting authority:** User, project authority  
-**Technical author:** Codex, using the User-authorized best-judgment method  
-**Effective date:** 2026-11-10  
-**Primary source:** [`RZN-001`](../../../_old/example/evidence/non-authoritative/realizations/v0.0/RZN-001-example-record-application.md)  
+**Supplemental proposal input:** [`RZN-001`](../../non-authoritative/realizations/v0.0/RZN-001-example-record-application.md)\
 **Authority record:** [`AUTH-EX-001`](01-accepted-architecture-baseline.md)  
-**Supersedes:** `ARC-SUITE-001@2.0.0`, preserved at Git commit `5f0c325`; revision `2.0.0` superseded [`ARC-SUITE-001@1.0.0`](../../architecture/revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md)  
 
 ## Purpose and standing
 
-This suite is the binding architecture for the example record application. It
-turns the requested outcome captured by `RZN-001` into accepted project-level
-boundaries, contracts, decisions, and conformance obligations. The realization
-remains non-authoritative source material; this suite owns the accepted
-interpretation.
+Start here for the example record application's architecture. This index is the
+primary project entry point to the binding boundaries, contracts, decisions,
+and conformance obligations in this suite. Read the current baseline directly;
+no earlier work record or realization note is a prerequisite.
 
-The User explicitly requested that the resulting suite be authoritative and
-invariant evidence and subsequently authorized Codex to complete it using best
-judgment. The exact scope and effect of that authority are preserved in
-[`ARC-AUT-001`](02-authority-and-source-disposition.md).
+The accepted baseline decisions are defined in
+[`ARC-AUT-001`](02-authority-and-source-disposition.md). `RZN-001` is optional,
+non-authoritative proposal input retained for correlation. It neither supplies
+architecture authority nor changes the meaning of this suite. The security
+suites remain the primary constraints for their respective security and
+data-use scopes.
 
-The User subsequently required a fully Dockerized result and explicitly
-prohibited installing application services and toolchains on the host. That
-instruction creates revision `2.0.0`; the superseded native-runtime deployment
-claims are retained in [`ARC-REV-001`](../../architecture/revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md).
-
-The User then explicitly instructed Codex to reconcile the architecture,
-security-policy, and `RZN-001` files in place according to the recorded
-reconciliation findings. That instruction creates patch revision `2.0.1`.
-The patch makes the already-binding NIST and HIPAA security policies and their
-data/use limits explicit in this suite; it does not change the v2 component
-graph, public contracts, runtime behavior, or product-completion status.
-
-This suite specifies what future products must do. It does **not** claim that
-the API, SDK, CLI, web application, database, tests, release, or operational
-environment already exists. It does not accept an initiative or authorize
-implementation. Product work still requires separately governed, narrowly
-scoped initiatives under the
-[Codex invariant suite](../../../_old/example/evidence/authoritative/LLM/00_Codex_Invariant_Suite_Index.md).
+This suite specifies what future products must do. It makes no claim that the
+API, SDK, CLI, web application, database, tests, release, or operational
+environment exists. Product work requires separately governed, narrowly scoped
+initiatives under the
+[Codex invariant suite](../LLM/00_Codex_Invariant_Suite_Index.md).
 
 ## Normative language
 
@@ -131,7 +116,7 @@ operations and conformance. The sequence is continuous from `00` through `24`.
 |---:|---|---|---|
 | `00` | `ARC-SUITE-001` | **This index** | Establishes standing, architecture shape, navigation, and change control |
 | `01` | `AUTH-EX-001` | [Accepted architecture baseline](01-accepted-architecture-baseline.md) | Fixes binding scope, top-level claims, source standing, and authority |
-| `02` | `ARC-AUT-001` | [Authority and source disposition](02-authority-and-source-disposition.md) | Preserves the exact authorization and resolves `RZN-001-Q01` through `Q17` |
+| `02` | `ARC-AUT-001` | [Accepted baseline decisions](02-authority-and-source-disposition.md) | Defines the current architecture choices, retaining `RZN-001-Q01` through `Q17` as correlation IDs |
 | `03` | `ARC-BND-001` | [Record platform boundary](03-record-platform-boundary.md) | Defines the whole system, actors, state authority, and exclusions |
 | `04` | `ADR-001` | [API-exclusive persistence](04-ADR-001-api-exclusive-persistence.md) | Selects the central component topology before component detail |
 | `05` | `ADR-002` | [Identity, order, and concurrency](05-ADR-002-identity-order-and-concurrency.md) | Selects core metadata that later domain/storage contracts consume |
@@ -184,41 +169,17 @@ implementation must not add them as undocumented convenience features.
 Streaming an opaque validated backup artifact under `ARC-CTR-008` is recovery,
 not a record import/export capability.
 
-## Reconciliation revision record
-
-- **Authority:** The User's 2026-11-10 instruction to reconcile the named
-  architecture, security-policy, and v0 realization files in place according
-  to `REC-RZN-001-001`.
-- **Reason:** Make the already-binding cross-suite ownership, permitted data
-  profile, successor triggers, and future-consumer rules explicit at every
-  source that owns them.
-- **Affected scope:** Architecture standing, `RZN-001` disposition, operations
-  and conformance gates, both security suites, and their future consumers.
-- **Effective point:** The Git commit carrying the coordinated `2.0.1`,
-  `1.0.1`, and realization-note edits.
-- **Compatibility and migration:** No API, schema, component, Compose,
-  persistence, SDK, CLI, browser, backup, or product behavior changes. No data
-  migration is required. Future specifications and claims must cite the patch
-  revisions and the already-applicable security gates.
-- **Successor relationship:** `ARC-SUITE-001@2.0.1` succeeds `2.0.0` only for
-  cross-source reconciliation. Git commit `5f0c325` preserves the complete
-  predecessor; revision `1.0.0` remains preserved by `ARC-REV-001`.
-
 ## Change control
 
 Every active root record in this directory is accepted invariant evidence at
-revision `2.0.1`. Superseded history below `revisions` is immutable evidence
-but not active architecture. The prior deployment baseline is preserved by
-`ARC-REV-001`. A change
-requires an explicit instruction from the User or a later
-named project authority, an impact review of all linked records, a new revision
-entry or successor record, compatibility and migration consequences, and
-reconciliation with every consuming initiative or product. Historical
-accepted meaning must remain recoverable from Git and explicit revision or
-supersession links.
+revision `2.0.1`. A change requires an explicit instruction from the User or a
+later named project authority, an impact review of all linked records, a new
+revision entry or successor record, compatibility and migration consequences,
+and reconciliation with every consuming initiative or product. Accepted
+meaning must remain recoverable from Git and explicit revision or supersession
+links when future changes occur.
 
 Implementation evidence may motivate a change but cannot silently revise this
 suite. A discovered contradiction must be recorded in the
-[invariant conflict register](../../../_old/example/evidence/authoritative/LLM/03_Codex_Invariant_Conflict_Register.md)
+[invariant conflict register](../LLM/03_Codex_Invariant_Conflict_Register.md)
 before affected delivery continues.
-

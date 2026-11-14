@@ -6,7 +6,6 @@
 **Contract owner:** API component owner and project architecture authority  
 **Producer:** Record API query layer  
 **Consumers:** Python SDK, CLI through SDK, and browser adapter  
-**Last reviewed:** 2026-11-10  
 
 ## Purpose and scope
 
@@ -132,7 +131,7 @@ stemming, glob syntax, wildcard escaping, SQL `LIKE` behavior, or implicit
 whitespace normalization. Because stored text and query text are NFC, canonically
 equivalent composed/decomposed inputs compare consistently after normalization.
 
-`exact` is the accepted correction of the realization's `exacth match` text.
+The canonical name of the exact-match mode is `exact`.
 
 ## Regex semantics
 
@@ -270,4 +269,3 @@ even when route/schema fields remain unchanged.
 - System boundary: [`ARC-BND-002`](12-api-service-boundary.md)
 - Decision: [`ADR-003`](06-ADR-003-search-execution-semantics.md)
 - Governing evidence: [`AUTH-EX-001`](01-accepted-architecture-baseline.md)
-

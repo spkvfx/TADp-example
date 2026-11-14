@@ -4,7 +4,6 @@
 **Revision:** `1.0.1`  
 **Status:** Accepted source register  
 **Owner and accepting authority:** User, project authority  
-**Effective date:** 2026-11-10  
 **Governing suite:** [`SEC-NIST-SUITE-001`](00-nist-security-policy-suite-index.md)  
 **Source access date:** 2026-11-10  
 
@@ -145,10 +144,3 @@ security authority and supplies no basis for weakening either source family.
   control is fully implemented.
 - Drafts may inform planning only. A draft cannot override this final-source
   register or serve as the sole justification for a binding policy change.
-
-## Revision record
-
-| Date | Revision | Change | Authority |
-|---|---|---|---|
-| 2026-11-10 | `1.0.0` | Established the NIST source register | User's NIST policy instruction and clarification |
-| 2026-11-10 | `1.0.1` | Clarified the independent HIPAA source basis and RZN-001's non-authoritative standing | User's explicit instruction to apply the reconciliation findings in place |

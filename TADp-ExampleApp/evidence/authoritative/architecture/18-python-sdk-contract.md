@@ -6,7 +6,6 @@
 **Contract owner:** SDK component owner and project architecture authority  
 **Producer:** `example-records-sdk` distribution  
 **Consumers:** `record-cli` image and supported containerized Python integrators  
-**Last reviewed:** 2026-11-10  
 
 ## Purpose and scope
 
@@ -221,12 +220,3 @@ API requires a major SDK version.
 - System boundary: [`ARC-BND-004`](17-python-sdk-boundary.md)
 - Decisions: [`ADR-001`](04-ADR-001-api-exclusive-persistence.md), [`ADR-005`](08-ADR-005-containerized-technology-stack.md), [`ADR-006`](09-ADR-006-contract-versioning-and-feedback.md)
 - Governing evidence: [`AUTH-EX-001`](01-accepted-architecture-baseline.md)
-- Superseded native deployment baseline: [`ARC-REV-001`](revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md)
-
-## Revision record
-
-| Date | Change | Authority |
-|---|---|---|
-| 2026-11-10 | Defined SDK v1 public surface, lifecycle, retry, and exception semantics | User-authorized best-judgment architecture completion |
-| 2026-11-10 | Bound supported SDK consumption and package verification to declared containers and private Compose discovery | User's explicit full-Dockerization/no-host-services instruction |
-

@@ -4,8 +4,6 @@
 **Status:** Accepted  
 **Architecture revision:** `2.0.1`  
 **Decision owner:** User, project authority  
-**Decision date:** 2026-11-10  
-**Supersedes / superseded by:** Not applicable  
 **Related initiative:** Not applicable - direct project-architecture instruction  
 
 ## Decision question
@@ -18,7 +16,7 @@ surface returns the same safe, deterministic membership and order?
 | Source | Precise claim or constraint | Effect on this decision |
 |---|---|---|
 | [`AUTH-EX-001.4`](01-accepted-architecture-baseline.md) | Search meaning and order are API-owned and consistent | Prohibits independent client/SQLite semantics |
-| [`RZN-001`](../../../_old/example/evidence/non-authoritative/realizations/v0.0/RZN-001-example-record-application.md), search behavior and Q06-Q07 | All fields/modes including regex requested; dialect/case/safety unresolved | Requires explicit semantics and resource bounds |
+| [`ARC-AUT-001`](02-authority-and-source-disposition.md), `RZN-001-Q06` and `RZN-001-Q07` | One explicit predicate, case-sensitive NFC matching, and a bounded RE2-compatible regex subset | Requires explicit semantics and resource bounds |
 | [`ARC-CTR-001`](11-record-domain-contract.md) | Stored text is bounded NFC Unicode | Supplies canonical comparison input |
 
 ## Decision
@@ -88,10 +86,3 @@ owned by [`ARC-CTR-003`](14-search-navigation-contract.md).
 | Every surface yields same IDs/order | End-to-end cross-surface comparison | Future product evidence |
 | Budget failure returns no partial page | Injected deadline test | Future API evidence |
 | No SQLite/client semantic search path exists | Architecture/dependency tests | Future API/clients evidence |
-
-## Revision record
-
-| Date | Change | Authority |
-|---|---|---|
-| 2026-11-10 | Accepted centralized case-sensitive NFC/RE2 search with bounded execution | User-authorized best-judgment architecture method recorded in `ARC-AUT-001` |
-

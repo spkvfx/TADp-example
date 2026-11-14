@@ -6,8 +6,6 @@
 **Contract owner:** API persistence component owner and project architecture authority  
 **Producer:** API repository/application layer  
 **Consumer:** SQLite adapter and database  
-**Last reviewed:** 2026-11-10  
-**Supersedes:** Native-placement portions of `ARC-CTR-004@1.0.0`, preserved in [`ARC-REV-001`](revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md)  
 
 ## Purpose and scope
 
@@ -322,12 +320,3 @@ migration policy, not an implicit startup failure.
 - System boundary: [`ARC-BND-003`](15-sqlite-store-boundary.md)
 - Decisions: [`ADR-001`](04-ADR-001-api-exclusive-persistence.md), [`ADR-002`](05-ADR-002-identity-order-and-concurrency.md)
 - Governing evidence: [`AUTH-EX-001`](01-accepted-architecture-baseline.md)
-- Superseded native deployment baseline: [`ARC-REV-001`](revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md)
-
-## Revision record
-
-| Date | Change | Authority |
-|---|---|---|
-| 2026-11-10 | Defined v1 SQLite schema and repository semantics | User-authorized best-judgment architecture completion |
-| 2026-11-10 | Fixed live state to a Compose named volume and moved initialize/migrate/backup/restore into stopped-API networkless maintenance | User's explicit full-Dockerization/no-host-services instruction |
-

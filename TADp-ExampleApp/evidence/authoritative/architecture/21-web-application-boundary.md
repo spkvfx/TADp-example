@@ -4,7 +4,6 @@
 **Status:** Accepted  
 **Architecture revision:** `2.0.1`  
 **Owner:** Web component owner under a future accepted initiative  
-**Last reviewed:** 2026-11-10  
 **Related records:** [`ADR-001`](04-ADR-001-api-exclusive-persistence.md), [`ADR-004`](07-ADR-004-container-only-deployment-trust-model.md), [`ARC-CTR-003`](14-search-navigation-contract.md), [`ARC-CTR-007`](22-web-interaction-contract.md), [`ARC-CTR-008`](23-operations-security-contract.md)  
 
 ## Boundary statement
@@ -129,11 +128,3 @@ layout should remain usable at a 320 CSS-pixel viewport.
 Changes require web owner review and project architecture authority. UI state,
 storage, API, accessibility, browser-support, or security changes require
 synchronized contract, operations, compatibility, and conformance updates.
-
-## Revision record
-
-| Date | Change | Authority |
-|---|---|---|
-| 2026-11-10 | Defined same-origin browser application, state, and accessibility boundary | User-authorized best-judgment architecture completion |
-| 2026-11-10 | Bound web build to a container stage and embedded delivery to the loopback-published API image | User's explicit full-Dockerization/no-host-services instruction |
-

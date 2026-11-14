@@ -4,8 +4,6 @@
 **Status:** Accepted  
 **Architecture revision:** `2.0.1`  
 **Decision owner:** User, project authority  
-**Decision date:** 2026-11-10  
-**Supersedes / superseded by:** Not applicable  
 **Related initiative:** Not applicable - future initiatives must apply this decision  
 
 ## Decision question
@@ -19,8 +17,8 @@ web outputs be decomposed and dependency-ordered for delivery/verification?
 |---|---|---|
 | [`AUTH-EX-001.7`](01-accepted-architecture-baseline.md) | Outputs are distinct independently verifiable delivery units | Prohibits one undifferentiated completion claim |
 | [`AUTH-EX-001.11`](01-accepted-architecture-baseline.md) | Compose-only runtime and no host application toolchain | Adds an independently verifiable container-platform output |
-| [`RZN-001`](../../../_old/example/evidence/non-authoritative/realizations/v0.0/RZN-001-example-record-application.md), candidate product sequence and Q17 | Requests docs, SDK/API, CLI, web in order; SDK/API cohesion unresolved | Supplies dependency intent, not initiative authority |
-| [Initiative scope specification](../../../_old/example/evidence/authoritative/LLM/06_Codex_Initiative_Scope_Specification.md) | Different outputs/verification/lifecycles trigger separate scopes | Requires narrow future initiatives |
+| [`ARC-AUT-001`](02-authority-and-source-disposition.md), `RZN-001-Q17` | Platform, API, SDK, CLI, and web are distinct components and independently verifiable outputs | Requires narrow initiative boundaries and explicit dependencies |
+| [Initiative scope specification](../LLM/06_Codex_Initiative_Scope_Specification.md) | Different outputs/verification/lifecycles trigger separate scopes | Requires narrow future initiatives |
 
 ## Decision
 
@@ -33,11 +31,10 @@ The architecture recognizes six independently reviewable delivery units:
 | `D3 API and SQLite runtime image` | Executable `/api/v1`, migrations, SQLite adapter, health/static hosting, API OCI image and operations behavior | Accepted D1, compatible D2 platform | API/persistence/image conformance; no SDK/CLI/web completion claim |
 | `D4 Python SDK artifact` | Independently versioned wheel plus containerized build/test/developer consumption path | Accepted D1/D2 plus contract-testable D3 API | SDK public API/wheel/live conformance; no host-install or CLI completion claim |
 | `D5 Standalone CLI image` | Independently versioned OCI image/entrypoint using the exact D4 wheel | Accepted D1-D4 compatible revisions | Compose command/output/exit/live parity; no web completion claim |
-| `D6 Web application bundle` | Accessible browser assets built in containers and embedded/versioned in D3 API image | Accepted D1-D3; delivery follows D5 per requested sequence | UI/accessibility/browser/bundle/end-to-end conformance |
+| `D6 Web application bundle` | Accessible browser assets built in containers and embedded/versioned in D3 API image | Accepted D1-D3; delivery follows D5 under this architecture | UI/accessibility/browser/bundle/end-to-end conformance |
 
-`D3` and `D4` replace the realization's combined SDK/API candidate as two
-architectural components and separately verifiable outcomes. `D2` is added by
-the User's Docker-only invariant and owns cross-product container infrastructure
+`D3` and `D4` are distinct architectural components and separately verifiable
+outcomes. `D2` owns the Docker-only cross-product container infrastructure
 without absorbing API/SDK/CLI/web completion claims. Future initiative
 preparation must normally create separately scoped initiatives for each of
 `D1`-`D6`. A human authority may accept another boundary only after an explicit
@@ -112,11 +109,3 @@ accept or complete all units through one umbrella claim.
 | Each handoff names exact architecture, Compose, image, API, SDK, schema, and bundle revisions/digests | Source mappings and product metadata | Future D2-D6 records |
 | No unit claims another unit's completion | Lifecycle/completion evidence audit | Future portfolio records |
 | Cross-unit behavior remains identical | Conformance matrix | [`ARC-CTR-009`](24-conformance-contract.md) |
-
-## Revision record
-
-| Date | Change | Authority |
-|---|---|---|
-| 2026-11-10 | Accepted five delivery units, split API/SDK, and dependency/sequence order | User-authorized best-judgment architecture method recorded in `ARC-AUT-001` |
-| 2026-11-10 | Added independent container-platform unit, made API/CLI/web outputs container artifacts, and revised dependencies to six units | User's explicit Dockerization/no-host-services instruction; predecessor in `ARC-REV-001` |
-

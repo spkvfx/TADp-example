@@ -4,8 +4,6 @@
 **Status:** Accepted  
 **Architecture revision:** `2.0.1`  
 **Decision owner:** User, project authority  
-**Decision date:** 2026-11-10  
-**Supersedes / superseded by:** Supersedes `ADR-005@1.0.0`, preserved in [`ARC-REV-001`](revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md); no successor  
 **Related initiative:** Not applicable - direct project-architecture instruction  
 
 ## Decision question
@@ -21,7 +19,6 @@ the host?
 | [`AUTH-EX-001.11`](01-accepted-architecture-baseline.md) | Compose is the only supported runtime and no application toolchain is installed on the host | Requires containerized runtime/build/test/maintenance |
 | [`ADR-004`](07-ADR-004-container-only-deployment-trust-model.md) | Defines service/network/volume/host trust boundary | Constrains image and Compose roles |
 | [Official `google-re2` distribution](https://pypi.org/project/google-re2/) | Official RE2 Python package currently publishes Linux wheels for selected CPython/platform targets | Supports feasibility; delivered wheel/version still requires locked matrix proof |
-| [`ARC-REV-001`](revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md) | Preserves prior native-runtime stack | Requires explicit successor/migration effect |
 
 ## Decision
 
@@ -144,11 +141,3 @@ them through Docker rather than native wheels/runtime processes.
 | Both declared OCI platforms pass applicable vectors | Native or explicitly qualified emulation platform matrix | Future release evidence |
 | RE2/SQLite/Python behavior matches contracts | Pinned engine/runtime conformance vectors | Future API evidence |
 | No mutable tag/toolchain drift controls release | Rendered Compose/image digest/lock/provenance review | Future operations evidence |
-
-## Revision record
-
-| Date | Change | Authority |
-|---|---|---|
-| 2026-11-10 | Accepted native v1 Python/FastAPI/Pydantic/SQLite/HTTPX/framework-free web stack | User-authorized best-judgment method |
-| 2026-11-10 | Retained application technologies inside mandatory multi-stage OCI images; made BuildKit/Compose/containerized build-test-run-maintenance the only supported path | User's exact full-Dockerization and no-host-services instructions preserved in `ARC-REV-001` |
-

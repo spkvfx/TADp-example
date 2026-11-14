@@ -4,7 +4,6 @@
 **Status:** Accepted  
 **Architecture revision:** `2.0.1`  
 **Owner:** SDK component owner under a future accepted initiative  
-**Last reviewed:** 2026-11-10  
 **Related records:** [`ARC-CTR-001`](11-record-domain-contract.md), [`ARC-CTR-002`](13-record-http-contract.md), [`ARC-CTR-003`](14-search-navigation-contract.md), [`ARC-CTR-005`](18-python-sdk-contract.md), [`ADR-006`](09-ADR-006-contract-versioning-and-feedback.md)  
 
 ## Boundary statement
@@ -110,11 +109,3 @@ SQLite access.
 Changes require SDK owner review and project architecture authority. Any
 change to a server-facing method must be reviewed against the HTTP, search,
 versioning, CLI, and conformance records.
-
-## Revision record
-
-| Date | Change | Authority |
-|---|---|---|
-| 2026-11-10 | Defined the independent synchronous Python SDK boundary | User-authorized best-judgment architecture completion |
-| 2026-11-10 | Made SDK build, test, and supported consumption container-only while preserving the wheel as an independent artifact | User's explicit full-Dockerization/no-host-services instruction |
-

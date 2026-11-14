@@ -4,8 +4,6 @@
 **Status:** Accepted  
 **Architecture revision:** `2.0.1`  
 **Decision owner:** User, project authority  
-**Decision date:** 2026-11-10  
-**Supersedes / superseded by:** Not applicable  
 **Related initiative:** Not applicable - direct project-architecture instruction  
 
 ## Decision question
@@ -18,8 +16,8 @@ the SDK, CLI, and browser obtain record capabilities?
 | Source | Precise claim or constraint | Effect on this decision |
 |---|---|---|
 | [`AUTH-EX-001.1`](01-accepted-architecture-baseline.md) | The API container is the normal live-store owner; offline maintenance is mutually exclusive | Requires one mediated runtime authority plus a bounded recovery exception |
-| [`RZN-001`](../../../_old/example/evidence/non-authoritative/realizations/v0.0/RZN-001-example-record-application.md), system boundary and Q10-Q11 | Direct versus API access was unresolved; all surfaces should share capabilities | Context only; requires an accepted path |
-| [`ARC-AUT-001`](02-authority-and-source-disposition.md) | Best judgment and the later Docker-only revision are explicitly authorized | Authorizes the selected v2 topology |
+| [`ARC-AUT-001`](02-authority-and-source-disposition.md), `RZN-001-Q10` and `RZN-001-Q11` | CLI uses the SDK; CLI and browser consume the same API while persistence remains API-exclusive | Requires one shared API-owned capability boundary |
+| [`ARC-AUT-001`](02-authority-and-source-disposition.md) | Defines the accepted container-only architecture choices | Governs the selected v2 topology |
 
 ## Decision
 
@@ -96,12 +94,3 @@ validation, search, navigation, concurrency, and error-semantics boundary.
 | Equivalent CLI and web operations use one `/api/v1` route/behavior | Route inventory plus cross-origin cross-surface conformance vectors | [`ARC-CTR-009`](24-conformance-contract.md) |
 | API outage causes explicit unavailability, never fallback | Fault-injected SDK/CLI/web tests | Future product evidence |
 | Maintenance paths never mutate a running store ad hoc | Backup/restore and instance-lock tests | Future operations evidence |
-
-## Revision record
-
-| Date | Change | Authority |
-|---|---|---|
-| 2026-11-10 | Accepted API-exclusive persistence and client integration paths | User-authorized best-judgment architecture method recorded in `ARC-AUT-001` |
-| 2026-11-10 | Reconciled API exclusivity with Docker-only runtime and a networkless stopped-API maintenance exception | User's Dockerization/no-host-services revision; predecessor recorded in `ARC-REV-001` |
-| 2026-11-10 | Fixed CLI/SDK and web to one identical `/api/v1` router and route contract | User's explicit shared-API-path instruction recorded in `ARC-AUT-001` |
-

@@ -4,10 +4,8 @@
 **Suite:** [`RZN-001-P2-SDK-SUITE@v2.2`](00-RZN-001-P2-SDK-suite-index.md)  
 **Suite version:** `v2.2`  
 **Status:** Recorded; invariant-bounded proposal input  
-**Recorded by:** Codex on behalf of the User  
-**Recorded date:** 2026-11-10  
-**Source:** User request in the current Codex conversation and [`RZN-001`](../v0.0/RZN-001-example-record-application.md)  
-**Historical product lineage:** SDK portion of `RZN-001-P2-SDK-API`  
+**Source:** User's application concept and [`RZN-001`](../v0.0/RZN-001-example-record-application.md)\
+**Source product lineage:** SDK portion of `RZN-001-P2-SDK-API`\
 **Accepted delivery-unit alignment:** `D4 Python SDK artifact`  
 **Related initiative or proposal:** None created  
 
@@ -53,18 +51,18 @@ surface, browser interface, or record/search semantics.
 
 | Source | Exact relevance |
 |---|---|
-| [`ARC-BND-004`](../../../architecture/17-python-sdk-boundary.md) | Wheel/package boundary, responsibilities, dependencies, state, invariants, failure, and containerized use. |
-| [`ARC-CTR-005`](../../../architecture/18-python-sdk-contract.md) | Exact public namespace, immutable models, constructor, methods, retries, exceptions, compatibility, and verification. |
-| [`ARC-CTR-001`](../../../architecture/11-record-domain-contract.md) | Canonical record and patch validation the SDK may mirror for feedback without becoming authoritative. |
-| [`ARC-CTR-002`](../../../architecture/13-record-http-contract.md) | Exact create/get/update encoding, headers, ETags, media, problems, and write uncertainty. |
-| [`ARC-CTR-003`](../../../architecture/14-search-navigation-contract.md) | Exact search spec, cursor, ceiling, paging, neighbor, and boundary wire meaning. |
-| [`ADR-001`](../../../architecture/04-ADR-001-api-exclusive-persistence.md) | SDK communicates only through `/api/v1`; no SQLite or server fallback. |
-| [`ADR-005`](../../../architecture/08-ADR-005-containerized-technology-stack.md) | Python/Pydantic/HTTPX selection, wheel build stage, exact artifact copying, and no host toolchain. |
-| [`ADR-006`](../../../architecture/09-ADR-006-contract-versioning-and-feedback.md) | SDK semantic identity, compatibility change classes, and feedback governance. |
-| [`ADR-007`](../../../architecture/10-ADR-007-product-and-delivery-decomposition.md) | D4 predecessor evidence and independent claim. |
-| [`ARC-CTR-009`](../../../architecture/24-conformance-contract.md) | D4 gate, `SDK-*` vectors, applicable cross-contract vectors, and exact evidence schema. |
-| [`SEC-NIST-POL-001`](../../../security/NIST/01-demonstrator-security-policy.md) / [`SEC-NIST-VER-001`](../../../security/NIST/03-future-development-assurance.md) | Security, safe input/output, release integrity, vulnerability, and assurance requirements. |
-| [`SEC-HIPAA-POL-001`](../../../security/HIPPA/02-prospective-security-policy.md) / [`SEC-HIPAA-DEV-001`](../../../security/HIPPA/04-future-development-and-evidence-standard.md) | Permitted data, minimum handling, diagnostics, build evidence, external-service, and claim gates. |
+| [`ARC-BND-004`](../../../authoritative/architecture/17-python-sdk-boundary.md) | Wheel/package boundary, responsibilities, dependencies, state, invariants, failure, and containerized use. |
+| [`ARC-CTR-005`](../../../authoritative/architecture/18-python-sdk-contract.md) | Exact public namespace, immutable models, constructor, methods, retries, exceptions, compatibility, and verification. |
+| [`ARC-CTR-001`](../../../authoritative/architecture/11-record-domain-contract.md) | Canonical record and patch validation the SDK may mirror for feedback without becoming authoritative. |
+| [`ARC-CTR-002`](../../../authoritative/architecture/13-record-http-contract.md) | Exact create/get/update encoding, headers, ETags, media, problems, and write uncertainty. |
+| [`ARC-CTR-003`](../../../authoritative/architecture/14-search-navigation-contract.md) | Exact search spec, cursor, ceiling, paging, neighbor, and boundary wire meaning. |
+| [`ADR-001`](../../../authoritative/architecture/04-ADR-001-api-exclusive-persistence.md) | SDK communicates only through `/api/v1`; no SQLite or server fallback. |
+| [`ADR-005`](../../../authoritative/architecture/08-ADR-005-containerized-technology-stack.md) | Python/Pydantic/HTTPX selection, wheel build stage, exact artifact copying, and no host toolchain. |
+| [`ADR-006`](../../../authoritative/architecture/09-ADR-006-contract-versioning-and-feedback.md) | SDK semantic identity, compatibility change classes, and feedback governance. |
+| [`ADR-007`](../../../authoritative/architecture/10-ADR-007-product-and-delivery-decomposition.md) | D4 predecessor evidence and independent claim. |
+| [`ARC-CTR-009`](../../../authoritative/architecture/24-conformance-contract.md) | D4 gate, `SDK-*` vectors, applicable cross-contract vectors, and exact evidence schema. |
+| [`SEC-NIST-POL-001`](../../../authoritative/security/NIST/01-demonstrator-security-policy.md) / [`SEC-NIST-VER-001`](../../../authoritative/security/NIST/03-future-development-assurance.md) | Security, safe input/output, release integrity, vulnerability, and assurance requirements. |
+| [`SEC-HIPAA-POL-001`](../../../authoritative/security/HIPPA/02-prospective-security-policy.md) / [`SEC-HIPAA-DEV-001`](../../../authoritative/security/HIPPA/04-future-development-and-evidence-standard.md) | Permitted data, minimum handling, diagnostics, build evidence, external-service, and claim gates. |
 
 ## Candidate package boundary
 
@@ -307,17 +305,3 @@ A receiving proposal must cite this realization and its v2.2 suite, preserve
 the accepted v2.1 API/v2.2 SDK split, map every public surface and failure path
 to its authoritative contract and verification, and state precisely what the
 wheel supplies to v3.0/D5 without accepting or completing the CLI.
-
-
-
-## Version-scope migration addendum (2026-11-12)
-
-**Version scope:** `v2.2`
-
-**Migration authority:** [EX-VSG-DR-001](../../../../../_old/example/initiatives/decision-receipts/EX-VSG-DR-001-initiative-migration.md)
-
-**Current initiative target:** [INIT-IMP-004](../../../../../_old/example/initiatives/v2.2/implementation/INIT-IMP-004-python-sdk/README.md)
-
-**Exact source catalog:** [RZN-001-P2-SDK-N01](01-RZN-001-P2-SDK-v2.2-python-sdk.md)
-
-The original headers and one-to-one allocation language remain historical evidence under the prior revision. This addendum adopts scope membership and many-target catalog capability without changing source identity, relabeling this note or promoting its non-authoritative standing. The existing target retains the same narrow Proposed claim. Future independent outcomes require their own initiative records, not necessarily another version. The initiative index owns current assignments; the historical branch and base above remain history.

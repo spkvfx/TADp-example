@@ -4,8 +4,6 @@
 **Status:** Accepted  
 **Architecture revision:** `2.0.1`  
 **Decision owner:** User, project authority  
-**Decision date:** 2026-11-10  
-**Supersedes / superseded by:** Supersedes `ADR-004@1.0.0`, preserved in [`ARC-REV-001`](revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md); no successor  
 **Related initiative:** Not applicable - direct project-architecture instruction  
 
 ## Decision question
@@ -20,13 +18,11 @@ the host?
 |---|---|---|
 | [`AUTH-EX-001.6`](01-accepted-architecture-baseline.md) | V2 is a local single-user application exposed only on host loopback | Requires local-only host publication |
 | [`AUTH-EX-001.11`](01-accepted-architecture-baseline.md) | Every application runtime/build/test/maintenance path is containerized | Prohibits native-host application prerequisites |
-| [`ARC-REV-001`](revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md) | Preserves the replaced native-host deployment meaning | Supplies revision history and compatibility boundary |
-| User instruction on 2026-11-10 | "I don;t want to install all the services on teh host. make taht decision now and add to the architecturer invaraint" | Explicitly authorizes the invariant change |
 
 ## Decision
 
-Revision `2.0.1` preserves the deployment decision introduced in `2.0.0` and
-has exactly one supported path: a Docker Compose application assembled from
+The accepted architecture has exactly one supported path: a Docker Compose
+application assembled from
 pinned Linux OCI images. The host installs only:
 
 - Docker Engine with Docker Compose v2, or Docker Desktop including Compose;
@@ -161,11 +157,3 @@ runtime components; arbitrary containers must not be attached.
 | Only API/maintenance mount data under mutual exclusion | Rendered Compose mount graph plus competing-container tests | Future persistence evidence |
 | Images enforce non-root/read-only/capability/resource constraints | Image/config inspection and runtime negative tests | Future release evidence |
 | Build/test/migrate/backup/restore all execute in containers | CI/runbook command and artifact evidence | Future product evidence |
-
-## Revision record
-
-| Date | Change | Authority |
-|---|---|---|
-| 2026-11-10 | Accepted local native-runtime, loopback-only trust model as `ADR-004@1.0.0` | User-authorized best-judgment method |
-| 2026-11-10 | Superseded native runtime with container-only Compose deployment; prohibited host application/service/toolchain installation | User's exact Dockerization and no-host-services instructions quoted above and in `ARC-REV-001` |
-

@@ -215,11 +215,3 @@ created only when the relevant work and evidence actually exist.
 
 `RZN-001` may be cited for requested intent but never as authority for a data
 classification, security exception, delivery gate, or product claim.
-
-## Revision record
-
-| Date | Revision | Change | Authority |
-|---|---|---|---|
-| 2026-11-10 | `1.0.0` | Established prospective development and evidence requirements | User's HIPAA policy instruction and future-development clarification |
-| 2026-11-10 | `1.0.1` | Required exact architecture, NIST, and HIPAA identities for one additive evidence record | User's explicit instruction to apply the reconciliation findings in place |
-

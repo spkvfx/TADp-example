@@ -4,8 +4,6 @@
 **Status:** Accepted  
 **Architecture revision:** `2.0.1`  
 **Decision owner:** User, project authority  
-**Decision date:** 2026-11-10  
-**Supersedes / superseded by:** Not applicable  
 **Related initiative:** Not applicable - direct project-architecture instruction  
 
 ## Decision question
@@ -19,8 +17,8 @@ and prevent concurrent edits from silently overwriting one another?
 |---|---|---|
 | [`AUTH-EX-001.2`](01-accepted-architecture-baseline.md) | Public `id` is immutable and service-generated | Requires a canonical server identity policy |
 | [`AUTH-EX-001.5`](01-accepted-architecture-baseline.md) | Updates require the current strong revision ETag | Requires internal revision metadata |
-| [`RZN-001`](../../../_old/example/evidence/non-authoritative/realizations/v0.0/RZN-001-example-record-application.md), Q03-Q05 | UUID form, navigation order, boundaries, and concurrency were unresolved | Context only; requires coherent choices |
-| [`ARC-AUT-001`](02-authority-and-source-disposition.md) | Best judgment authorized for all listed questions | Authorizes selected metadata model |
+| [`ARC-AUT-001`](02-authority-and-source-disposition.md), `RZN-001-Q03` through `RZN-001-Q05` | UUIDv4 identity, ordinal navigation, and optimistic concurrency are accepted baseline choices | Requires coherent identity, ordering, and update behavior |
+| [`ARC-AUT-001`](02-authority-and-source-disposition.md) | Defines the accepted baseline decisions | Governs the selected metadata model |
 
 ## Decision
 
@@ -94,10 +92,3 @@ gaps but must never renumber existing records.
 | Stale update never overwrites | Concurrent conditional-update test | [`ARC-CTR-009`](24-conformance-contract.md) |
 | No-op update preserves revision/time | Domain plus HTTP ETag test | Future API evidence |
 | Restore preserves all metadata | Backup/restore semantic comparison | Future operations evidence |
-
-## Revision record
-
-| Date | Change | Authority |
-|---|---|---|
-| 2026-11-10 | Accepted UUIDv4, internal ordinal/revision, ETag, and timestamp model | User-authorized best-judgment architecture method recorded in `ARC-AUT-001` |
-

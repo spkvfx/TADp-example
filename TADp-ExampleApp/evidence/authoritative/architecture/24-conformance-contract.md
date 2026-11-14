@@ -6,7 +6,6 @@
 **Contract owner:** Project architecture authority  
 **Producer:** This accepted architecture suite  
 **Consumers:** Future documentation, API, persistence, SDK, CLI, web, operations, and release initiatives  
-**Last reviewed:** 2026-11-10  
 
 ## Purpose and scope
 
@@ -20,7 +19,7 @@ architecture is a test oracle, not execution evidence.
 
 | Delivery unit | Implementation exists? | Conformance evidence exists? | Permitted claim now |
 |---|---:|---:|---|
-| `D1` architecture/contracts | This accepted suite exists | Structural verification must be recorded with this change | Architecture baseline created; no initiative completion implied |
+| `D1` architecture/contracts | This accepted baseline exists | No delivery verification recorded | Required architecture only; no initiative completion implied |
 | `D2` container platform/runtime packaging | No evidence supplied | No | Required behavior only |
 | `D3` API/SQLite runtime image | No evidence supplied | No | Required behavior only |
 | `D4` Python SDK artifact | No evidence supplied | No | Required behavior only |
@@ -29,26 +28,6 @@ architecture is a test oracle, not execution evidence.
 
 Absence of a failure, detail in this suite, generated code/schema, or a future
 unit test alone cannot be reported as product conformance or completion.
-
-## Architecture-suite structural verification
-
-On 2026-11-10, a repository-local read-only verification checked the delivered
-architecture directory and observed:
-
-| Check | Observed result |
-|---|---|
-| File sequence | 25 active root Markdown records, exactly one filename for every prefix `00` through `24`; one nested immutable predecessor record under `revisions/1.0.0` |
-| Primary identities | 26 primary IDs across active plus archived records, all unique |
-| Source decisions | 17 disposition rows covering `RZN-001-Q01` through `RZN-001-Q17` |
-| Local links | All 202 Markdown relative-link references resolve to existing targets |
-| Template residue | No unexpanded template variable or planning residue |
-| Numbering-link integrity | No doubled numeric filename prefix |
-| Record integrity | Each record has one H1, balanced code fences, and a final newline; every active header identifies revision `2.0.1` |
-| Cross-suite reconciliation | Architecture `2.0.1`, NIST `1.0.1`, and HIPAA `1.0.1` identify one another, preserve their separate ownership, and require additive evidence for applicable future claims |
-
-The check returned zero structural errors. It verifies suite assembly only; it
-does not prove semantic correctness, human review beyond the recorded
-instructions, initiative completion, or any D2-D6 product behavior.
 
 ## Conformance method
 
@@ -342,15 +321,15 @@ Seed records in ordinal order unless a vector states otherwise:
 ### D1 architecture/documentation gate
 
 - Every active root file `00` through `24` exists in numeric order, has a unique
-  stable ID, accepted status/authority/date, and no unresolved template token;
-  superseded revision records are preserved below `revisions` and are not
-  interleaved into the active reading sequence.
+  stable ID, accepted status/authority, and no unresolved template token.
+- Future revisions preserve accepted meaning in Git and explicit revision or
+  successor records outside the active reading sequence.
 - All relative links resolve and all record-catalog IDs match their targets.
-- `RZN-001-Q01` through `Q17` each has exactly one disposition and owning
-  record in `ARC-AUT-001`.
+- The 17 baseline decisions retain correlation IDs `RZN-001-Q01` through
+  `RZN-001-Q17`, each with exactly one owning record in `ARC-AUT-001`.
 - The current architecture, NIST, and HIPAA suite revisions cross-reference one
-  another, and `RZN-001` identifies their authoritative dispositions without
-  becoming a specification.
+  another. Optional proposal inputs remain non-authoritative and are not
+  prerequisites for interpreting this baseline.
 - No statement claims an implementation/test/release that lacks evidence.
 - Architecture review finds no internal contradiction or unrecorded conflict.
 
@@ -467,16 +446,6 @@ platform/release artifact. Evidence must support the exact claim made.
 - Baseline: [`AUTH-EX-001`](01-accepted-architecture-baseline.md)
 - Delivery decomposition: [`ADR-007`](10-ADR-007-product-and-delivery-decomposition.md)
 - Version/change governance: [`ADR-006`](09-ADR-006-contract-versioning-and-feedback.md)
-- Governing protocol: [Codex invariant suite](../../../_old/example/evidence/authoritative/LLM/00_Codex_Invariant_Suite_Index.md)
+- Governing protocol: [Codex invariant suite](../LLM/00_Codex_Invariant_Suite_Index.md)
 - Operations/security contract: [`ARC-CTR-008`](23-operations-security-contract.md)
 - Governing security suites: [`SEC-NIST-SUITE-001@1.0.1`](../security/NIST/00-nist-security-policy-suite-index.md), [`SEC-HIPAA-SUITE-001@1.0.1`](../security/HIPPA/00-hipaa-security-policy-suite-index.md)
-- Superseded native deployment baseline: [`ARC-REV-001`](revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md)
-
-## Revision record
-
-| Date | Change | Authority |
-|---|---|---|
-| 2026-11-10 | Defined revision 1.0 domain/API/persistence/SDK/CLI/web/operations conformance vectors | User-authorized best-judgment architecture completion |
-| 2026-11-10 | Added D2 container-platform gate, Docker-only vectors, six-unit mapping, named-volume/offline-maintenance proofs, and shared CLI/web `/api/v1` evidence for architecture 2.0 | User's explicit Dockerization, no-host-services, and shared-API-path instructions |
-| 2026-11-10 | Made NIST/HIPAA evidence additive at D1-D6 and recorded the permitted data/use and successor-gate proofs for architecture 2.0.1 | User's explicit instruction to apply the reconciliation findings in place |
-

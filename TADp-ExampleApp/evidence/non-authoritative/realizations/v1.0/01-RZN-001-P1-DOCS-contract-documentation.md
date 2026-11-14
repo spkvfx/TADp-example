@@ -4,10 +4,8 @@
 **Suite:** [`RZN-001-P1-DOCS-SUITE@v1.0`](00-RZN-001-P1-DOCS-suite-index.md)  
 **Suite version:** `v1.0`  
 **Status:** Recorded; invariant-bounded proposal input  
-**Recorded by:** Codex on behalf of the User  
-**Recorded date:** 2026-11-10  
-**Source:** User request in the current Codex conversation and [`RZN-001`](../v0.0/RZN-001-example-record-application.md)  
-**Historical product lineage:** `RZN-001-P1-DOCS`  
+**Source:** User's application concept and [`RZN-001`](../v0.0/RZN-001-example-record-application.md)\
+**Source product lineage:** `RZN-001-P1-DOCS`\
 **Accepted delivery-unit alignment:** `D1 Architecture and contract documentation`  
 **Related initiative or proposal:** None created  
 
@@ -55,13 +53,12 @@ any future behavior has been observed.
 
 | Source | Standing | Permitted use in a future documentation product |
 |---|---|---|
-| [`RZN-001`](../v0.0/RZN-001-example-record-application.md) | Non-authoritative historical realization | Explain the requested outcome and product lineage only; do not revive resolved questions as current choices. |
-| [`ARC-AUT-001`](../../../architecture/02-authority-and-source-disposition.md) | Accepted architecture authority record | Identify the authoritative dispositions of `RZN-001-Q01` through `Q17`. |
-| [`ARC-SUITE-001@2.0.1`](../../../architecture/00-architecture-suite-index.md) and records `01`-`24` | Accepted invariant architecture | Own all technical boundaries, contracts, decisions, exclusions, delivery units, and conformance meaning. |
-| [`SEC-NIST-SUITE-001@1.0.1`](../../../security/NIST/00-nist-security-policy-suite-index.md) | Accepted future-development security invariant | Own NIST-aligned security requirements, limitations, evidence methods, and claim wording. |
-| [`SEC-HIPAA-SUITE-001@1.0.1`](../../../security/HIPPA/00-hipaa-security-policy-suite-index.md) | Accepted prospective security/data-use invariant | Own allowed data/use, HIPAA-aligned safeguards, inherited dependencies, evidence obligations, and regulated-use gate. |
-| [`ARC-CTR-009`](../../../architecture/24-conformance-contract.md) | Accepted conformance contract | Supply exact vector and delivery-gate locators; never use planned vectors as passing evidence. |
-| [`REC-RZN-001-001`](../../../../../_old/example/evidence/non-authoritative/reconciliations/RZN-001-architecture-security-reconciliation.md) | Non-authoritative applied-comparison record | Explain source relationships and applied dispositions only; do not substitute it for a binding source. |
+| [`RZN-001`](../v0.0/RZN-001-example-record-application.md) | Non-authoritative realization input | Explain the requested outcome and product lineage only; do not revive resolved questions as current choices. |
+| [`ARC-AUT-001`](../../../authoritative/architecture/02-authority-and-source-disposition.md) | Accepted architecture authority record | Identify the authoritative dispositions of `RZN-001-Q01` through `Q17`. |
+| [`ARC-SUITE-001@2.0.1`](../../../authoritative/architecture/00-architecture-suite-index.md) and records `01`-`24` | Accepted invariant architecture | Own all technical boundaries, contracts, decisions, exclusions, delivery units, and conformance meaning. |
+| [`SEC-NIST-SUITE-001@1.0.1`](../../../authoritative/security/NIST/00-nist-security-policy-suite-index.md) | Accepted future-development security invariant | Own NIST-aligned security requirements, limitations, evidence methods, and claim wording. |
+| [`SEC-HIPAA-SUITE-001@1.0.1`](../../../authoritative/security/HIPPA/00-hipaa-security-policy-suite-index.md) | Accepted prospective security/data-use invariant | Own allowed data/use, HIPAA-aligned safeguards, inherited dependencies, evidence obligations, and regulated-use gate. |
+| [`ARC-CTR-009`](../../../authoritative/architecture/24-conformance-contract.md) | Accepted conformance contract | Supply exact vector and delivery-gate locators; never use planned vectors as passing evidence. |
 
 ## Candidate documentation architecture
 
@@ -242,17 +239,3 @@ A receiving proposal must cite this realization ID and the parent `RZN-001`
 source separately. It must state which candidate publication areas it accepts,
 changes, defers, or rejects; map every normative statement to its authoritative
 owner; and avoid treating the detail in this note as specification acceptance.
-
-
-
-## Version-scope migration addendum (2026-11-12)
-
-**Version scope:** `v1.0`
-
-**Migration authority:** [EX-VSG-DR-001](../../../../../_old/example/initiatives/decision-receipts/EX-VSG-DR-001-initiative-migration.md)
-
-**Current initiative target:** [INIT-IMP-001](../../../../../_old/example/initiatives/v1.0/implementation/INIT-IMP-001-contract-documentation/README.md)
-
-**Exact source catalog:** [RZN-001-P1-DOCS-N01](01-RZN-001-P1-DOCS-contract-documentation.md)
-
-The original headers and one-to-one allocation language remain historical evidence under the prior revision. This addendum adopts scope membership and many-target catalog capability without changing source identity, relabeling this note or promoting its non-authoritative standing. The existing target retains the same narrow Proposed claim. Future independent outcomes require their own initiative records, not necessarily another version. The initiative index owns current assignments; the historical branch and base above remain history.

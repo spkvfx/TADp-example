@@ -6,7 +6,6 @@
 **Contract owner:** CLI component owner and project architecture authority  
 **Producer:** `record-cli` one-shot Compose service / `recordctl` image entrypoint  
 **Consumer:** Local shell user or invoking process  
-**Last reviewed:** 2026-11-10  
 
 ## Purpose and scope
 
@@ -234,12 +233,3 @@ indeterminate guidance even though the process exit remains 130.
 - SDK contract: [`ARC-CTR-005`](18-python-sdk-contract.md)
 - Decisions: [`ADR-001`](04-ADR-001-api-exclusive-persistence.md), [`ADR-007`](10-ADR-007-product-and-delivery-decomposition.md)
 - Governing evidence: [`AUTH-EX-001`](01-accepted-architecture-baseline.md)
-- Superseded native deployment baseline: [`ARC-REV-001`](revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md)
-
-## Revision record
-
-| Date | Change | Authority |
-|---|---|---|
-| 2026-11-10 | Defined native `recordctl` command, output, and exit semantics | User-authorized best-judgment architecture completion |
-| 2026-11-10 | Made the host interface a one-shot Compose CLI container with fixed private API discovery and stdin-only host data ingress | User's explicit full-Dockerization/no-host-services instruction |
-

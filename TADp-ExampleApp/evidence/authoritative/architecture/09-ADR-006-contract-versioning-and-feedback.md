@@ -4,8 +4,6 @@
 **Status:** Accepted  
 **Architecture revision:** `2.0.1`  
 **Decision owner:** User, project authority  
-**Decision date:** 2026-11-10  
-**Supersedes / superseded by:** Not applicable  
 **Related initiative:** Not applicable - direct project-architecture instruction  
 
 ## Decision question
@@ -19,8 +17,8 @@ omission or impractical choice?
 | Source | Precise claim or constraint | Effect on this decision |
 |---|---|---|
 | [`AUTH-EX-001.8`](01-accepted-architecture-baseline.md) | Released contract meaning is versioned and never rewritten to match drift | Requires immutable historical meaning and governed successors |
-| [`RZN-001`](../../../_old/example/evidence/non-authoritative/realizations/v0.0/RZN-001-example-record-application.md), feedback loop and Q16 | Documentation guides implementation; evidence should refine it without losing identity | Requires explicit classification/reconciliation workflow |
-| [Evidence authority specification](../../../_old/example/evidence/authoritative/LLM/01_Codex_Evidence_Authority_Specification.md) | Implementation evidence cannot override architecture | Prohibits product-led silent contract changes |
+| [`ARC-AUT-001`](02-authority-and-source-disposition.md), `RZN-001-Q16` | Released contract meaning uses immutable semantic revisions and governed implementation feedback | Requires explicit classification/reconciliation workflow |
+| [Evidence authority specification](../LLM/01_Codex_Evidence_Authority_Specification.md) | Implementation evidence cannot override architecture | Prohibits product-led silent contract changes |
 
 ## Decision
 
@@ -28,7 +26,7 @@ omission or impractical choice?
 
 | Artifact | Active identity | Version rule |
 |---|---|---|
-| Architecture suite | `ARC-SUITE-001` revision `2.0.1`; predecessor `2.0.0` at Git commit `5f0c325`, with `1.0.0` in `ARC-REV-001` | Semantic revision recorded in index, affected records, and preserved predecessor/successor link |
+| Architecture suite | `ARC-SUITE-001@2.0.1` | Semantic revision recorded in the index and affected records; future changes preserve predecessor/successor relationships |
 | Compose application | Project/release semantic version plus normalized effective-config hash | Any service/network/volume/port/security/default change is reviewed for architecture/compatibility effect |
 | API OCI image | API product semantic version plus immutable multi-platform manifest digest | Labels declare architecture, API, schema, source commit, and dependency/SBOM identity |
 | HTTP API | `/api/v1` | Major path identifies compatibility family; accepted schema/semantics form one baseline |
@@ -99,7 +97,7 @@ the prior accepted content must remain recoverable and linked.
 - Architecture, conformance fixtures, and product version metadata must be
   maintained together.
 - Parallel old/new major versions require an explicit support and migration
-  plan; revision `2.0.1` does not support the superseded native runtime.
+  plan. Native-host application runtime is outside this baseline.
 - Image tags, base tags, local build caches, Compose overrides, and generated
   effective configuration can drift unless immutable digests/hashes are
   recorded and tested.
@@ -124,12 +122,3 @@ the prior accepted content must remain recoverable and linked.
 | Breaking change cannot enter same major silently | Diff classifier plus architecture/human review | Future design initiative evidence |
 | Generated contracts do not drift | Snapshot/schema comparison against accepted vectors | Future API/SDK evidence |
 | Migration supports every declared prior schema | Fixture migration and restore tests | Future persistence evidence |
-
-## Revision record
-
-| Date | Change | Authority |
-|---|---|---|
-| 2026-11-10 | Accepted semantic change classes and governed implementation-feedback workflow | User-authorized best-judgment architecture method recorded in `ARC-AUT-001` |
-| 2026-11-10 | Applied the workflow to preserve `1.0.0` and establish container-only `2.0.0`; added Compose/image/artifact identities | User's explicit Dockerization/no-host-services authority preserved in `ARC-REV-001` |
-| 2026-11-10 | Established patch `2.0.1` and coordinated security-policy patches `1.0.1` to make cross-suite standing and `RZN-001` consumption explicit without product-semantic change | User's explicit in-place reconciliation instruction recorded in `ARC-AUT-001`; predecessor preserved at Git commit `5f0c325` |
-

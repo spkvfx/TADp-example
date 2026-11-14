@@ -4,10 +4,8 @@
 **Revision:** `1.0.1`  
 **Status:** Accepted future-development policy  
 **Owner and accepting authority:** User, project authority  
-**Effective date:** 2026-11-10  
-**Architecture input:** [`ARC-SUITE-001@2.0.1`](../../../architecture/00-architecture-suite-index.md)  
+**Architecture input:** [`ARC-SUITE-001@2.0.1`](../../architecture/00-architecture-suite-index.md)\
 **Applicable peer security baseline:** [`SEC-HIPAA-SUITE-001@1.0.1`](../HIPPA/00-hipaa-security-policy-suite-index.md)  
-**Supersedes:** `SEC-NIST-SUITE-001@1.0.0` at Git commit `82bd147`  
 **Policy profile:** Local, single-user, Docker Compose demonstrator  
 
 ## Purpose and standing
@@ -15,8 +13,8 @@
 This suite is the binding, limited-scope future-development security policy for
 the example record application used as the TADp demonstrator. It establishes a
 focused NIST-aligned policy, control-tailoring profile, and future assurance
-plan. The architecture describes the current technical design under review;
-this suite remains the primary invariant for its security, permitted-use,
+plan. The architecture suite index is the starting point for the technical
+design; this suite remains the primary invariant for its security, permitted-use,
 review, and assurance scope and guides that architecture.
 The NIST publications in the [source register](04-nist-source-register.md)
 justify the security outcomes selected for that architecture.
@@ -33,8 +31,8 @@ after the required evidence in
 ## Development posture
 
 This suite states requirements for work performed after its acceptance. The
-architecture invariant supplied factual input for initial scope selection; it
-is not authority to narrow the accepted policy and is not implementation
+architecture invariant defines the technical scope constrained by this policy;
+it is not authority to narrow the accepted policy and is not implementation
 evidence. Source code, images,
 configurations, tests, scans, backups, operations, and releases are **not
 assessed** by this suite, and no current pass, failure, or conformance result is
@@ -45,38 +43,21 @@ developers and reviewers what evidence an implementation would have to produce
 before making a narrowly scoped claim. Creating that specification does not
 assert that the evidence or implementation already exists.
 
-## Human authorization captured
+## Baseline authority and scope
 
-The User instructed Codex on 2026-11-10:
+The User is the accepting project authority for this limited, NIST-aligned
+future-development policy. The suite selects architecture-relevant safeguards
+and justifies them with the official sources in `SEC-NIST-SRC-001`.
 
-> create a limited scope NIST aligned security policy for the TADp demonstrator
-> app. use the architecture invariant as primary evidence. The policy does not
-> need to include every NIST protocol, limit only to areas relevant to the
-> example app. Place the policy document suite in the NIST folder. Be certain
-> to justify every policy with existing, documented NIST guidelines and
-> protocols.
+This is a prospective policy baseline, not a current-state assessment.
+Architecture `2.0.1` and HIPAA policy `1.0.1` apply alongside it. This policy
+remains the primary invariant for its NIST-aligned security outcomes and guides
+the architecture and realization. Neither can weaken, replace, or retarget a
+`SEC-POL-*` requirement.
 
-The User clarified on 2026-11-10:
-
-> right - these policies guide future development, not validate existing work
-
-That instruction authorizes creation and acceptance of this project-specific
-future-development suite in the repository's authoritative security hierarchy.
-The clarification controls its interpretation: this is a policy baseline, not
-a current-state assessment. The instructions do not authorize alteration of
-the architecture suite, the Codex invariant suite, or any protected source.
-
-The User subsequently instructed Codex on 2026-11-10 to reconcile the files
-according to the recorded findings and make the changes in place. That
-instruction authorizes this coordinated patch revision with architecture
-`2.0.1` and HIPAA policy `1.0.1`. It does not authorize a product-behavior
-change, implementation, use of prohibited data, or a compliance claim.
-
-The User then clarified that the security policy must remain the primary
-invariant guiding both the architecture and realization note, not be changed to
-match them. This controls the reconciliation: revision `1.0.1` changes
-cross-references and makes precedence explicit, but does not weaken, replace,
-or retarget any `SEC-POL-*` requirement.
+The suite authorizes no implementation, use of prohibited data, product
+acceptance or completion, compliance claim, alteration of the Codex invariant
+suite, or protected reusable-source change.
 
 ## Authority and interpretation
 
@@ -87,10 +68,10 @@ Apply sources in this order for this suite's scope:
    security invariants without using either to weaken the other;
 3. the active example application architecture as a constrained technical
    design record, especially
-   [`AUTH-EX-001`](../../../architecture/01-accepted-architecture-baseline.md),
-   [`ADR-004`](../../../architecture/07-ADR-004-container-only-deployment-trust-model.md),
+   [`AUTH-EX-001`](../../architecture/01-accepted-architecture-baseline.md),
+   [`ADR-004`](../../architecture/07-ADR-004-container-only-deployment-trust-model.md),
    and
-   [`ARC-CTR-008`](../../../architecture/23-operations-security-contract.md);
+   [`ARC-CTR-008`](../../architecture/23-operations-security-contract.md);
 4. accepted, narrowly scoped initiative specifications; and
 5. implementation, test, scanner, and operational evidence.
 
@@ -106,7 +87,7 @@ requires an accepted successor architecture and security-policy revision.
 An implementation convenience, scan result, generated configuration, or NIST
 crosswalk cannot weaken either the architecture or this suite. Any discovered
 contradiction must follow the repository's
-[invariant-conflict process](../../../../_old/example/evidence/authoritative/LLM/03_Codex_Invariant_Conflict_Register.md).
+[invariant-conflict process](../../LLM/03_Codex_Invariant_Conflict_Register.md).
 
 ## System and data scope
 
@@ -154,9 +135,9 @@ in `SEC-NIST-MAP-001`.
 
 ## Relationship to RZN-001 and the HIPAA suite
 
-[`RZN-001`](../../../../_old/example/evidence/non-authoritative/realizations/v0.0/RZN-001-example-record-application.md)
-is historical, non-authoritative intent evidence. Its generic record model and
-previously open security/deployment question do not authorize credentials,
+[`RZN-001`](../../../non-authoritative/realizations/v0.0/RZN-001-example-record-application.md)
+is non-authoritative proposal input. Its generic record model and
+source security/deployment question do not authorize credentials,
 confidential or production data, regulated data, actual or possible ePHI, or a
 boundary excluded here. Architecture `2.0.1` owns the system decisions; this
 suite and `SEC-HIPAA-SUITE-001@1.0.1` own their respective security, data-use,
@@ -199,10 +180,3 @@ Remote exposure, application identity, sensitive-data approval, encryption
 requirements, multi-user operation, production use, or a formal compliance
 claim always requires a successor security architecture; it cannot be approved
 as an informal exception to this limited profile.
-
-## Revision record
-
-| Date | Revision | Change | Authority |
-|---|---|---|---|
-| 2026-11-10 | `1.0.0` | Established the limited NIST-aligned future-development policy | User's NIST policy instruction and clarification |
-| 2026-11-10 | `1.0.1` | Made policy primacy explicit and reconciled cross-references to architecture 2.0.1, HIPAA 1.0.1, and RZN-001; no policy outcome changed | User's explicit reconciliation instruction and policy-primacy clarification |

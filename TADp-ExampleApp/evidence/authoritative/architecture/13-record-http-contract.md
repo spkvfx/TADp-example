@@ -6,7 +6,6 @@
 **Contract owner:** API component owner and project architecture authority  
 **Producer:** Record API service  
 **Consumers:** Python SDK, CLI through SDK, and browser adapter  
-**Last reviewed:** 2026-11-10  
 
 ## Purpose and scope
 
@@ -235,4 +234,3 @@ codes may be added for a genuinely new failure only with synchronized clients.
 - System boundary: [`ARC-BND-002`](12-api-service-boundary.md)
 - Decisions: [`ADR-001`](04-ADR-001-api-exclusive-persistence.md), [`ADR-002`](05-ADR-002-identity-order-and-concurrency.md)
 - Governing evidence: [`AUTH-EX-001`](01-accepted-architecture-baseline.md)
-
