@@ -5,16 +5,26 @@ explicit instruction (reference invocation text, inert until sent by the human):
 
 > Execute prompts/review-all-initiative-questions-autonomously.md. I expressly
 > designate its DEMO-06 autonomous block, including its robotic/review directives,
-> exact six-initiative target set, decision method, per-rule human-interaction
-> exceptions, and necessary Stage 5 prerequisite/derived-assumption review,
-> as my instructions. I delegate those bounded demo decisions to Codex without
-> per-item human input. Retain all other gates and separate initiative acceptance.
+> exact six-initiative primary target set, independent per-question decision
+> method, per-rule human-interaction exceptions, and necessary Stage 5/6
+> dependency activities, including the bounded project-local cross-initiative
+> route below, as my instructions. Resolve every newly exposed assumption and
+> question in the active dependency chain before any next main-queue question.
+> I delegate those bounded demo decisions to Codex without per-item human input.
+> Retain all other gates and separate initiative acceptance.
 
 This is a project-local demonstration wrapper around the installed numbered
 workflow library. Creating, attaching or reading this file does not execute it
 or authorize its proposed exceptions. The operative block below is proposed
 for explicit human designation; retain its exact revision and the actual
 designation instruction when executed.
+
+Changes to this wrapper apply prospectively. Existing receipts and executions
+remain bound to their captured source revision; earlier designation does not
+automatically adopt an edited method or additional dependency activity. Capture
+the actual edited revision and sufficient designation for a new execution, or
+explicitly authorized changed scope before a resumed execution relies on it.
+Preserve earlier decisions and failed or incomplete execution evidence.
 
 Resolve the scaffold `S` from this directory's [AGENTS.md](AGENTS.md).
 Its expected identity is `TADp-ExampleApp`, presently installed at
@@ -34,10 +44,13 @@ Check protected-source integrity before relying on the library.
 
 ## Exact target set
 
-This table is a target inventory, not an allocation instruction. Process its
-rows serially in the displayed order. Each initiative is an independently
-governed implementation initiative; its branch-local canonical records must
-verify the assignment below. Scope numbering proves no dependency gate.
+This table inventories the primary targets, not an allocation instruction.
+Process their main queues serially in the displayed order. A necessary
+dependency activity may temporarily enter another existing initiative through
+the bounded route below; it does not start that initiative's complete batch
+early. Each initiative remains independently governed; its branch-local
+canonical records must verify its assignment. Scope numbering proves no
+dependency gate.
 
 | Scope | Initiative ID and slug | Recorded dedicated branch |
 |---|---|---|
@@ -59,12 +72,18 @@ sources before executing a numbered prompt; leave no executable placeholders.
 ## Authority and record requirements
 
 The autonomous block delegates individual assumption and question dispositions
-only for this target set and in-scope records newly exposed by this invocation.
+for the primary target set and necessary records newly exposed by the active
+question's dependency chain. Other existing initiatives inside S may host those
+records only through the target-owned dependency route below, with sufficient
+recorded authority for the exact target, sources and activity before reliance.
+This is no authority over another scaffold, unrelated work or new allocation.
 Its duration ends at this batch's verified completion or recorded blocked
 termination. Before that end condition, a retry/resume retains the original
 source revision and authority and records its new attempt identity. After
 termination, a new execution needs fresh explicit designation and a receipt.
-It supplies no standing delegation to other initiatives.
+It supplies no standing delegation to other initiatives. A dependency activity
+must be necessary to the active question, bounded and inventoried before action;
+do not use it to sweep an unrelated initiative's questions.
 
 Before any covered disposition, capture the human's exact designation/
 authorization, identity and actual authority under the profile separately
@@ -114,11 +133,29 @@ These paragraphs define the delegated method, not facts about implementation.
 Preserve governing invariants, accepted contracts, current narrow outcome,
 exclusions, component ownership and real dependencies. Reuse sufficient exact
 prior decisions and valid receipts. Compare evidence by standing, then choose
-the smallest invariant-compatible, reversible in-scope answer. Use a source
-recommendation only after assessing its options and constraints independently;
-it is input to an agent decision, never prior human approval. For otherwise
-equivalent viable source options, prefer the first in source order and record
-why the tie is immaterial. Preserve all original text and rejected alternatives.
+the best-supported invariant-compatible, reversible in-scope answer.
+
+Consider each question carefully and independently on its own merits. Do not
+carry a preferred answer, recommendation or pattern from another question into
+the current decision without checking its applicability. Respect actual
+governing prior decisions; a recommendation is not one. Compare every source
+option, the source recommendation, and materially distinct evidence-supported
+in-scope alternatives against the exact question, owning architecture/security
+contracts, current scope, dependencies, compatibility, risk, reversibility and
+verification obligations. The three source options are candidates, not an
+exhaustive menu or defaults. Choose neither the recommended answer nor any of
+those three options unless the recorded comparison shows it is truly the best
+supported option for this question. When a better in-scope answer exists,
+state it explicitly and explain why it is better, preserving the original
+source options unchanged.
+
+Record the viable alternatives considered, evidence and limitations, tradeoffs,
+reasons for rejecting alternatives, and why the selected answer is best. If
+several answers are equally best after that assessment, explain the tie and
+the substantive basis for choosing among them; recommendation status, source
+order and convenience alone must not break it. If material evidence cannot
+support a choice, record a real blocker rather than manufacture certainty.
+Preserve all original text and rejected alternatives.
 
 For assumptions, confirm an unchanged, consistent intended boundary; correct
 only an evidence-supported in-scope error, preserving the original verbatim;
@@ -136,6 +173,31 @@ locks, browser qualification, review credentials, tests or delivered products.
 Use recorded owners only within their existing role; choosing accountability
 does not assert specialist review has occurred.
 
+A new or materially changed assumption or open question may be added when
+careful analysis exposes a real uncertainty or prerequisite. When an answer
+establishes a durable initiative boundary, template 06 requires adding or
+updating the related assumption and linking the source decision; this duty is
+mandatory. Give every new or materially changed assumption its own Stage 5
+disposition before relying on it or advancing. Link it to the
+originating question, give it a stable source ID, and preserve its exact text,
+owning initiative, dependency and evidence. An answer is not permission to
+treat its unverified premises as facts. Record a provisional answer as such
+while its prerequisites remain unresolved; do not mark it final or rely on it
+until those prerequisites support it.
+
+Before moving to any next main-queue question, satisfy every assumption and
+question newly exposed by the current question, its answer or its recursive
+dependency activities, including records owned by another initiative.
+Satisfaction means each assumption has its own valid Confirmed, Corrected or
+Not applicable disposition and receipt, each question has its own supported
+final answer and receipt, and all affected permitted consumers and required
+checks are reconciled. Merely adding a record, assigning an owner, answering a
+different question, or marking a required dependency Deferred does not satisfy
+this barrier. Process prerequisite questions within the active chain as needed;
+they are not advancement to the next main-queue question. Revisit the
+originating answer after the chain is satisfied, then explicitly close the
+chain before advancing.
+
 When a nonessential choice genuinely belongs outside the current outcome or
 has a valid conditional trigger, explicitly defer it as an agent-made
 decision with reason, owner and specific re-entry condition. Preserve dormant
@@ -143,7 +205,61 @@ Deferred entries until their trigger is met. Do not defer mandatory in-scope
 work merely to claim success. A missing material fact, unsatisfied external
 dependency, invariant conflict or mandatory split remains a real blocker;
 record it and stop the affected chain, without asking routine preference
-questions or broadening scope. Continue independent eligible targets.
+questions or broadening scope. An unresolved active chain blocks every next
+main-queue question, including questions in another primary target. Independent
+read-only inspection or verification may continue, but must not bypass this
+question-processing barrier. Existing dormant questions retain their triggers;
+if a required chain cannot legally activate or satisfy one, record the blocker.
+
+## Target-owned dependency activities
+
+This route permits necessary new assumptions and questions in another existing
+project initiative, including one outside the six primary targets, only within
+S and its own governed outcome. It does not widen template 06's current
+initiative edit boundary: suspend the originating review and perform a separate
+owning-initiative Stage 5/6 activity with that template instance bound to the
+dependency target. Retain the original template restrictions in both contexts.
+
+Before a handoff, identify and record the exact originating question, why the
+dependency is necessary, target initiative/type/scope/path, current lifecycle
+and claim, source IDs/text, owning records, current branch and immutable tip,
+recorded execution assignment/base/immediate parent, applicable evidence,
+permitted edit boundary and actual authority. Use sufficient existing authority,
+including an explicitly designated dependency route only where it covers that
+exact activity; do not infer additional authority from a dependency link.
+Capture the target-specific receipt, human-interaction exception inventory and
+effective settings before any covered addition or disposition. Missing or
+ambiguous authority blocks the chain; do not demand repeated confirmation when
+sufficient scoped authority is already recorded.
+
+Preserve both initiatives' ownership, narrow claims, source history and
+reciprocal dependency links. Verify the dependency target's own prerequisites
+and prior review evidence; use its canonical prefix/records and recorded branch.
+Inventory its complete source context, but review only the exact sources needed
+by the active dependency chain, leaving its unrelated main queue for its turn.
+Create and review only the necessary new or materially affected sources, with
+individual receipts and commits. An existing valid source may satisfy a
+dependency only after checking its exact meaning and current applicability.
+Primary-target queue entry requires Proposed standing. Existing valid dependency
+records may be inspected and reused without changing their lifecycle. A new
+activity that changes an Accepted or closed dependency claim must wait until its
+separately authorized revision/reopening route has actually established a
+permissible Proposed state and owning-stage prerequisites. Merely requesting
+that route does not pass entry. Renewed acceptance remains required where
+applicable; this dependency route supplies neither revision/reopening authority
+nor initiative acceptance. Missing identity,
+scope compatibility, facts, verification or a required split remains a blocker.
+
+Serialize branch and registry writes. Commit the originating question's necessary
+provisional dependency/handoff records before switching branches, without
+claiming its unresolved answer is final. Record the handoff/resume chain, source
+and target commit identities, effective block settings, findings and checks.
+Return to the recorded originating branch only after the dependency activity
+is safely committed and the worktree is clean; recheck the originating records
+and answer before resuming. Nested dependencies follow the same rules. Detect
+cycles or lack of progress by exact source IDs and stop rather than assume
+satisfaction. A later primary target resumes its ordinary queue only when its
+turn arrives, reusing valid dependency results without duplicate decisions.
 
 ## Branch, evidence and output requirements
 
@@ -170,9 +286,11 @@ branch if restoration is blocked.
 
 Use the numbered prompts' documentary preparation procedure only for
 constructible prerequisites with sufficient actual owning-stage authority.
-Preserve historical sources and frozen proposals. Edit only the affected
-initiative's permitted review records/receipts and necessary project-local
-tracking/conflict entries. Never change protected templates, invariants,
+Preserve historical sources and frozen proposals. Edit only the current
+owning initiative's permitted review records/receipts and necessary project-local
+tracking/conflict entries. Another initiative may be changed only during its
+separately bound, sufficiently authorized dependency activity described above.
+Never change protected templates, invariants,
 locks, validators, workflow behavior, products or an external project.
 If recording an invariant conflict would require a protected register edit,
 record its factual details in allowed initiative/work-conflict records and
@@ -212,14 +330,18 @@ means identify the next stage only here, never execute it.
 
 [tadp:robotic][tadp:review]
 
-For the explicitly designated target set and source IDs inventoried before
-disposition, use the recorded demonstration method instead of the ordinary
+For the explicitly designated primary targets and necessary dependency
+activities, with exact target/source IDs and sufficient authority inventoried
+before action, use the recorded demonstration method instead of the ordinary
 per-item human presentation/wait/answer loop. This is the bounded alternate
 method permitted by specifications 02, 07, 08 and 11, not a blanket waiver.
 
-Execute the following steps serially for each target; then proceed to the
-next independent eligible target in table order. A blocked source blocks its
-dependants, not unrelated targets. Shared branch writes remain serial.
+Execute the following steps serially for each primary target in table order.
+Required dependency activities are nested handoffs within the active question,
+not permission to begin another primary queue. Do not advance to any next
+main-queue question or primary target while the active question has an
+unsatisfied newly exposed assumption/question chain. Shared branch writes
+remain serial.
 
 1. Complete safe branch preflight and required documentary preparation.
    Record sufficient actual designation and the exact per-rule exception
@@ -231,36 +353,60 @@ dependants, not unrelated targets. Shared branch writes remain serial.
    block under this delegation as the owning prerequisite activity, retaining
    necessary question-dependent assumptions for the explicit dependency loop.
    Do not manufacture Stage 5 completion or bypass a real entry blocker.
-2. Apply only the executable Initiative open-question resolution prompt block
-   in [template 06](../template/prompts/06_initiative_open_question_review.md),
-   with the bindings above and the recorded human-interaction replacements.
-   Do not execute its examples. Inventory every canonical source question,
+2. Bind the executable Initiative open-question resolution prompt block
+   in [template 06](../template/prompts/06_initiative_open_question_review.md)
+   for the per-question loop in steps 3-5, using the bindings above and recorded
+   human-interaction replacements. Do not run its whole question queue here
+   or execute its examples. Inventory every canonical source question,
    complete original text/options, status, recommendation, dependencies,
    acceptance conditions, affected records and conditional/deferred triggers;
    count repeated representations once. Preserve already valid decisions.
-3. Process every active question in explicit dependency/earliest-blocking
-   order, then stable-ID order. Use the demonstration method to select an
-   exact in-scope answer, or a justified explicit deferral with re-entry.
-   Preserve original text/options and label every new outcome agent-made.
-   Record the receipt before changing status; reconcile the register, details
-   and all actually affected permitted records, verify and commit separately.
-4. Queue every question exposed by an answer. Review new or materially changed
-   assumptions individually through the executable block of
+3. Select the next ready active question in explicit dependency/earliest-blocking
+   order, then stable-ID order. Independently assess that one question and
+   all source options/recommendations plus viable in-scope alternatives.
+   Select an exact answer only when the recorded evidence/tradeoff comparison
+   shows it is best; never default to a recommendation, one of the three
+   source options or the first-listed option. Preserve original text/options,
+   record why alternatives were rejected, and label every outcome agent-made.
+   Capture a receipt before any source disposition. Keep an answer provisional
+   when newly exposed prerequisites remain; a nonessential justified deferral
+   must not be used to bypass the dependency barrier.
+4. Add and process every new or materially changed assumption/question exposed
+   by the current question, answer or recursive dependency activity. Use the
+   executable block of
    [template 05](../template/prompts/05_initiative_assumption_review.md)
-   under this same delegation, with distinct stable-ID receipts and commits.
-   A question answer does not confirm a different assumption. Finish that
-   prerequisite chain before a dependent question; then resume Stage 6.
-   Do not recurse into the other batch wrapper. A dependency cycle with no
-   progress remains blocked with exact IDs and missing evidence.
-5. Re-scan the source register and affected assumptions until every active
-   question has a valid answer or justified explicit Deferred disposition,
-   and derived assumptions have their own valid outcomes, or record genuine
-   blockers. Keep dormant conditional questions and their triggers visible.
+   for each assumption and template 06 for each question, with distinct
+   stable-ID receipts and commits. Use the target-owned route for necessary
+   records in another initiative; never change it from the originating
+   template instance. A question answer does not confirm an assumption.
+   Satisfy the entire chain, reconcile consumers and checks, return to and
+   reassess the originating answer, and commit its final disposition before
+   moving to any next main-queue question, even in another primary target.
+   For the last main-queue question of this primary target, retain its changes
+   pending through steps 5-6 so its receipt, reconciliation, final tracking and
+   review/check records are committed together, as template 06 requires.
+   This does not permit advancing or switching branches with pending changes.
+   Do not recurse into the other batch wrapper. Missing authority/evidence,
+   an unsatisfied source or a cycle with no progress blocks advancement;
+   record exact IDs, owners and re-entry requirements.
+5. Re-scan the source register and affected assumptions after that one question.
+   Only after its entire dependency barrier is satisfied, repeat steps 3-4 for
+   the next ready main-queue question. Continue this per-question loop until
+   every active primary question has a valid answer or justified explicit
+   Deferred disposition, and every newly exposed dependency assumption/question
+   in every owning initiative has its own valid outcome. If a genuine blocker
+   prevents this, record it and stop main-queue advancement. Keep dormant conditional questions and their
+   triggers visible. Recheck the active chain after every new source or
+   material change; do not silently leave a dependency for a later target.
    Reconcile final status/Last updated/milestone fields only from actual
    coverage; open blocking questions and unconfirmed assumptions prevent
    acceptance handoff. Do not use deferral to erase mandatory delivery gates.
 6. Complete required checks, independent review and applicable final
-   local tracking/commits and conditional push. Preserve Proposed standing.
+   local tracking. Commit the last question's pending receipt/reconciliation
+   together with final tracking and review/check records; for blocked
+   termination retain its truthful unresolved source and blocker evidence.
+   Perform only an otherwise authorized conditional push. Preserve Proposed
+   standing.
    Identify Stage 7 only when the ordinary decision prerequisites hold;
    do not execute it. Restore gates at prompt end and report any remaining
    dependencies and remote obligation separately.
@@ -271,7 +417,12 @@ source IDs in actual dependency order, agent-made outcomes or retained
 decisions, authority/exception/receipt links, preparation and substantive
 changed paths, commit hashes/messages, verification and independent review,
 status/milestone effects, push result and remaining blockers/re-entry
-conditions. Give assumption/question coverage totals and dormant/deferred
-IDs. Distinguish local review completion, full template obligations, and
+conditions. For each question report the independent alternatives comparison
+and selection rationale, every new source ID/owning initiative, handoff/resume
+order, individual satisfaction receipts and checks, and whether the barrier
+permitted advancement. Include dependency targets outside the six primary rows
+separately with their exact authority, branch/commit and remaining blockers.
+Give assumption/question coverage totals and dormant/deferred IDs. Distinguish
+local review completion, full template obligations, and
 initiative lifecycle. Never claim all work complete while any required
 decision, reconciliation, check, review or push remains unmet.
