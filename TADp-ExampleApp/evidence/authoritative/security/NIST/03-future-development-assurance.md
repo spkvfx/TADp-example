@@ -6,7 +6,7 @@
 **Owner and accepting authority:** User, project authority  
 **Effective date:** 2026-11-10  
 **Governing suite:** [`SEC-NIST-SUITE-001`](00-nist-security-policy-suite-index.md)  
-**Architecture input:** [`ARC-SUITE-001@2.0.1`](../../architecture/00-architecture-suite-index.md)  
+**Architecture input:** [`ARC-SUITE-001@2.0.1`](../../../architecture/00-architecture-suite-index.md)  
 **Applicable peer evidence standard:** [`SEC-HIPAA-DEV-001@1.0.1`](../HIPPA/04-future-development-and-evidence-standard.md)  
 
 ## Purpose and non-assessment statement
@@ -55,7 +55,7 @@ for every cited SP 800-53 control has been performed.
 Method depth and coverage must be sufficient for the claim and risk. The
 minimum architecture layers, vectors, delivery gates, and evidence fields are
 defined by
-[`ARC-CTR-009`](../../architecture/24-conformance-contract.md). This standard
+[`ARC-CTR-009`](../../../architecture/24-conformance-contract.md). This standard
 adds security-policy traceability; it does not weaken that contract.
 
 ## Result model for future work

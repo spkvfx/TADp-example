@@ -8,7 +8,7 @@
 **Effective date:** 2026-11-10  
 **Primary source:** [`RZN-001`](../../../_old/example/evidence/non-authoritative/realizations/v0.0/RZN-001-example-record-application.md)  
 **Authority record:** [`AUTH-EX-001`](01-accepted-architecture-baseline.md)  
-**Supersedes:** `ARC-SUITE-001@2.0.0`, preserved at Git commit `5f0c325`; revision `2.0.0` superseded [`ARC-SUITE-001@1.0.0`](revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md)  
+**Supersedes:** `ARC-SUITE-001@2.0.0`, preserved at Git commit `5f0c325`; revision `2.0.0` superseded [`ARC-SUITE-001@1.0.0`](../../architecture/revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md)  
 
 ## Purpose and standing
 
@@ -26,7 +26,7 @@ judgment. The exact scope and effect of that authority are preserved in
 The User subsequently required a fully Dockerized result and explicitly
 prohibited installing application services and toolchains on the host. That
 instruction creates revision `2.0.0`; the superseded native-runtime deployment
-claims are retained in [`ARC-REV-001`](revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md).
+claims are retained in [`ARC-REV-001`](../../architecture/revisions/1.0.0/00-superseded-native-runtime-deployment-baseline.md).
 
 The User then explicitly instructed Codex to reconcile the architecture,
 security-policy, and `RZN-001` files in place according to the recorded

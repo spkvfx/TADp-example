@@ -5,7 +5,7 @@
 **Status:** Accepted future-development policy  
 **Owner and accepting authority:** User, project authority  
 **Effective date:** 2026-11-10  
-**Architecture input:** [`ARC-SUITE-001@2.0.1`](../../architecture/00-architecture-suite-index.md)  
+**Architecture input:** [`ARC-SUITE-001@2.0.1`](../../../architecture/00-architecture-suite-index.md)  
 **Applicable peer security baseline:** [`SEC-HIPAA-SUITE-001@1.0.1`](../HIPPA/00-hipaa-security-policy-suite-index.md)  
 **Supersedes:** `SEC-NIST-SUITE-001@1.0.0` at Git commit `82bd147`  
 **Policy profile:** Local, single-user, Docker Compose demonstrator  
@@ -87,10 +87,10 @@ Apply sources in this order for this suite's scope:
    security invariants without using either to weaken the other;
 3. the active example application architecture as a constrained technical
    design record, especially
-   [`AUTH-EX-001`](../../architecture/01-accepted-architecture-baseline.md),
-   [`ADR-004`](../../architecture/07-ADR-004-container-only-deployment-trust-model.md),
+   [`AUTH-EX-001`](../../../architecture/01-accepted-architecture-baseline.md),
+   [`ADR-004`](../../../architecture/07-ADR-004-container-only-deployment-trust-model.md),
    and
-   [`ARC-CTR-008`](../../architecture/23-operations-security-contract.md);
+   [`ARC-CTR-008`](../../../architecture/23-operations-security-contract.md);
 4. accepted, narrowly scoped initiative specifications; and
 5. implementation, test, scanner, and operational evidence.
 
