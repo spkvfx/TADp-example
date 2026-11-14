@@ -58,6 +58,15 @@ The template root is `S/template/`. Read reusable prompts as instructions;
 instantiate record sources only at their declared destinations outside that
 protected directory.
 
+For this project's existing library, select the working proposal source at
+`template/project/initiatives/proposal/proposal.template.md`, the root structure
+at `template/project/initiatives/initiative-README.template.md`, and constituent
+record sources under `template/project/initiatives/`, using specification 02
+and the canonical coverage map. The inherited Stage 1/3 path inconsistencies
+are documented in the project coordination plan; do not edit protected prompts
+or invent missing sources. A genuinely missing or ambiguous canonical source
+still blocks the affected stage.
+
 ## Candidate mapping
 
 All paths in this table are project-relative. All candidates are independent
@@ -123,7 +132,9 @@ and its required verification before beginning the next stage:
 2. Apply Stage 1 to create the canonical working proposal from the mapped
    realization index and note, preserving their non-authoritative standing.
 3. Apply Stage 2 to align that proposal with precise authoritative evidence.
-   Retain unresolved assumptions and questions.
+   Retain unresolved assumptions and questions. Record ADR-007's predecessor
+   evidence and the D6-after-D5 delivery sequencing gate without claiming those
+   gates are satisfied.
 4. Apply Stage 3 to create the complete initial implementation initiative
    suite and tracking entries using the mapped identity and decision prefix.
    Keep the initiative `Proposed`.
@@ -131,12 +142,32 @@ and its required verification before beginning the next stage:
    specification, including current sibling effort and mandatory split
    triggers. Do not accept the initiative or resolve human decision gates.
 
-Serialize shared worktree and registry writes, preserving earlier rows and
-their actual standing. Prepare shared scope coordination through Stage 0's
-owning rules; never merge unfinished initiative branches to propagate it.
-If the recorded branch layout cannot make required shared coordination
-available without an unauthorized merge or transfer, stop and report that
-coordination blocker. Do not silently change parentage or hide sibling work.
+Serialize shared worktree and registry writes. Prepare common project
+governance before creating scope or initiative branches. Under Stage 0, commit
+a missing major's scope coordination on that major, then the matching minor's
+scope coordination on that minor, before creating the dedicated candidate
+directly from that minor's actual tip. Capture actual creation bases and reuse
+existing valid parents; v2.1 and v2.2 originate from v2, never from v2.0.
+
+Preserve every canonical row and history entry inherited by the active branch.
+Keep newly allocated initiative records and their tracking on the assigned
+branch. Sibling branches may contain additional proposed work that has not
+been integrated. Do not copy their suites, synthesize local reciprocal links
+to absent records, or claim a consolidated integration-branch registry.
+
+Before allocation and each coherence review, inventory existing candidate refs
+and capture their immutable tips. Inspect sibling canonical indexes, routing
+evidence, initiative records and conflicts through read-only Git inspection.
+Identify each sibling source by branch, immutable commit and project-relative
+path. Include that evidence in the active initiative's fit, source-mapping and
+dependency review without promoting its standing. Stop affected work for
+identity collisions and record incompatible effort before proceeding.
+
+The final audit covers all six branch snapshots and distinguishes branch-local
+records from integrated state. No merge, cherry-pick, ref reassignment or
+transfer is authorized. If required coordination still cannot be established
+under these existing rules, stop and report the precise blocker. See the
+[project coordination plan](../docs/development/initiative-preparation-coordination.md).
 
 Keep initiative-specific commits on the assigned branch with clear identity
 and stage messages. Commit only traceable changes after each owning step
