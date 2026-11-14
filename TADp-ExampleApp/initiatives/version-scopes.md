@@ -4,7 +4,7 @@ This is the canonical scope identity, topology and closure registry. Scope
 READMEs and status views link here; each initiative README owns its lifecycle.
 Scopes are coordination containers, not collective specifications or releases.
 
-**Governing revision:** Not yet adopted
+**Governing revision:** 90fa3cc51ce01eb5d4dde526c9b2f9eff46c5890
 
 **Reopening evidence:** None; no scopes allocated
 

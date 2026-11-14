@@ -1,6 +1,6 @@
 # TADp-ExampleApp work-conflict register
 
-**Register owner:** Not appointed; pending human decision
+**Register owner:** User, under [SETUP-001](decision-receipts/SETUP-001.md)
 
 **Last reviewed:** 2026-11-14
 

@@ -124,3 +124,9 @@ readiness is claimed.
 The initial staged whitespace check flagged Markdown hard-break spaces inherited
 from record formatting and extra final blank lines in the new instances. These
 were normalized in project instances only; no reusable source was changed.
+
+## Approved setup event
+
+User responded "approve" to the four-part setup question; see [SETUP-001](../../initiatives/decision-receipts/SETUP-001.md). The proposals above are preserved as historical pre-approval standing. User roles and app-integration are now appointed, installed revision 90fa3cc51ce01eb5d4dde526c9b2f9eff46c5890 is prospectively adopted, and immediately pre-adoption baseline is f1ca414e97513b4488479e92ec60de110d06b9e4. The IDE setting was retained and separately committed at f1ca414e97513b4488479e92ec60de110d06b9e4. No initiative, scope, acceptance, execution or migration was invented by this setup. Current checks must pass before app-integration is created from the resulting setup commit.
+
+Approved setup verification: protected-source check exit 0, 0 errors; structural validator exit 0, valid true, 0 errors and 0 warnings. The first adoption-ledger draft failed TADP048 because a no-legacy explanatory row was interpreted as a migration action; replaced with an empty table and explicit factual inventory, then validation passed. Independent preflight_review inspected the actual setup changes; its reconciliation-trail finding was corrected in SETUP-001. No protected source or architecture change.
