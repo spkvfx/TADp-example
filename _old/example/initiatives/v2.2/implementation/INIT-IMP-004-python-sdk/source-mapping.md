@@ -8,14 +8,14 @@
 
 | Evidence | Standing | Initiative use |
 |---|---|---|
-| [Architecture suite](../../../../evidence/authoritative/architecture/00-architecture-suite-index.md) | Authoritative | Decomposition and conformance |
-| [SDK boundary](../../../../evidence/authoritative/architecture/17-python-sdk-boundary.md) | Authoritative | D4 ownership and exclusions |
-| [SDK contract](../../../../evidence/authoritative/architecture/18-python-sdk-contract.md) | Authoritative | Models, methods, exceptions, transport |
-| [HTTP contract](../../../../evidence/authoritative/architecture/13-record-http-contract.md) | Authoritative | Compatible D3 behavior |
-| [Operations/security](../../../../evidence/authoritative/architecture/23-operations-security-contract.md) | Authoritative | Failure, security, evidence |
-| [Conformance](../../../../evidence/authoritative/architecture/24-conformance-contract.md) | Authoritative | D4 gates and vectors |
-| [NIST suite](../../../../evidence/authoritative/security/NIST/00-nist-security-policy-suite-index.md) | Authoritative | Security and assurance |
-| [HIPAA-aligned suite](../../../../evidence/authoritative/security/HIPPA/00-hipaa-security-policy-suite-index.md) | Authoritative | Data-use and evidence gates |
+| [Architecture suite](../../../../../../TADp-ExampleApp/evidence/architecture/00-architecture-suite-index.md) | Authoritative | Decomposition and conformance |
+| [SDK boundary](../../../../../../TADp-ExampleApp/evidence/architecture/17-python-sdk-boundary.md) | Authoritative | D4 ownership and exclusions |
+| [SDK contract](../../../../../../TADp-ExampleApp/evidence/architecture/18-python-sdk-contract.md) | Authoritative | Models, methods, exceptions, transport |
+| [HTTP contract](../../../../../../TADp-ExampleApp/evidence/architecture/13-record-http-contract.md) | Authoritative | Compatible D3 behavior |
+| [Operations/security](../../../../../../TADp-ExampleApp/evidence/architecture/23-operations-security-contract.md) | Authoritative | Failure, security, evidence |
+| [Conformance](../../../../../../TADp-ExampleApp/evidence/architecture/24-conformance-contract.md) | Authoritative | D4 gates and vectors |
+| [NIST suite](../../../../../../TADp-ExampleApp/evidence/security/NIST/00-nist-security-policy-suite-index.md) | Authoritative | Security and assurance |
+| [HIPAA-aligned suite](../../../../../../TADp-ExampleApp/evidence/security/HIPPA/00-hipaa-security-policy-suite-index.md) | Authoritative | Data-use and evidence gates |
 | [v2.2 suite](../../../../evidence/non-authoritative/realizations/v2.2/00-RZN-001-P2-SDK-suite-index.md) | Non-authoritative | Planning details only |
 
 ## Concept and contract mapping

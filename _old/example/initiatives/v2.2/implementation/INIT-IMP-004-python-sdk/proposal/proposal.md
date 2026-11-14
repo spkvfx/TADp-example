@@ -162,14 +162,14 @@ separate later authority and artifact-specific evidence.
 
 ## References
 
-- [Architecture suite](../../../../../evidence/authoritative/architecture/00-architecture-suite-index.md)
-- [ADR-007 decomposition](../../../../../evidence/authoritative/architecture/10-ADR-007-product-and-delivery-decomposition.md)
-- [SDK boundary](../../../../../evidence/authoritative/architecture/17-python-sdk-boundary.md)
-- [SDK contract](../../../../../evidence/authoritative/architecture/18-python-sdk-contract.md)
-- [Operations/security](../../../../../evidence/authoritative/architecture/23-operations-security-contract.md)
-- [Conformance](../../../../../evidence/authoritative/architecture/24-conformance-contract.md)
-- [NIST suite](../../../../../evidence/authoritative/security/NIST/00-nist-security-policy-suite-index.md)
-- [HIPAA-aligned suite](../../../../../evidence/authoritative/security/HIPPA/00-hipaa-security-policy-suite-index.md)
+- [Architecture suite](../../../../../../../TADp-ExampleApp/evidence/architecture/00-architecture-suite-index.md)
+- [ADR-007 decomposition](../../../../../../../TADp-ExampleApp/evidence/architecture/10-ADR-007-product-and-delivery-decomposition.md)
+- [SDK boundary](../../../../../../../TADp-ExampleApp/evidence/architecture/17-python-sdk-boundary.md)
+- [SDK contract](../../../../../../../TADp-ExampleApp/evidence/architecture/18-python-sdk-contract.md)
+- [Operations/security](../../../../../../../TADp-ExampleApp/evidence/architecture/23-operations-security-contract.md)
+- [Conformance](../../../../../../../TADp-ExampleApp/evidence/architecture/24-conformance-contract.md)
+- [NIST suite](../../../../../../../TADp-ExampleApp/evidence/security/NIST/00-nist-security-policy-suite-index.md)
+- [HIPAA-aligned suite](../../../../../../../TADp-ExampleApp/evidence/security/HIPPA/00-hipaa-security-policy-suite-index.md)
 - [v2.2 suite](../../../../../evidence/non-authoritative/realizations/v2.2/00-RZN-001-P2-SDK-suite-index.md)
 
 ## Revision history

@@ -24,10 +24,10 @@ in [architecture.md](../architecture.md).
 |---|---|---|---|
 | [Canonical proposal](proposal.md) | 0.1 / 2026-11-11 | `../../../evidence/non-authoritative` | Primary statement of proposed outcome and scope |
 | [`RZN-001-P1-DOCS-N01`](../../../../../evidence/non-authoritative/realizations/v1.0/01-RZN-001-P1-DOCS-contract-documentation.md) | 2026-11-10 | `../../../evidence/non-authoritative` | Detailed realization input and unresolved publication questions |
-| [`ARC-SUITE-001@2.0.1`](../../../../../evidence/authoritative/architecture/00-architecture-suite-index.md) | 2.0.1 | `../../../evidence/authoritative` | Technical contracts, D1 boundary, and change discipline |
-| [`ARC-CTR-009`](../../../../../evidence/authoritative/architecture/24-conformance-contract.md) | 2.0.1 | `../../../evidence/authoritative` | D1 gate, vector identities, and evidence claim limits |
-| [`SEC-NIST-SUITE-001@1.0.1`](../../../../../evidence/authoritative/security/NIST/00-nist-security-policy-suite-index.md) | 1.0.1 | `../../../evidence/authoritative` | Security, use, assurance, and claim requirements |
-| [`SEC-HIPAA-SUITE-001@1.0.1`](../../../../../evidence/authoritative/security/HIPPA/00-hipaa-security-policy-suite-index.md) | 1.0.1 | `../../../evidence/authoritative` | Data profile, safeguards, evidence, and successor gate |
+| [`ARC-SUITE-001@2.0.1`](../../../../../../../TADp-ExampleApp/evidence/architecture/00-architecture-suite-index.md) | 2.0.1 | `../../../evidence/authoritative` | Technical contracts, D1 boundary, and change discipline |
+| [`ARC-CTR-009`](../../../../../../../TADp-ExampleApp/evidence/architecture/24-conformance-contract.md) | 2.0.1 | `../../../evidence/authoritative` | D1 gate, vector identities, and evidence claim limits |
+| [`SEC-NIST-SUITE-001@1.0.1`](../../../../../../../TADp-ExampleApp/evidence/security/NIST/00-nist-security-policy-suite-index.md) | 1.0.1 | `../../../evidence/authoritative` | Security, use, assurance, and claim requirements |
+| [`SEC-HIPAA-SUITE-001@1.0.1`](../../../../../../../TADp-ExampleApp/evidence/security/HIPPA/00-hipaa-security-policy-suite-index.md) | 1.0.1 | `../../../evidence/authoritative` | Data profile, safeguards, evidence, and successor gate |
 
 ## Precedence
 

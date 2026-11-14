@@ -201,8 +201,8 @@ own separately evidenced initiatives.
 ## References
 
 - [`RZN-001-P1-DOCS-N01`](../../../../../evidence/non-authoritative/realizations/v1.0/01-RZN-001-P1-DOCS-contract-documentation.md) — primary non-authoritative realization input.
-- [`ARC-SUITE-001@2.0.1`](../../../../../evidence/authoritative/architecture/00-architecture-suite-index.md) and [`ARC-CTR-009`](../../../../../evidence/authoritative/architecture/24-conformance-contract.md) — binding D1 contracts and gate.
-- [`SEC-NIST-SUITE-001@1.0.1`](../../../../../evidence/authoritative/security/NIST/00-nist-security-policy-suite-index.md) and [`SEC-HIPAA-SUITE-001@1.0.1`](../../../../../evidence/authoritative/security/HIPPA/00-hipaa-security-policy-suite-index.md) — binding security and use limits.
+- [`ARC-SUITE-001@2.0.1`](../../../../../../../TADp-ExampleApp/evidence/architecture/00-architecture-suite-index.md) and [`ARC-CTR-009`](../../../../../../../TADp-ExampleApp/evidence/architecture/24-conformance-contract.md) — binding D1 contracts and gate.
+- [`SEC-NIST-SUITE-001@1.0.1`](../../../../../../../TADp-ExampleApp/evidence/security/NIST/00-nist-security-policy-suite-index.md) and [`SEC-HIPAA-SUITE-001@1.0.1`](../../../../../../../TADp-ExampleApp/evidence/security/HIPPA/00-hipaa-security-policy-suite-index.md) — binding security and use limits.
 
 ## Revision history
 

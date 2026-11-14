@@ -162,14 +162,14 @@ and testable. Artifact acceptance/conformance require later authority/evidence.
 
 ## References
 
-- [Architecture suite](../../../../../evidence/authoritative/architecture/00-architecture-suite-index.md)
-- [ADR-007](../../../../../evidence/authoritative/architecture/10-ADR-007-product-and-delivery-decomposition.md)
-- [CLI boundary](../../../../../evidence/authoritative/architecture/19-cli-boundary.md)
-- [CLI contract](../../../../../evidence/authoritative/architecture/20-cli-interaction-contract.md)
-- [Operations/security](../../../../../evidence/authoritative/architecture/23-operations-security-contract.md)
-- [Conformance](../../../../../evidence/authoritative/architecture/24-conformance-contract.md)
-- [NIST suite](../../../../../evidence/authoritative/security/NIST/00-nist-security-policy-suite-index.md)
-- [HIPAA-aligned suite](../../../../../evidence/authoritative/security/HIPPA/00-hipaa-security-policy-suite-index.md)
+- [Architecture suite](../../../../../../../TADp-ExampleApp/evidence/architecture/00-architecture-suite-index.md)
+- [ADR-007](../../../../../../../TADp-ExampleApp/evidence/architecture/10-ADR-007-product-and-delivery-decomposition.md)
+- [CLI boundary](../../../../../../../TADp-ExampleApp/evidence/architecture/19-cli-boundary.md)
+- [CLI contract](../../../../../../../TADp-ExampleApp/evidence/architecture/20-cli-interaction-contract.md)
+- [Operations/security](../../../../../../../TADp-ExampleApp/evidence/architecture/23-operations-security-contract.md)
+- [Conformance](../../../../../../../TADp-ExampleApp/evidence/architecture/24-conformance-contract.md)
+- [NIST suite](../../../../../../../TADp-ExampleApp/evidence/security/NIST/00-nist-security-policy-suite-index.md)
+- [HIPAA-aligned suite](../../../../../../../TADp-ExampleApp/evidence/security/HIPPA/00-hipaa-security-policy-suite-index.md)
 - [v3.0 suite](../../../../../evidence/non-authoritative/realizations/v3.0/00-RZN-001-P3-CLI-suite-index.md)
 
 ## Revision history

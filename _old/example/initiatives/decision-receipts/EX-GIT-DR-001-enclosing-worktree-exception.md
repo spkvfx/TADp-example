@@ -44,7 +44,7 @@ containing this receipt, resolution, reconciled consumers, and protected lock
 - **Other evidence:** The
   [project-local prompt guard](../../prompts/AGENTS.md#resolve-the-current-scaffold-first)
   fixes `../..` as the scaffold boundary, and the
-  [migration prompt](../../prompts/create-v1.0-through-v4.0-initiatives.md)
+  [migration prompt](../../../../TADp-ExampleApp/prompts/create-v1.0-through-v4.0-initiatives.md)
   names exactly six mappings and permits only Git metadata outside that
   directory.
 - **Material limitations:** A project-local prompt is non-authoritative and
@@ -114,7 +114,7 @@ the example-root exception.
 | [Initiative index](../initiative-index.md#adoption-gate) | Permit governed allocation under the project-wide Git boundary while retaining every tuple gate | Canonical table remains empty before Stage 0 |
 | [Status view](../status.md#portfolio-gates) | Resolve `EX-ADOPT-GIT-01` for the installed example project | Gate and receipt links agree |
 | [Migration ledger](../version-correlation-migration-ledger.md#migration-ledger) | Remove the Git-root blocker from the six `Deferred` rows without allocating identity | Validator retains six actionable warnings |
-| [Migration prompt](../../prompts/create-v1.0-through-v4.0-initiatives.md#example-project-root-resolution) | Cite and enforce the exception during every preflight and stage | Prompt scope and exact map review |
+| [Migration prompt](../../../../TADp-ExampleApp/prompts/create-v1.0-through-v4.0-initiatives.md#example-project-root-resolution) | Cite and enforce the exception during every preflight and stage | Prompt scope and exact map review |
 
 ## Unresolved consequences and re-entry conditions
 

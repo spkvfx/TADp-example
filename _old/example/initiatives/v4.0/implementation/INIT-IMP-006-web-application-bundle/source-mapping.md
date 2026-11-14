@@ -8,14 +8,14 @@
 
 | Evidence | Standing | Initiative use |
 |---|---|---|
-| [Architecture suite](../../../../evidence/authoritative/architecture/00-architecture-suite-index.md) | Authoritative | Decomposition/conformance |
-| [Web boundary](../../../../evidence/authoritative/architecture/21-web-application-boundary.md) | Authoritative | D6 ownership/exclusions |
-| [Web contract](../../../../evidence/authoritative/architecture/22-web-interaction-contract.md) | Authoritative | State/interaction/accessibility |
-| [HTTP contract](../../../../evidence/authoritative/architecture/13-record-http-contract.md) | Authoritative | Same-origin API semantics |
-| [Operations/security](../../../../evidence/authoritative/architecture/23-operations-security-contract.md) | Authoritative | Runtime/security/failure |
-| [Conformance](../../../../evidence/authoritative/architecture/24-conformance-contract.md) | Authoritative | D6 vectors/gates |
-| [NIST suite](../../../../evidence/authoritative/security/NIST/00-nist-security-policy-suite-index.md) | Authoritative | Security/assurance |
-| [HIPAA-aligned suite](../../../../evidence/authoritative/security/HIPPA/00-hipaa-security-policy-suite-index.md) | Authoritative | Data-use/evidence gates |
+| [Architecture suite](../../../../../../TADp-ExampleApp/evidence/architecture/00-architecture-suite-index.md) | Authoritative | Decomposition/conformance |
+| [Web boundary](../../../../../../TADp-ExampleApp/evidence/architecture/21-web-application-boundary.md) | Authoritative | D6 ownership/exclusions |
+| [Web contract](../../../../../../TADp-ExampleApp/evidence/architecture/22-web-interaction-contract.md) | Authoritative | State/interaction/accessibility |
+| [HTTP contract](../../../../../../TADp-ExampleApp/evidence/architecture/13-record-http-contract.md) | Authoritative | Same-origin API semantics |
+| [Operations/security](../../../../../../TADp-ExampleApp/evidence/architecture/23-operations-security-contract.md) | Authoritative | Runtime/security/failure |
+| [Conformance](../../../../../../TADp-ExampleApp/evidence/architecture/24-conformance-contract.md) | Authoritative | D6 vectors/gates |
+| [NIST suite](../../../../../../TADp-ExampleApp/evidence/security/NIST/00-nist-security-policy-suite-index.md) | Authoritative | Security/assurance |
+| [HIPAA-aligned suite](../../../../../../TADp-ExampleApp/evidence/security/HIPPA/00-hipaa-security-policy-suite-index.md) | Authoritative | Data-use/evidence gates |
 | [v4.0 suite](../../../../evidence/non-authoritative/realizations/v4.0/00-RZN-001-P4-WEB-suite-index.md) | Non-authoritative | Planning only |
 
 ## Concept and contract mapping

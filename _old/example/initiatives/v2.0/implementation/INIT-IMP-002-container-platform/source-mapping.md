@@ -9,11 +9,11 @@
 
 | Evidence ID | Source | Evidence label | Governs | Conflict rule |
 |---|---|---|---|---|
-| `EVD-01` | [`ADR-004`](../../../../evidence/authoritative/architecture/07-ADR-004-container-only-deployment-trust-model.md) | `../../evidence/authoritative` | Trust topology and hardening | Block conflicting product |
-| `EVD-02` | [`ADR-005`](../../../../evidence/authoritative/architecture/08-ADR-005-containerized-technology-stack.md) | `../../evidence/authoritative` | Build targets and release integrity | Block drift; route design change |
-| `EVD-03` | [`ARC-CTR-008`](../../../../evidence/authoritative/architecture/23-operations-security-contract.md) | `../../evidence/authoritative` | Compose, lifecycle, limits, operations | Exact contract wins |
-| `EVD-04` | [`ARC-CTR-009`](../../../../evidence/authoritative/architecture/24-conformance-contract.md) | `../../evidence/authoritative` | D2 vectors/evidence | Planned checks are not results |
-| `EVD-05` | [NIST](../../../../evidence/authoritative/security/NIST/00-nist-security-policy-suite-index.md) and [HIPAA](../../../../evidence/authoritative/security/HIPPA/00-hipaa-security-policy-suite-index.md) suites | `../../evidence/authoritative` | Security/use/evidence gates | Both apply additively |
+| `EVD-01` | [`ADR-004`](../../../../../../TADp-ExampleApp/evidence/architecture/07-ADR-004-container-only-deployment-trust-model.md) | `../../evidence/authoritative` | Trust topology and hardening | Block conflicting product |
+| `EVD-02` | [`ADR-005`](../../../../../../TADp-ExampleApp/evidence/architecture/08-ADR-005-containerized-technology-stack.md) | `../../evidence/authoritative` | Build targets and release integrity | Block drift; route design change |
+| `EVD-03` | [`ARC-CTR-008`](../../../../../../TADp-ExampleApp/evidence/architecture/23-operations-security-contract.md) | `../../evidence/authoritative` | Compose, lifecycle, limits, operations | Exact contract wins |
+| `EVD-04` | [`ARC-CTR-009`](../../../../../../TADp-ExampleApp/evidence/architecture/24-conformance-contract.md) | `../../evidence/authoritative` | D2 vectors/evidence | Planned checks are not results |
+| `EVD-05` | [NIST](../../../../../../TADp-ExampleApp/evidence/security/NIST/00-nist-security-policy-suite-index.md) and [HIPAA](../../../../../../TADp-ExampleApp/evidence/security/HIPPA/00-hipaa-security-policy-suite-index.md) suites | `../../evidence/authoritative` | Security/use/evidence gates | Both apply additively |
 | `EVD-06` | [Platform realization](../../../../evidence/non-authoritative/realizations/v2.0/01-RZN-001-P2-PLATFORM-v2.0-container-platform.md) | `../../evidence/non-authoritative` | Candidate detail/open choices | Cannot override EVD-01–05 |
 
 ## Concept and contract mapping

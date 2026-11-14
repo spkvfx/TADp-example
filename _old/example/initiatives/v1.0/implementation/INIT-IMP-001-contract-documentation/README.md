@@ -89,7 +89,7 @@ than making this initiative an umbrella.
 
 | Product | Form | Destination | Governing specification | Verification |
 |---|---|---|---|---|
-| Example-record contract documentation set | Versioned derivative documentation | Open — `DOC-01` must select the repository or publishing destination | [`ARC-SUITE-001@2.0.1`](../../../../evidence/authoritative/architecture/00-architecture-suite-index.md), NIST `1.0.1`, and HIPAA `1.0.1` | D1 structural gate, source/claim review, links, accessibility/usability, and safe-example review |
+| Example-record contract documentation set | Versioned derivative documentation | Open — `DOC-01` must select the repository or publishing destination | [`ARC-SUITE-001@2.0.1`](../../../../../../TADp-ExampleApp/evidence/architecture/00-architecture-suite-index.md), NIST `1.0.1`, and HIPAA `1.0.1` | D1 structural gate, source/claim review, links, accessibility/usability, and safe-example review |
 
 ## Proposal source
 

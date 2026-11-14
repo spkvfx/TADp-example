@@ -186,7 +186,7 @@ PLT-01 through PLT-03 remain `Open, blocking`; the other 31 questions remain
 `Open`. Repeated table/detail representations count once. No additional
 continuation or Deferred source ID was found. Historical RZN-001-Q01 through
 RZN-001-Q17 have accepted dispositions in
-[ARC-AUT-001](../../evidence/authoritative/architecture/02-authority-and-source-disposition.md)
+[ARC-AUT-001](../../../../TADp-ExampleApp/evidence/architecture/02-authority-and-source-disposition.md)
 and remain excluded without reopening. All six initiatives remain `Proposed`;
 no proposed acceptance baseline or D1-D6 design handoff is qualified.
 

@@ -8,16 +8,16 @@
 
 | Evidence | Standing | Initiative use |
 |---|---|---|
-| [Architecture suite](../../../../evidence/authoritative/architecture/00-architecture-suite-index.md) | Authoritative | D3 contracts, decomposition, operations, conformance |
-| [Record domain](../../../../evidence/authoritative/architecture/11-record-domain-contract.md) | Authoritative | Identity, validation, timestamps, revisions |
-| [API service boundary](../../../../evidence/authoritative/architecture/12-api-service-boundary.md) | Authoritative | D3 service ownership and interfaces |
-| [HTTP API](../../../../evidence/authoritative/architecture/13-record-http-contract.md) | Authoritative | `/api/v1` methods, problems, concurrency |
-| [Search and navigation](../../../../evidence/authoritative/architecture/14-search-navigation-contract.md) | Authoritative | Query, result, and hierarchy behavior |
-| [SQLite](../../../../evidence/authoritative/architecture/16-sqlite-persistence-contract.md) | Authoritative | Schema, transactions, migration, recovery |
-| [Operations/security](../../../../evidence/authoritative/architecture/23-operations-security-contract.md) | Authoritative | Runtime, health, logging, maintenance |
-| [Conformance](../../../../evidence/authoritative/architecture/24-conformance-contract.md) | Authoritative | D3 evidence gates |
-| [NIST suite](../../../../evidence/authoritative/security/NIST/00-nist-security-policy-suite-index.md) | Authoritative | Security and assurance |
-| [HIPAA-aligned suite](../../../../evidence/authoritative/security/HIPPA/00-hipaa-security-policy-suite-index.md) | Authoritative | Data-use and safeguard gates |
+| [Architecture suite](../../../../../../TADp-ExampleApp/evidence/architecture/00-architecture-suite-index.md) | Authoritative | D3 contracts, decomposition, operations, conformance |
+| [Record domain](../../../../../../TADp-ExampleApp/evidence/architecture/11-record-domain-contract.md) | Authoritative | Identity, validation, timestamps, revisions |
+| [API service boundary](../../../../../../TADp-ExampleApp/evidence/architecture/12-api-service-boundary.md) | Authoritative | D3 service ownership and interfaces |
+| [HTTP API](../../../../../../TADp-ExampleApp/evidence/architecture/13-record-http-contract.md) | Authoritative | `/api/v1` methods, problems, concurrency |
+| [Search and navigation](../../../../../../TADp-ExampleApp/evidence/architecture/14-search-navigation-contract.md) | Authoritative | Query, result, and hierarchy behavior |
+| [SQLite](../../../../../../TADp-ExampleApp/evidence/architecture/16-sqlite-persistence-contract.md) | Authoritative | Schema, transactions, migration, recovery |
+| [Operations/security](../../../../../../TADp-ExampleApp/evidence/architecture/23-operations-security-contract.md) | Authoritative | Runtime, health, logging, maintenance |
+| [Conformance](../../../../../../TADp-ExampleApp/evidence/architecture/24-conformance-contract.md) | Authoritative | D3 evidence gates |
+| [NIST suite](../../../../../../TADp-ExampleApp/evidence/security/NIST/00-nist-security-policy-suite-index.md) | Authoritative | Security and assurance |
+| [HIPAA-aligned suite](../../../../../../TADp-ExampleApp/evidence/security/HIPPA/00-hipaa-security-policy-suite-index.md) | Authoritative | Data-use and safeguard gates |
 | [v2.1 suite](../../../../evidence/non-authoritative/realizations/v2.1/00-RZN-001-P2-API-SQLITE-suite-index.md) | Non-authoritative | Planning details only |
 
 ## Concept and contract mapping

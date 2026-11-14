@@ -12,12 +12,12 @@ and verification. It does not resolve assumptions or decisions.
 
 | Evidence ID | Source | Evidence label | Governs | Conflict rule |
 |---|---|---|---|---|
-| `EVD-01` | [`ARC-SUITE-001@2.0.1`](../../../../evidence/authoritative/architecture/00-architecture-suite-index.md) | `../../evidence/authoritative` | Technical meaning, source catalog, D1–D6 decomposition | Block derivative; authority is never edited here |
-| `EVD-02` | [`ADR-006`](../../../../evidence/authoritative/architecture/09-ADR-006-contract-versioning-and-feedback.md) | `../../evidence/authoritative` | Revision, compatibility, and feedback handling | Preserve conflict and route governed successor |
-| `EVD-03` | [`ADR-007`](../../../../evidence/authoritative/architecture/10-ADR-007-product-and-delivery-decomposition.md) | `../../evidence/authoritative` | D1 boundary and independent claims | Split work that crosses a delivery-unit claim |
-| `EVD-04` | [`ARC-CTR-009`](../../../../evidence/authoritative/architecture/24-conformance-contract.md) | `../../evidence/authoritative` | D1 gate and truthful evidence vocabulary | Planned vectors never become results |
-| `EVD-05` | [NIST suite `1.0.1`](../../../../evidence/authoritative/security/NIST/00-nist-security-policy-suite-index.md) | `../../evidence/authoritative` | Security/use/assurance requirements and claim limits | Block conflicting or incomplete security text |
-| `EVD-06` | [HIPAA suite `1.0.1`](../../../../evidence/authoritative/security/HIPPA/00-hipaa-security-policy-suite-index.md) | `../../evidence/authoritative` | Data profile, safeguards, evidence, successor gate | Prohibit possible ePHI and route successor trigger |
+| `EVD-01` | [`ARC-SUITE-001@2.0.1`](../../../../../../TADp-ExampleApp/evidence/architecture/00-architecture-suite-index.md) | `../../evidence/authoritative` | Technical meaning, source catalog, D1–D6 decomposition | Block derivative; authority is never edited here |
+| `EVD-02` | [`ADR-006`](../../../../../../TADp-ExampleApp/evidence/architecture/09-ADR-006-contract-versioning-and-feedback.md) | `../../evidence/authoritative` | Revision, compatibility, and feedback handling | Preserve conflict and route governed successor |
+| `EVD-03` | [`ADR-007`](../../../../../../TADp-ExampleApp/evidence/architecture/10-ADR-007-product-and-delivery-decomposition.md) | `../../evidence/authoritative` | D1 boundary and independent claims | Split work that crosses a delivery-unit claim |
+| `EVD-04` | [`ARC-CTR-009`](../../../../../../TADp-ExampleApp/evidence/architecture/24-conformance-contract.md) | `../../evidence/authoritative` | D1 gate and truthful evidence vocabulary | Planned vectors never become results |
+| `EVD-05` | [NIST suite `1.0.1`](../../../../../../TADp-ExampleApp/evidence/security/NIST/00-nist-security-policy-suite-index.md) | `../../evidence/authoritative` | Security/use/assurance requirements and claim limits | Block conflicting or incomplete security text |
+| `EVD-06` | [HIPAA suite `1.0.1`](../../../../../../TADp-ExampleApp/evidence/security/HIPPA/00-hipaa-security-policy-suite-index.md) | `../../evidence/authoritative` | Data profile, safeguards, evidence, successor gate | Prohibit possible ePHI and route successor trigger |
 | `EVD-07` | [`RZN-001-P1-DOCS-N01`](../../../../evidence/non-authoritative/realizations/v1.0/01-RZN-001-P1-DOCS-contract-documentation.md) | `../../evidence/non-authoritative` | Candidate areas, risks, and open publication choices | May inform but cannot override EVD-01–06 |
 
 ## Concept and contract mapping

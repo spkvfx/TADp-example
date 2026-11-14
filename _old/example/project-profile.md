@@ -83,10 +83,10 @@ preserved in the record that owns it.
 1. The [Codex invariant suite](evidence/authoritative/LLM/00_Codex_Invariant_Suite_Index.md)
    governs evidence standing, initiative scope, lifecycle, Git, human decisions,
    workflow, and correlation identity.
-2. [`ARC-SUITE-001@2.0.1`](evidence/authoritative/architecture/00-architecture-suite-index.md)
+2. [`ARC-SUITE-001@2.0.1`](../../TADp-ExampleApp/evidence/architecture/00-architecture-suite-index.md)
    governs the accepted technical shape and product boundaries.
-3. [`SEC-NIST-SUITE-001@1.0.1`](evidence/authoritative/security/NIST/00-nist-security-policy-suite-index.md)
-   and [`SEC-HIPAA-SUITE-001@1.0.1`](evidence/authoritative/security/HIPPA/00-hipaa-security-policy-suite-index.md)
+3. [`SEC-NIST-SUITE-001@1.0.1`](../../TADp-ExampleApp/evidence/security/NIST/00-nist-security-policy-suite-index.md)
+   and [`SEC-HIPAA-SUITE-001@1.0.1`](../../TADp-ExampleApp/evidence/security/HIPPA/00-hipaa-security-policy-suite-index.md)
    govern security, permitted data and use, safeguards, assurance, and successor
    gates.
 4. The [initiative index](initiatives/initiative-index.md) owns current

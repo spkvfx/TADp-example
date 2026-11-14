@@ -36,7 +36,7 @@ resolution satisfies the Git-root precondition by treating `..` as the
 TADp project root and the directly enclosing repository or worktree as Git
 mechanics only. It applies to every otherwise-authorized allocation in this
 installed example; it is not limited to the current
-[migration prompt](../prompts/create-v1.0-through-v4.0-initiatives.md#exact-initiative-map).
+[migration prompt](../../../TADp-ExampleApp/prompts/create-v1.0-through-v4.0-initiatives.md#exact-initiative-map).
 The exception allocates no tuple and waives no identity, migration, or
 lifecycle gate. Stage 0 must still create each complete reciprocal row on its
 exact dedicated branch.

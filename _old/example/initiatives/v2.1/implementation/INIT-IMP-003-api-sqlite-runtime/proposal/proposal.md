@@ -176,14 +176,14 @@ conformance, and completion require their own later workflow and evidence.
 
 ## References
 
-- [Authoritative architecture suite](../../../../../evidence/authoritative/architecture/00-architecture-suite-index.md)
-- [ADR-007 decomposition](../../../../../evidence/authoritative/architecture/10-ADR-007-product-and-delivery-decomposition.md)
-- [Record-domain contract](../../../../../evidence/authoritative/architecture/11-record-domain-contract.md)
-- [SQLite persistence contract](../../../../../evidence/authoritative/architecture/16-sqlite-persistence-contract.md)
-- [Operations/security contract](../../../../../evidence/authoritative/architecture/23-operations-security-contract.md)
-- [Conformance contract](../../../../../evidence/authoritative/architecture/24-conformance-contract.md)
-- [NIST security suite](../../../../../evidence/authoritative/security/NIST/00-nist-security-policy-suite-index.md)
-- [HIPAA-aligned suite](../../../../../evidence/authoritative/security/HIPPA/00-hipaa-security-policy-suite-index.md)
+- [Authoritative architecture suite](../../../../../../../TADp-ExampleApp/evidence/architecture/00-architecture-suite-index.md)
+- [ADR-007 decomposition](../../../../../../../TADp-ExampleApp/evidence/architecture/10-ADR-007-product-and-delivery-decomposition.md)
+- [Record-domain contract](../../../../../../../TADp-ExampleApp/evidence/architecture/11-record-domain-contract.md)
+- [SQLite persistence contract](../../../../../../../TADp-ExampleApp/evidence/architecture/16-sqlite-persistence-contract.md)
+- [Operations/security contract](../../../../../../../TADp-ExampleApp/evidence/architecture/23-operations-security-contract.md)
+- [Conformance contract](../../../../../../../TADp-ExampleApp/evidence/architecture/24-conformance-contract.md)
+- [NIST security suite](../../../../../../../TADp-ExampleApp/evidence/security/NIST/00-nist-security-policy-suite-index.md)
+- [HIPAA-aligned suite](../../../../../../../TADp-ExampleApp/evidence/security/HIPPA/00-hipaa-security-policy-suite-index.md)
 - [v2.1 realization suite](../../../../../evidence/non-authoritative/realizations/v2.1/00-RZN-001-P2-API-SQLITE-suite-index.md)
 
 ## Revision history

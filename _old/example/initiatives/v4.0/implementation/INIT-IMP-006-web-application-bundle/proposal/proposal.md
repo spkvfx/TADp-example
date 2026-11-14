@@ -169,14 +169,14 @@ and release require later authority and evidence.
 
 ## References
 
-- [Architecture suite](../../../../../evidence/authoritative/architecture/00-architecture-suite-index.md)
-- [ADR-007](../../../../../evidence/authoritative/architecture/10-ADR-007-product-and-delivery-decomposition.md)
-- [Web boundary](../../../../../evidence/authoritative/architecture/21-web-application-boundary.md)
-- [Web contract](../../../../../evidence/authoritative/architecture/22-web-interaction-contract.md)
-- [Operations/security](../../../../../evidence/authoritative/architecture/23-operations-security-contract.md)
-- [Conformance](../../../../../evidence/authoritative/architecture/24-conformance-contract.md)
-- [NIST suite](../../../../../evidence/authoritative/security/NIST/00-nist-security-policy-suite-index.md)
-- [HIPAA-aligned suite](../../../../../evidence/authoritative/security/HIPPA/00-hipaa-security-policy-suite-index.md)
+- [Architecture suite](../../../../../../../TADp-ExampleApp/evidence/architecture/00-architecture-suite-index.md)
+- [ADR-007](../../../../../../../TADp-ExampleApp/evidence/architecture/10-ADR-007-product-and-delivery-decomposition.md)
+- [Web boundary](../../../../../../../TADp-ExampleApp/evidence/architecture/21-web-application-boundary.md)
+- [Web contract](../../../../../../../TADp-ExampleApp/evidence/architecture/22-web-interaction-contract.md)
+- [Operations/security](../../../../../../../TADp-ExampleApp/evidence/architecture/23-operations-security-contract.md)
+- [Conformance](../../../../../../../TADp-ExampleApp/evidence/architecture/24-conformance-contract.md)
+- [NIST suite](../../../../../../../TADp-ExampleApp/evidence/security/NIST/00-nist-security-policy-suite-index.md)
+- [HIPAA-aligned suite](../../../../../../../TADp-ExampleApp/evidence/security/HIPPA/00-hipaa-security-policy-suite-index.md)
 - [v4.0 suite](../../../../../evidence/non-authoritative/realizations/v4.0/00-RZN-001-P4-WEB-suite-index.md)
 
 ## Revision history

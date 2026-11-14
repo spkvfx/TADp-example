@@ -192,8 +192,8 @@ zero-downtime or automatic-downgrade claim.
 ## References
 
 - [Platform realization note](../../../../../evidence/non-authoritative/realizations/v2.0/01-RZN-001-P2-PLATFORM-v2.0-container-platform.md) — primary non-authoritative proposal input.
-- [`ADR-004`](../../../../../evidence/authoritative/architecture/07-ADR-004-container-only-deployment-trust-model.md), [`ADR-005`](../../../../../evidence/authoritative/architecture/08-ADR-005-containerized-technology-stack.md), and [`ARC-CTR-008`](../../../../../evidence/authoritative/architecture/23-operations-security-contract.md) — binding platform contracts.
-- [`ARC-CTR-009`](../../../../../evidence/authoritative/architecture/24-conformance-contract.md), NIST `1.0.1`, and HIPAA `1.0.1` — exact qualification and security gates.
+- [`ADR-004`](../../../../../../../TADp-ExampleApp/evidence/architecture/07-ADR-004-container-only-deployment-trust-model.md), [`ADR-005`](../../../../../../../TADp-ExampleApp/evidence/architecture/08-ADR-005-containerized-technology-stack.md), and [`ARC-CTR-008`](../../../../../../../TADp-ExampleApp/evidence/architecture/23-operations-security-contract.md) — binding platform contracts.
+- [`ARC-CTR-009`](../../../../../../../TADp-ExampleApp/evidence/architecture/24-conformance-contract.md), NIST `1.0.1`, and HIPAA `1.0.1` — exact qualification and security gates.
 
 ## Revision history
 
