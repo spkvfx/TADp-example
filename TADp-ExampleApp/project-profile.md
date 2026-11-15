@@ -4,11 +4,11 @@
 
 **Status:** Setup approved; prospective protocol adoption recorded
 
-**Project owner:** User (current repository owner), appointed by SETUP-001
+**Project owner:** The current human user, under [RULE-001](evidence/authoritative/rules/RULE-001-current-human-ownership.md); historical SETUP-001 appointment retained
 
-**Technical owner:** User, appointed by SETUP-001
+**Technical owner:** The current human user, under RULE-001; component boundaries and competent performer/reviewer evidence remain explicit
 
-**Human authority model:** User holds human owner, reviewer and approver roles under SETUP-001
+**Human authority model:** RULE-001 binds all project accountable human-owner roles to the current human user and permits only explicit scoped LLM authorization compliant with TADp workflow and applicable regulation
 
 **TADp project root:** C:/Users/User/PycharmProjects/TADp-example/TADp-ExampleApp
 
@@ -69,6 +69,12 @@ The API, SQLite persistence, SDK, CLI and browser application remain future work
 | Delivered products | products | Navigation only; product destinations remain future initiative decisions | User, SETUP-001 |
 
 ## Human ownership and approval
+
+Current convention: [RULE-001](evidence/authoritative/rules/RULE-001-current-human-ownership.md), established by [OWN-001](initiatives/decision-receipts/OWN-001.md), applies prospectively to every project scope regardless of branch, workspace, machine, session or time. The human directing the current work is the accountable owner, including security/risk accountability. In this task that human is User. Explicit scoped LLM delegation is permitted only within TADp workflow, applicable law/regulation and recorded authority. Ownership proves neither competence, independent review, control effectiveness nor acceptance of a pending decision.
+
+### Historical SETUP-001 appointment
+
+The following paragraphs retain the original setup event; RULE-001 owns current role resolution. Prior decision identities and technical/evidence boundaries remain unchanged.
 
 The existing architecture identifies User as its accepting project authority.
 That observation does not appoint every project-wide role. The proposed convention
@@ -163,3 +169,7 @@ The user approved retaining and separately committing its tracked diff; commit f
 | Date | Change | Reason | Owner |
 |---|---|---|---|
 | 2026-11-14 | Approved prospective adoption, User role appointments, app-integration configuration; retain prior setup history | Exact human approval in SETUP-001; no protocol or accepted architecture revision | User, authority; Codex, recording agent |
+
+## Project-wide ownership rule promotion - 2026-11-15
+
+[OWN-PROMOTE-001](initiatives/decision-receipts/OWN-PROMOTE-001.md) records this branch's prospective adoption of the exact RULE-001 source. Prior adoption, architecture, scope, acceptance and component evidence remain unchanged; accountable ownership follows the current human, while explicit delegation, review, regulation and workflow gates remain enforced.

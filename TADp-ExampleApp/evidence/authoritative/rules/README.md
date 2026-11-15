@@ -74,3 +74,9 @@ supported scope.
 - [ ] Initiative, architecture, and product citations use the rule ID.
 - [ ] Exceptions are authorized, time-bounded, and linked.
 - [ ] Superseded rules remain available with their replacement relationship.
+
+## Active project rules
+
+| Rule | Scope | Authority |
+|---|---|---|
+| [RULE-001: Current human ownership and explicit LLM delegation](RULE-001-current-human-ownership.md) | All project scopes, across work contexts | [OWN-PROMOTE-001](../../../initiatives/decision-receipts/OWN-PROMOTE-001.md), explicit project-wide promotion |

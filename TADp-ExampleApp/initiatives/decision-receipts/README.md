@@ -10,3 +10,11 @@ for the additional per-rule and instruction-block fields.
 Keep reusable sources in `template/`; create only the required populated
 instances outside it. This navigation creates no initiative-local receipt
 directory, approval or exception.
+
+## Current-human ownership authority
+
+[OWN-001](OWN-001.md) preserves the original rule authority/source. It is not a new initiative acceptance or control result.
+
+## Project-wide rule promotion
+
+[OWN-PROMOTE-001](OWN-PROMOTE-001.md) records the exact promotion instruction, source identity, branch baseline and actual verification. RULE-001 binds accountable ownership and permits only explicit workflow/regulation-compliant LLM authorization.
