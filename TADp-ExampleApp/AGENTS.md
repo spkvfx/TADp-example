@@ -86,3 +86,7 @@ sibling redirection, retain parent instructions and coordinate shared Git state.
 Preserve source identity, distinguish observed evidence from accepted
 authority, and report only outcomes supported by verification.
 
+
+## Current human ownership and explicit delegation
+
+Apply [RULE-001](evidence/authoritative/rules/RULE-001-current-human-ownership.md) to all project scopes and work contexts. The current human user is the accountable human owner. LLM work on that human's behalf requires explicit sufficient authorization, TADp workflow compliance and applicable law/regulation. Preserve actual human/agent authors, technical boundaries, required reviews/evidence and separate acceptance decisions. [OWN-PROMOTE-001](initiatives/decision-receipts/OWN-PROMOTE-001.md) records this branch's rule promotion.
